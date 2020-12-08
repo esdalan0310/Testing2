@@ -139,6 +139,13 @@
 				</field>
 			</fields>
 		</section>
+		<section>
+			<title>Default Section Title 1607410605418</title>
+			<description></description>
+			<defaultOpen>false</defaultOpen>
+			<fields>
+			</fields>
+		</section>
 	</sections>
 	<datasources>	</datasources>
 </form>
