@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2020-12-08T09:52:10.343Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-08T09:52:10.343Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-08T09:53:21.326Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-08T09:53:21.326Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
 	<hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Hi, I&amp;rsquo;m Editorial&lt;/h1&gt;
@@ -134,10 +134,6 @@
 	<lastModifiedDate>2020-12-08T04:15:47.699Z</lastModifiedDate>
 	<lastModifiedDate_dt>2020-12-08T04:15:47.699Z</lastModifiedDate_dt>
 </component>
-	</item>	<item datasource="sharedFeatures">	<key>/site/components/features/test1/index.xml</key>
-	<value>test1</value>
-	<include>/site/components/features/test1/index.xml</include>
-	<disableFlattening>false</disableFlattening>
 	</item></features_o>
 	<header/>
 	<hero_image_s>/static-assets/images/strawberries.jpg</hero_image_s>
