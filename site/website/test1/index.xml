@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/pagedemo1</content-type>
+	<display-template>/templates/web/pages/demo1.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>fd9e</objectGroupId>
+	<objectId>fd9e5862-04b4-7e26-eaef-1495551f4695</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test1</folder-name>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>7000</orderDefault_f>
+	<internal-name>test1</internal-name>
+	<navLabel>test1</navLabel>
+	<upper_o item-list="true">	<item datasource="upper" inline="true">	<key>2ea0ac8c-1180-a41e-6825-aa617d2b4a5e</key>
+	<value>upper</value>
+<component id="2ea0ac8c-1180-a41e-6825-aa617d2b4a5e">
+	<content-type>/component/upper</content-type>
+	<display-template>/templates/web/components/upper.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>2ea0</objectGroupId>
+	<objectId>2ea0ac8c-1180-a41e-6825-aa617d2b4a5e</objectId>
+	<file-name>2ea0ac8c-1180-a41e-6825-aa617d2b4a5e.xml</file-name>
+	<content_1_s>123</content_1_s>
+	<internal-name>upper</internal-name>
+	<pic_1_alt_s>123</pic_1_alt_s>
+	<input_1_s>123</input_1_s>
+	<pic_1_s/>
+	<createdDate>2020-12-08T07:00:17.598Z</createdDate>
+	<createdDate_dt>2020-12-08T07:00:17.598Z</createdDate_dt>
+	<lastModifiedDate>2020-12-08T07:00:17.598Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-08T07:00:17.598Z</lastModifiedDate_dt>
+</component>
+	</item></upper_o>
+	<createdDate>2020-12-08T07:00:12.318Z</createdDate>
+	<createdDate_dt>2020-12-08T07:00:12.318Z</createdDate_dt>
+	<lastModifiedDate>2020-12-08T07:00:12.318Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-08T07:00:12.318Z</lastModifiedDate_dt>
+</page>
