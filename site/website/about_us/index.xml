@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/pagedemo2</content-type>
+	<display-template>/templates/web/pages/demo2.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>2aad</objectGroupId>
+	<objectId>2aad3b67-9ce1-7e62-11e0-64b13aeffe47</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>about_us</folder-name>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>10000</orderDefault_f>
+	<internal-name>about_us</internal-name>
+	<navLabel>about_us</navLabel>
+	<upper_o item-list="true"/>
+	<createdDate>2020-12-09T02:51:30.023Z</createdDate>
+	<createdDate_dt>2020-12-09T02:51:30.023Z</createdDate_dt>
+	<lastModifiedDate>2020-12-09T02:51:30.023Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T02:51:30.023Z</lastModifiedDate_dt>
+</page>
