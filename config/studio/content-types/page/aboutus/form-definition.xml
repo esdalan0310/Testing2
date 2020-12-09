@@ -471,9 +471,9 @@
 		</section>
 	</sections>
 	<datasources>				<datasource>
-					<type>child-content</type>
-					<id>header</id>
-					<title>Header</title>
+					<type>shared-content</type>
+					<id>components-header</id>
+					<title>Components Header</title>
 					<interface>item</interface>
 					<properties>
 						<property>
@@ -484,6 +484,11 @@
 						<property>
 							<name>enableBrowseExisting</name>
 							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
 								<type>boolean</type>
 						</property>
 						<property>
