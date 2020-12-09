@@ -347,7 +347,7 @@
 					<properties>
 						<property>
 							<name>contentType</name>
-							<value></value>
+							<value>/site/components</value>
 								<type>string</type>
 						</property>
 					</properties>
