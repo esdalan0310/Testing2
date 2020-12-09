@@ -10,10 +10,10 @@
             </li>
         </#list>
         
-        <#list contentModel.contactGroup_o.item as item>
+        <#list contentModel.socialMedia_o.item as item2>
             <li>
-                <h3>${item.title_s}</h3>
-                <h4>${item.input_s}</h4>
+                <h3>${item2.title_s}</h3>
+                <h4>${item2.input_s}</h4>
             </li>
         </#list>
         </ul>
