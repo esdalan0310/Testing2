@@ -1,6 +1,6 @@
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
 <article <@studio.componentAttr component=contentModel ice=true />>
-<h2></h2>
+<h2>${contentModel.title_s}</h2>
     <div class="content">
         <ul>
         <#list contentModel.contactGroup_o.item as item>
