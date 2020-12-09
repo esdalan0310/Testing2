@@ -14,12 +14,16 @@
 	<subject_s>Subject</subject_s>
 	<placeInNav>true</placeInNav>
 	<orderDefault_f>13000</orderDefault_f>
-	<header_o item-list="true"/>
+	<header_o item-list="true">	<item datasource="components-header">	<key>/site/components/headers/f086d473-de72-5376-5be9-68c5d647b086.xml</key>
+	<value>header_gba</value>
+	<include>/site/components/headers/f086d473-de72-5376-5be9-68c5d647b086.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></header_o>
 	<content_html>&lt;p&gt;Content&lt;/p&gt;</content_html>
 	<createdDate>2020-12-09T07:18:35.384Z</createdDate>
 	<createdDate_dt>2020-12-09T07:18:35.384Z</createdDate_dt>
-	<lastModifiedDate>2020-12-09T07:18:35.384Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-09T07:18:35.384Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-09T07:23:52.967Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T07:23:52.967Z</lastModifiedDate_dt>
 	<date_to>07:18:35</date_to>
 	<date_to_tz>EST5EDT</date_to_tz>
 </page>
