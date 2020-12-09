@@ -1,212 +1,149 @@
 <form>
-	<title>page - demo1</title>
-	<description></description>
-	<objectType>page</objectType>
-	<content-type>/page/pagedemo1</content-type>
-	<imageThumbnail>undefined</imageThumbnail>
-	<quickCreate>false</quickCreate>
-	<quickCreatePath></quickCreatePath>
-	<properties>		<property>
-			<name>display-template</name>
-			<label>Display Template</label>
-			<value>/templates/web/pages/demo1.ftl</value>
-			<type>template</type>
-		</property>
-		<property>
-			<name>no-template-required</name>
-			<label>No Template Required</label>
-			<value></value>
-			<type>boolean</type>
-		</property>
-		<property>
-			<name>merge-strategy</name>
-			<label>Merge Strategy</label>
-			<value>inherit-levels</value>
-			<type>string</type>
-		</property>
-	</properties>
-	<sections>		<section>
-			<title>page - demo1 Properties</title>
-			<description></description>
-			<defaultOpen>true</defaultOpen>
-			<fields>
-				<field>
-					<type>file-name</type>
-					<id>file-name</id>
-					<iceId></iceId>
-					<title>Page URL</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-					</constraints>
-				</field>
-				<field>
-					<type>input</type>
-					<id>internal-name</id>
-					<iceId></iceId>
-					<title>Internal Name</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[true]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>page-nav-order</type>
-					<id>placeInNav</id>
-					<iceId></iceId>
-					<title>Place in Nav</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>input</type>
-					<id>navLabel</id>
-					<iceId></iceId>
-					<title>Nav Label</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[true]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-			</fields>
-		</section>
-		<section>
-			<title>Default Section Title 1607410728952</title>
-			<description></description>
-			<defaultOpen>false</defaultOpen>
-			<fields>
-				<field>
-					<type>node-selector</type>
-					<id>upper_o</id>
-					<iceId>upper</iceId>
-					<title>upper</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>minSize</name>
-							<value></value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxSize</name>
-							<value></value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>itemManager</name>
-							<value>upper</value>
-							<type>datasource:item</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>disableFlattening</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>useSingleValueFilename</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>allowDuplicates</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-			</fields>
-		</section>
-	</sections>
-	<datasources>				<datasource>
-					<type>embedded-content</type>
-					<id>upper</id>
-					<title>upper</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>contentType</name>
-							<value>/component/upper</value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
-	</datasources>
+<title>page - demo1</title>
+<description></description>
+<content-type>/page/pagedemo1</content-type>
+<objectType>page</objectType>
+<quickCreate>false</quickCreate>
+<quickCreatePath></quickCreatePath>
+<properties>
+<property>
+<name>content-type</name>
+<label>Content Type</label>
+<value>/page/pagedemo1</value>
+<type>string</type>
+</property>
+<property>
+<name>display-template</name>
+<label>Display Template</label>
+<value></value>
+<type>template</type>
+</property>
+<property>
+<name>no-template-required</name>
+<label>No Template Required</label>
+<value></value>
+<type>boolean</type>
+</property>
+<property>
+<name>merge-strategy</name>
+<label>Merge Strategy</label>
+<value>inherit-levels</value>
+<type>string</type>
+</property>
+</properties>
+<sections>
+<section>
+<title>page - demo1 Properties</title>
+<description></description>
+<defaultOpen>true</defaultOpen>
+<fields>
+<field>
+<type>file-name</type>
+<id>file-name</id>
+<iceId></iceId>
+<title>Page URL</title>
+<description></description>
+<defaultValue></defaultValue>
+<help></help>
+<properties>
+<property>
+<name>size</name>
+<value>50</value>
+<type>int</type>
+</property>
+<property>
+<name>maxlength</name>
+<value>50</value>
+<type>int</type>
+</property>
+<property>
+<name>readonly</name>
+<value></value>
+<type>boolean</type>
+</property>
+</properties>
+<constraints>
+</constraints>
+</field>
+<field>
+<type>input</type>
+<id>internal-name</id>
+<iceId></iceId>
+<title>Internal Name</title>
+<description></description>
+<defaultValue></defaultValue>
+<help></help>
+<properties>
+<property>
+<name>size</name>
+<value>50</value>
+<type>int</type>
+</property>
+<property>
+<name>maxlength</name>
+<value>50</value>
+<type>int</type>
+</property>
+</properties>
+<constraints>
+<constraint>
+<name>required</name>
+<value>true</value>
+<type>boolean</type>
+</constraint>
+</constraints>
+</field>
+<field>
+<type>page-nav-order</type>
+<id>placeInNav</id>
+<iceId></iceId>
+<title>Place in Nav</title>
+<description></description>
+<defaultValue></defaultValue>
+<help></help>
+<properties>
+<property>
+<name>readonly</name>
+<value>[]</value>
+<type>boolean</type>
+</property>
+</properties>
+<constraints>
+<constraint>
+<name>required</name>
+<value><![CDATA[]]></value>
+<type>boolean</type>
+</constraint>
+</constraints>
+</field><field>
+<type>input</type>
+<id>navLabel</id>
+<iceId></iceId>
+<title>Nav Label</title>
+<description></description>
+<defaultValue></defaultValue>
+<help></help>
+<properties>
+<property>
+<name>size</name>
+<value>50</value>
+<type>int</type>
+</property>
+<property>
+<name>maxlength</name>
+<value>50</value>
+<type>int</type>
+</property>
+</properties>
+<constraints>
+<constraint>
+<name>required</name>
+<value>true</value>
+<type>boolean</type>
+</constraint>
+</constraints>
+</field>
+</fields>
+</section>
+</sections>
 </form>
