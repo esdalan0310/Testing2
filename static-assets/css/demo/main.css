@@ -126,7 +126,7 @@ li{
 }
 /* =============== header =============== */
 header {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   z-index: 98;
   width: 100%;
