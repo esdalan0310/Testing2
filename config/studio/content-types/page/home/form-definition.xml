@@ -138,6 +138,11 @@
 							<value>false</value>
 							<type>boolean</type>
 						</property>
+						<property>
+							<name>escapeContent</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
@@ -303,6 +308,26 @@
 							<name>videoManager</name>
 							<value></value>
 							<type>datasource:video</type>
+						</property>
+						<property>
+							<name>width</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>autoGrow</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSpellCheck</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>fileManager</name>
+							<value></value>
+							<type>datasource:item</type>
 						</property>
 					</properties>
 					<constraints>
@@ -503,6 +528,11 @@
 							<value>false</value>
 							<type>boolean</type>
 						</property>
+						<property>
+							<name>escapeContent</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
@@ -615,6 +645,21 @@
 							<value></value>
 								<type>undefined</type>
 						</property>
+						<property>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
 					</properties>
 				</datasource>
 				<datasource>
@@ -650,6 +695,21 @@
 							<name>type</name>
 							<value></value>
 								<type>undefined</type>
+						</property>
+						<property>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
+								<type>boolean</type>
 						</property>
 					</properties>
 				</datasource>
