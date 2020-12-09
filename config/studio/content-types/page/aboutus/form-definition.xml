@@ -445,7 +445,7 @@
 						</property>
 						<property>
 							<name>repoPath</name>
-							<value>/componentes</value>
+							<value>/site/componentes</value>
 								<type>string</type>
 						</property>
 						<property>
