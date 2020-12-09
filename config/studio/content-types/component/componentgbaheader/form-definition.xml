@@ -147,7 +147,7 @@
 						</property>
 						<property>
 							<name>imageManager</name>
-							<value></value>
+							<value>existing_images,upload_image</value>
 							<type>datasource:image</type>
 						</property>
 						<property>
@@ -195,7 +195,7 @@
 						</property>
 						<property>
 							<name>imageManager</name>
-							<value></value>
+							<value>existing_images,upload_image</value>
 							<type>datasource:image</type>
 						</property>
 						<property>
@@ -243,7 +243,7 @@
 						</property>
 						<property>
 							<name>imageManager</name>
-							<value></value>
+							<value>existing_images,upload_image</value>
 							<type>datasource:image</type>
 						</property>
 						<property>
