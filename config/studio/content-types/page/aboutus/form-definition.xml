@@ -188,9 +188,9 @@
 				<field>
 					<type>node-selector</type>
 					<id>header_o</id>
-					<iceId></iceId>
+					<iceId>core</iceId>
 					<title>Header</title>
-					<description></description>
+					<description>Default header is inherited from Section Defaults. Specify a new header to overwrite it.</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
@@ -206,7 +206,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>header</value>
+							<value>components-header</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
