@@ -30,7 +30,7 @@
 						<section id="aboutOurOrganization" <@studio.iceAttr iceGroup="hero"/>>
 									<div class="content">
 										<header>${contentModel.hero_title_html}</header>
-										${contentModel.hero_text_html}
+										${contentModel.hero_text_1_html}
 									</div>
 									<span class="image object">
 										<img src="${contentModel.hero_image_s !""}" alt="" />
