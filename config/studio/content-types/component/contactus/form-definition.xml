@@ -378,12 +378,12 @@
 					<properties>
 						<property>
 							<name>width</name>
-							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;50&quot; }</value>
+							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;30&quot; }</value>
 							<type>range</type>
 						</property>
 						<property>
 							<name>height</name>
-							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;50&quot; }</value>
+							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;30&quot; }</value>
 							<type>range</type>
 						</property>
 						<property>
