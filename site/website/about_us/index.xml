@@ -14,32 +14,11 @@
 	<orderDefault_f>11000</orderDefault_f>
 	<createdDate>2020-12-09T05:00:40.440Z</createdDate>
 	<createdDate_dt>2020-12-09T05:00:40.440Z</createdDate_dt>
-	<lastModifiedDate>2020-12-09T06:33:00.661Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-09T06:33:00.661Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-09T06:33:32.937Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T06:33:32.937Z</lastModifiedDate_dt>
 	<pageTitle_s>123</pageTitle_s>
 	<subject_s>123</subject_s>
-	<header_o item-list="true">	<item datasource="header" inline="true">	<key>81536f62-3200-cd86-986c-61d939d88747</key>
-	<value>123</value>
-<component id="81536f62-3200-cd86-986c-61d939d88747">
-	<content-type>/component/header</content-type>
-	<display-template>/templates/web/components/header.ftl</display-template>
-	<no-template-required/>
-	<merge-strategy>inherit-levels</merge-strategy>
-	<objectGroupId>8153</objectGroupId>
-	<objectId>81536f62-3200-cd86-986c-61d939d88747</objectId>
-	<file-name>123.xml</file-name>
-	<folder-name/>
-	<internal-name>123</internal-name>
-	<logo_text_t>123</logo_text_t>
-	<business_name_s>123</business_name_s>
-	<disabled>false</disabled>
-	<logo_s/>
-	<createdDate>2020-12-09T06:33:05.462Z</createdDate>
-	<createdDate_dt>2020-12-09T06:33:05.462Z</createdDate_dt>
-	<lastModifiedDate>2020-12-09T06:33:05.462Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-09T06:33:05.462Z</lastModifiedDate_dt>
-</component>
-	</item></header_o>
+	<header_o item-list="true"/>
 	<content_html>&lt;p&gt;123&lt;/p&gt;</content_html>
 	<date_to>06:26:17</date_to>
 	<date_to_tz>EST5EDT</date_to_tz>
