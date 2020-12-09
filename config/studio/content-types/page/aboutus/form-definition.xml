@@ -251,9 +251,9 @@
 				<field>
 					<type>node-selector</type>
 					<id>left-rail_o</id>
-					<iceId></iceId>
+					<iceId>core</iceId>
 					<title>Left-rail</title>
-					<description></description>
+					<description>Default left-rail is inherited from Section Defaults. Specify a new left-rail to overwrite it.</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
