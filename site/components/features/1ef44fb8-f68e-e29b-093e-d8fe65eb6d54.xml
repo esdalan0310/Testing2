@@ -6,8 +6,9 @@
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>1ef4</objectGroupId>
 	<objectId>1ef44fb8-f68e-e29b-093e-d8fe65eb6d54</objectId>
-	<contactGroup_o item-list="true">	<item>	<title_s/>
+	<contactGroup_o item-list="true">	<item>	<title_s>email</title_s>
 	<content_s/>
+	<input_s>example@gmail.com</input_s>
 	</item></contactGroup_o>
 	<file-name>1ef44fb8-f68e-e29b-093e-d8fe65eb6d54.xml</file-name>
 	<internal-name>contact_us</internal-name>
@@ -15,6 +16,6 @@
 	<disabled>false</disabled>
 	<createdDate>2020-12-09T09:01:24.526Z</createdDate>
 	<createdDate_dt>2020-12-09T09:01:24.526Z</createdDate_dt>
-	<lastModifiedDate>2020-12-09T09:01:24.526Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-09T09:01:24.526Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-09T09:18:02.777Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T09:18:02.777Z</lastModifiedDate_dt>
 </component>
