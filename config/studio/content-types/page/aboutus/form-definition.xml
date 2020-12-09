@@ -206,7 +206,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>components</value>
+							<value>header</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -472,8 +472,8 @@
 	</sections>
 	<datasources>				<datasource>
 					<type>shared-content</type>
-					<id>components</id>
-					<title>Components</title>
+					<id>header</id>
+					<title>Header</title>
 					<interface>item</interface>
 					<properties>
 						<property>
