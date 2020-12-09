@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/componentgbaheader</content-type>
+	<display-template>/templates/web/components/header_gba.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>09d5</objectGroupId>
+	<objectId>09d5efe6-dde1-c9b0-bbf6-5873ae3bb996</objectId>
+	<file-name>09d5efe6-dde1-c9b0-bbf6-5873ae3bb996.xml</file-name>
+	<internal-name>gba_header</internal-name>
+	<logo_text_s>Yo Club!</logo_text_s>
+	<disabled>false</disabled>
+	<logo_s>/static-assets/images/demo/logo.png</logo_s>
+	<search_s>/static-assets/images/demo/icon-search.png</search_s>
+	<menu_s>/static-assets/images/demo/icon-menu.png</menu_s>
+	<createdDate>2020-12-09T07:32:27.090Z</createdDate>
+	<createdDate_dt>2020-12-09T07:32:27.090Z</createdDate_dt>
+	<lastModifiedDate>2020-12-09T07:32:27.090Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T07:32:27.090Z</lastModifiedDate_dt>
+</component>
