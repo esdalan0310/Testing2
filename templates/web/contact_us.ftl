@@ -11,7 +11,7 @@
             </#list>
                 <li>
                     <#list contentModel.socialMedia_o.item as item2>
-                    <img src="${item2.media_icon_s}" alt="${item2.media_link_s}" />
+                    <img src="${item2.media_icon_s}" alt="${item2.media_link_s}" width="50" height="50"/>
                 </li>
             </#list>
         </ul>
