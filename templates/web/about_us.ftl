@@ -47,6 +47,20 @@
     					</div>
 					</section>
 					
+					<!-- Contact Us -->
+					<section <@studio.iceAttr iceGroup="contactus"/>>
+
+						<div class="features" <@studio.componentContainerAttr target="contact_us_o" component=contentModel/>>
+
+						    
+							<#if contentModel.contact_us_o?? && contentModel.contact_us_o.item??>
+							  <#list contentModel.contact_us_o.item as feature>
+							      <@renderComponent component=feature />
+							  </#list>
+							</#if>
+						</div>
+					</section>
+					
 			    </div>
 		    </div>
 				<!-- Left Rail -->
