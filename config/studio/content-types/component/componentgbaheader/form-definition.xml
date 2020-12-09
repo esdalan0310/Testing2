@@ -111,13 +111,6 @@
 				</field>
 			</fields>
 		</section>
-		<section>
-			<title>Business Name and Logo</title>
-			<description></description>
-			<defaultOpen>true</defaultOpen>
-			<fields>
-			</fields>
-		</section>
 	</sections>
 	<datasources>				<datasource>
 					<type>img-repository-upload</type>
