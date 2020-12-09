@@ -35,7 +35,7 @@
 							${contentModel.hero_text_1_html}
 						</div>
 						<span class="image object">
-							<img src="${contentModel.hero_image_s !""}" alt="" />
+							<img src="${contentModel.heroImage_1_s !""}" alt="" />
 						</span>
 					</section>
 								
