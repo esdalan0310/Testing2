@@ -340,14 +340,39 @@
 		</section>
 	</sections>
 	<datasources>				<datasource>
-					<type>embedded-content</type>
-					<id>upper</id>
-					<title>upper</title>
+					<type>shared-content</type>
+					<id>components</id>
+					<title>Components</title>
 					<interface>item</interface>
 					<properties>
 						<property>
-							<name>contentType</name>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>repoPath</name>
 							<value>/site/components</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>browsePath</name>
+							<value></value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>type</name>
+							<value></value>
 								<type>string</type>
 						</property>
 					</properties>
