@@ -1,6 +1,6 @@
 <content-type name="/page/pagedemo1" is-wcm-type="true">
-	<label>page - demo1</label>
-	<form>/page/pagedemo1</form>
+	<label>page - demo0</label>
+	<form>/page/pagedemo0</form>
 	<form-path>simple</form-path>
 	<model-instance-path>NOT-USED-BY-SIMPLE-FORM-ENGINE</model-instance-path>
 	<file-extension>xml</file-extension>
