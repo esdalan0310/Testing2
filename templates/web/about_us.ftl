@@ -21,8 +21,8 @@
 			<!-- Main -->
 			<div id="main">
 				<div class="inner">
-                <!-- Header -->
-<!-- Header -->
+					<!-- Header -->
+					<@renderComponent component=contentModel.header_o.item />
 
 			    </div>
 		    </div>
