@@ -9,7 +9,7 @@
 	<properties>		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
-			<value>/templates/web/header_gba.ftl</value>
+			<value>/templates/web/components/header_gba.ftl</value>
 			<type>template</type>
 		</property>
 		<property>
