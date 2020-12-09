@@ -27,28 +27,27 @@
 					<@renderComponent component=contentModel.header_o.item />
 					
 					<!--About Our Organization-->
-						<section id="aboutOurOrganization" <@studio.iceAttr iceGroup="hero1"/>>
-									<div class="content">
-										<header>${contentModel.hero_title_1_html}</header>
-										${contentModel.hero_text_1_html}
-									</div>
-									<span class="image object">
-										<img src="${contentModel.hero_image_s !""}" alt="" />
-									</span>
-								</section>
+					<section id="aboutOurOrganization" <@studio.iceAttr iceGroup="hero1"/>>
+						<div class="content">
+							<header>${contentModel.hero_title_1_html}</header>
+							${contentModel.hero_text_1_html}
+						</div>
+						<span class="image object">
+							<img src="${contentModel.hero_image_s !""}" alt="" />
+						</span>
+					</section>
 								
 					<!--Our Services-->
-						<section id="ourServices" <@studio.iceAttr iceGroup="hero2"/>>
-									<div class="content">
-										<header>${contentModel.hero_title_2_html}</header>
-										${contentModel.hero_text_2_html}
-									</div>
-								</section>
-
+					<section id="ourServices" <@studio.iceAttr iceGroup="hero2"/>>
+    					<div class="content">
+    						<header>${contentModel.hero_title_2_html}</header>
+    						${contentModel.hero_text_2_html}
+    					</div>
+					</section>
+					
 			    </div>
 		    </div>
 		</div>
-		<h1>CONTENT HERE</h1>
 	<@studio.toolSupport/>
 	</body>
 </html>
