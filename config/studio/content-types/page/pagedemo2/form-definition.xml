@@ -147,7 +147,7 @@
 				<field>
 					<type>node-selector</type>
 					<id>upper_o</id>
-					<iceId>upper</iceId>
+					<iceId></iceId>
 					<title>upper</title>
 					<description></description>
 					<defaultValue></defaultValue>
