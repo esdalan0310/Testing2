@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/componentgbaheader</content-type>
+	<display-template>/templates/web/header_gba.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>e1a5</objectGroupId>
+	<objectId>e1a5b6c0-df60-49bd-da50-b92a001b4bc2</objectId>
+	<file-name>e1a5b6c0-df60-49bd-da50-b92a001b4bc2.xml</file-name>
+	<disabled>false</disabled>
+	<logo_s/>
+	<internal-name>header_gba</internal-name>
+	<logo_text_t/>
+	<business_name_s>header_gba_test</business_name_s>
+	<createdDate>2020-12-09T03:56:15.215Z</createdDate>
+	<createdDate_dt>2020-12-09T03:56:15.215Z</createdDate_dt>
+	<lastModifiedDate>2020-12-09T03:56:15.215Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T03:56:15.215Z</lastModifiedDate_dt>
+	<dateTime_dt>2020-12-08T05:00:00.000Z</dateTime_dt>
+	<dateTime_dt_tz>EST5EDT</dateTime_dt_tz>
+</component>
