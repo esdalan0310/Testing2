@@ -22,7 +22,9 @@
 			<div id="main">
 				<div class="inner">
                 <!-- Header -->
-                    <@renderComponent component = contentModel.header.item />
+<!-- Header -->
+							<@renderComponent component=contentModel.header.item />
+							<section id="header " <@studio.iceAttr iceGroup="header1"/>>
 			    </div>
 		    </div>
 		</div>
