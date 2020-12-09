@@ -77,6 +77,21 @@
 							<value>50</value>
 							<type>int</type>
 						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>escapeContent</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
@@ -89,7 +104,7 @@
 				<field>
 					<type>input</type>
 					<id>title_s</id>
-					<iceId></iceId>
+					<iceId>contactus</iceId>
 					<title>Title</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -167,7 +182,7 @@
 				<field>
 					<type>repeat</type>
 					<id>contactGroup_o</id>
-					<iceId>content</iceId>
+					<iceId>contactus</iceId>
 					<title>Contact Group</title>
 					<description></description>
 					<minOccurs>1</minOccurs>
@@ -188,7 +203,7 @@
 				<field>
 					<type>input</type>
 					<id>title_s</id>
-					<iceId></iceId>
+					<iceId>contactus</iceId>
 					<title>Title</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -236,7 +251,7 @@
 				<field>
 					<type>input</type>
 					<id>content_s</id>
-					<iceId></iceId>
+					<iceId>contactus</iceId>
 					<title>Content</title>
 					<description></description>
 					<defaultValue></defaultValue>
