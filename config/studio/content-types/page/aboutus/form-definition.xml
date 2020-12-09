@@ -284,53 +284,78 @@
 			</fields>
 		</section>
 		<section>
-			<title>Content</title>
+			<title>About Our Organization</title>
 			<description></description>
-			<defaultOpen>true</defaultOpen>
+			<defaultOpen>false</defaultOpen>
 			<fields>
 				<field>
-					<type>time</type>
-					<id>date_to</id>
+					<type>rte-tinymce5</type>
+					<id>hero_title_html</id>
 					<iceId></iceId>
-					<title>Date</title>
+					<title>Hero title</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>showClear</name>
+							<name>width</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>height</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>autoGrow</name>
 							<value>false</value>
 							<type>boolean</type>
 						</property>
 						<property>
-							<name>showNowLink</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>populate</name>
+							<name>enableSpellCheck</name>
 							<value>true</value>
 							<type>boolean</type>
 						</property>
 						<property>
-							<name>populateDateExp</name>
-							<value>now</value>
+							<name>forceRootBlockPTag</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forcePTags</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forceBRTags</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>supportedChannels</name>
+							<value></value>
+							<type>supportedChannels</type>
+						</property>
+						<property>
+							<name>rteConfiguration</name>
+							<value>generic</value>
 							<type>string</type>
 						</property>
 						<property>
-							<name>useCustomTimezone</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>readonly</name>
+							<name>imageManager</name>
 							<value></value>
-							<type>boolean</type>
+							<type>datasource:image</type>
 						</property>
 						<property>
-							<name>readonlyEdit</name>
-							<value>false</value>
-							<type>boolean</type>
+							<name>videoManager</name>
+							<value></value>
+							<type>datasource:video</type>
+						</property>
+						<property>
+							<name>fileManager</name>
+							<value></value>
+							<type>datasource:item</type>
 						</property>
 					</properties>
 					<constraints>
@@ -338,62 +363,14 @@
 							<name>required</name>
 							<value><![CDATA[]]></value>
 							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>input</type>
-					<id>subject_s</id>
-					<iceId></iceId>
-					<title>Subject</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[]]></value>
-							<type>string</type>
 						</constraint>
 					</constraints>
 				</field>
 				<field>
 					<type>rte-tinymce5</type>
-					<id>content_html</id>
+					<id>hero_text_1_html</id>
 					<iceId></iceId>
-					<title>Content</title>
+					<title>Hero Text 1</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -499,6 +476,126 @@
 						<property>
 							<name>browsePath</name>
 							<value></value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>type</name>
+							<value></value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>img-desktop-upload</type>
+					<id>uploadImages</id>
+					<title>Upload Images</title>
+					<interface>image</interface>
+					<properties>
+						<property>
+							<name>repoPath</name>
+							<value>/static-assets/item/images/{yyyy}/{mm}/{dd}/</value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>img-repository-upload</type>
+					<id>existingImages</id>
+					<title>Existing Images</title>
+					<interface>image</interface>
+					<properties>
+						<property>
+							<name>repoPath</name>
+							<value>/static-assets/images/</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>useSearch</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>shared-content</type>
+					<id>components-left-rail</id>
+					<title>Components Left Rail</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>repoPath</name>
+							<value>/site/components/left-rails/</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>browsePath</name>
+							<value></value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>type</name>
+							<value></value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>embedded-content</type>
+					<id>features</id>
+					<title>Features</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>contentType</name>
+							<value>/component/feature</value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>shared-content</type>
+					<id>sharedFeatures</id>
+					<title>Shared Features</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>repoPath</name>
+							<value>/site/components/features</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>browsePath</name>
+							<value>/site/components/features</value>
 								<type>string</type>
 						</property>
 						<property>
