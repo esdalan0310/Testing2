@@ -14,6 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="/static-assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/static-assets/css/icons.css">
   	<link rel="stylesheet" type="text/css" href="/static-assets/css/main.css">
+  	  	<link rel="stylesheet" type="text/css" href="/static-assets/css/demo/main.css">
+
 </head>
 	<body>
 		<!-- Wrapper -->
