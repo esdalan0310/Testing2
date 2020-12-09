@@ -493,7 +493,7 @@
 						</property>
 						<property>
 							<name>repoPath</name>
-							<value>/site/components</value>
+							<value>/component/componentgbaheader</value>
 								<type>string</type>
 						</property>
 						<property>
