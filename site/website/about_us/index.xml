@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/aboutus</content-type>
+	<content-type>/page/aboutus</content-type>
+	<display-template/>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>4566</objectGroupId>
+	<objectId>45663c98-ea32-594f-d9cf-57c120abc66f</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>about_us</folder-name>
+	<internal-name>about_us</internal-name>
+	<navLabel>About Us</navLabel>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>11000</orderDefault_f>
+	<createdDate>2020-12-09T05:00:40.440Z</createdDate>
+	<createdDate_dt>2020-12-09T05:00:40.440Z</createdDate_dt>
+	<lastModifiedDate>2020-12-09T05:00:40.440Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T05:00:40.440Z</lastModifiedDate_dt>
+</page>
