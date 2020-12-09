@@ -31,7 +31,7 @@
 							<section id="header " <@studio.iceAttr iceGroup="header1"/>>
 							    <div class="content">
 							        <h1>${contentModel.header_title_s}</h1>
-							        <p>${contentModel.header_content_html}</p>
+							        <p>${contentModel.header_content_html_s}</p>
 							    </div>
 							</section>
 							
