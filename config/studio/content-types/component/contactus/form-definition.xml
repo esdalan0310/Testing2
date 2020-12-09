@@ -369,9 +369,9 @@
 					<fields>
 				<field>
 					<type>image-picker</type>
-					<id>mediaTitle_s</id>
+					<id>media_icon_s</id>
 					<iceId>contactus</iceId>
-					<title>Media Title</title>
+					<title>Media Icon</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
