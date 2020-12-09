@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.icon {
+  display: inline-block;
+  line-height: 50%;
+  vertical-align: middle;
+}
+.icon img{
+  width: 100%;
+}
+.icon:before{
+  content: '';
+  display: inline-block;
+}
+.icon-search:before {
+  background: url(../image/icon-search.png);
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+}
+.icon-menu:before {
+  background: url(../image/icon-menu.png);
+  background-size: cover;
+  width: 28px;
+  height: 28px;
+}
