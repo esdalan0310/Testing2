@@ -250,9 +250,9 @@
 				</field>
 				<field>
 					<type>input</type>
-					<id>content_s</id>
+					<id>input_s</id>
 					<iceId>contactus</iceId>
-					<title>Content</title>
+					<title>input</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
