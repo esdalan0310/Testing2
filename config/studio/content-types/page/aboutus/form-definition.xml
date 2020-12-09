@@ -206,7 +206,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>components</value>
+							<value>header</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -471,22 +471,9 @@
 		</section>
 	</sections>
 	<datasources>				<datasource>
-					<type>embedded-content</type>
-					<id>header</id>
-					<title>header</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>contentType</name>
-							<value>/component/componentgbaheader</value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
 					<type>child-content</type>
-					<id>components</id>
-					<title>Components</title>
+					<id>header</id>
+					<title>Header</title>
 					<interface>item</interface>
 					<properties>
 						<property>
@@ -501,7 +488,7 @@
 						</property>
 						<property>
 							<name>repoPath</name>
-							<value>/site/components</value>
+							<value>/site/components/headers/</value>
 								<type>string</type>
 						</property>
 						<property>
