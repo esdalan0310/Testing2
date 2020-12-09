@@ -27,20 +27,13 @@
 						<div class="inner">
 
 							<!-- Header -->
-							<@renderComponent component=contentModel.header_o.item />
-							<section id="header " <@studio.iceAttr iceGroup="header1"/>>
-							    <div class="content">
-							        <h1>${contentModel.header_title_s}</h1>
-							        <p>${contentModel.header_content_html}</p>
-							    </div>
-							</section>
-							
+
 							
 
                             <!-- Feature Demo -->
 							<section <@studio.iceAttr iceGroup="features"/>>
 									<header class="major">
-										<h2>${contentModel.featureTitle_s}</h2>
+
 									</header>
 									<div class="features" <@studio.componentContainerAttr target="features_o" component=contentModel/>>
 										<#if contentModel.features_o?? && contentModel.features_o.item??>
