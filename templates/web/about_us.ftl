@@ -23,10 +23,6 @@
 				<div class="inner">
     				<!-- Header -->
                     <@renderComponent component = contentModel.header.item />
-                    <!-- Content -->
-                      <section>
-                      
-                      </section>
 			    </div>
 		    </div>
 		</div>
