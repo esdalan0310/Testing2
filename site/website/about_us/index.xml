@@ -20,11 +20,39 @@
 	</item></header_o>
 	<createdDate>2020-12-09T07:18:35.384Z</createdDate>
 	<createdDate_dt>2020-12-09T07:18:35.384Z</createdDate_dt>
-	<lastModifiedDate>2020-12-09T08:32:11.246Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-09T08:32:11.246Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-09T08:43:21.428Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T08:43:21.428Z</lastModifiedDate_dt>
 	<hero_text_1_html>&lt;p&gt;&lt;strong style="margin: 0px; padding: 0px; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify; background-color: #ffffff;"&gt;Lorem Ipsum&lt;/strong&gt;&lt;span style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify; background-color: #ffffff;"&gt;&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/span&gt;&lt;/p&gt;</hero_text_1_html>
 	<heroImage_1_s>/static-assets/images/demo/img_03.png</heroImage_1_s>
 	<hero_title_1_html>&lt;p&gt;About Our Organization&lt;/p&gt;</hero_title_1_html>
 	<hero_title_2_html>&lt;p&gt;Our Services&lt;/p&gt;</hero_title_2_html>
 	<hero_text_2_html>&lt;p&gt;&lt;strong style="margin: 0px; padding: 0px; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify; background-color: #ffffff;"&gt;Lorem Ipsum&lt;/strong&gt;&lt;span style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify; background-color: #ffffff;"&gt; is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/span&gt;&lt;/p&gt;</hero_text_2_html>
+	<contact_us_o item-list="true">	<item datasource="contactus" inline="true">	<key>af43a3d3-9ff8-43a1-d2d1-5f523f1204bb</key>
+	<value>contact us</value>
+<component id="af43a3d3-9ff8-43a1-d2d1-5f523f1204bb">
+	<content-type>/component/contactus</content-type>
+	<display-template>/templates/web/contact_us.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>af43</objectGroupId>
+	<objectId>af43a3d3-9ff8-43a1-d2d1-5f523f1204bb</objectId>
+	<contactGroup_o item-list="true">	<item>	<title_s>Hotline</title_s>
+	<content_s>2210 9600</content_s>
+	</item>	<item>	<title_s>Fax</title_s>
+	<content_s>25618669</content_s>
+	</item>	<item>	<title_s>Email</title_s>
+	<content_s>info@yoclub.org.hk</content_s>
+	</item>	<item>	<title_s>Address</title_s>
+	<content_s>8/F, China Hong Kong towerm 8-12 Hennessy Road, Wa</content_s>
+	</item></contactGroup_o>
+	<internal-name>contact us</internal-name>
+	<title_s>Contact Us</title_s>
+	<disabled>false</disabled>
+	<file-name>af43a3d3-9ff8-43a1-d2d1-5f523f1204bb.xml</file-name>
+	<createdDate>2020-12-09T08:43:27.044Z</createdDate>
+	<createdDate_dt>2020-12-09T08:43:27.044Z</createdDate_dt>
+	<lastModifiedDate>2020-12-09T08:43:27.044Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T08:43:27.044Z</lastModifiedDate_dt>
+</component>
+	</item></contact_us_o>
 </page>
