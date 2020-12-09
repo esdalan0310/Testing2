@@ -12,7 +12,7 @@
             <li>
                 <h4>${contentModel.title_2_s}</h4>
                 <#list contentModel.socialMedia_o.item as item2>
-                <img src="${item2.media_icon_s}" alt="${item2.media_link_s}" width="50" height="50"/>
+                <a alt="${item2.media_link_s}" <img src="${item2.media_icon_s}" alt="${item2.media_link_s}" width="50" height="50"/></a>
                 </#list>
             </li>
         </ul>
