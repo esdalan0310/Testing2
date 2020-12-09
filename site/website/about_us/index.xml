@@ -13,15 +13,11 @@
 	<pageTitle_s>About Us</pageTitle_s>
 	<placeInNav>true</placeInNav>
 	<orderDefault_f>13000</orderDefault_f>
-	<header_o item-list="true">	<item datasource="components-header">	<key>/site/components/headers/09d5efe6-dde1-c9b0-bbf6-5873ae3bb996.xml</key>
-	<value>gba_header</value>
-	<include>/site/components/headers/09d5efe6-dde1-c9b0-bbf6-5873ae3bb996.xml</include>
-	<disableFlattening>false</disableFlattening>
-	</item></header_o>
+	<header_o item-list="true"/>
 	<createdDate>2020-12-09T07:18:35.384Z</createdDate>
 	<createdDate_dt>2020-12-09T07:18:35.384Z</createdDate_dt>
-	<lastModifiedDate>2020-12-09T08:04:27.990Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-09T08:04:27.990Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-09T08:06:08.961Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T08:06:08.961Z</lastModifiedDate_dt>
 	<hero_text_1_html>&lt;p&gt;&lt;strong style="margin: 0px; padding: 0px; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify; background-color: #ffffff;"&gt;Lorem Ipsum&lt;/strong&gt;&lt;span style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify; background-color: #ffffff;"&gt;&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/span&gt;&lt;/p&gt;</hero_text_1_html>
 	<heroImage_1_s>/static-assets/images/demo/img_03.png</heroImage_1_s>
 	<hero_title_1_html>&lt;p&gt;About Our Organization&lt;/p&gt;</hero_title_1_html>
