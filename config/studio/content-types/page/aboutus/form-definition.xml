@@ -445,12 +445,12 @@
 						</property>
 						<property>
 							<name>repoPath</name>
-							<value>/web/components/</value>
+							<value></value>
 								<type>string</type>
 						</property>
 						<property>
 							<name>browsePath</name>
-							<value></value>
+							<value>/web/components</value>
 								<type>string</type>
 						</property>
 						<property>
