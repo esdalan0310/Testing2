@@ -12,7 +12,7 @@
         
         <#list contentModel.socialMedia_o.item as item2>
             <li>
-                <h3>${item2.title_s}</h3>
+                <h3>${item2.mediaTitle_s}</h3>
                 <h4>${item2.input_s}</h4>
             </li>
         </#list>
