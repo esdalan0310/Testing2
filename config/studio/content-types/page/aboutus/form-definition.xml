@@ -680,7 +680,7 @@
 				<field>
 					<type>node-selector</type>
 					<id>contact_us_o</id>
-					<iceId></iceId>
+					<iceId>contactus</iceId>
 					<title>Contact Us</title>
 					<description></description>
 					<defaultValue></defaultValue>
