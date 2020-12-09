@@ -242,9 +242,9 @@
 			<fields>
 				<field>
 					<type>node-selector</type>
-					<id>upper_o</id>
+					<id>features_o</id>
 					<iceId></iceId>
-					<title>upper</title>
+					<title>features</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
