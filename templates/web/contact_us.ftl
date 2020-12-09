@@ -9,6 +9,13 @@
                 <h4>${item.input_s}</h4>
             </li>
         </#list>
+        
+        <#list contentModel.contactGroup_o.item as item>
+            <li>
+                <h3>${item.title_s}</h3>
+                <h4>${item.input_s}</h4>
+            </li>
+        </#list>
         </ul>
     </div>
 </article>
