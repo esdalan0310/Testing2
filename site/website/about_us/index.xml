@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/pagedemo2</content-type>
+	<display-template>/templates/web/pages/demo2.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>aa3f</objectGroupId>
+	<objectId>aa3f94f1-6267-f1d8-617d-1e51401668c5</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>about_us</folder-name>
+	<internal-name>about_us</internal-name>
+	<navLabel>about_us</navLabel>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>9000</orderDefault_f>
+	<upper_o item-list="true">	<item datasource="upper" inline="true">	<key>d1c0751e-779a-fc81-585d-e90359abe548</key>
+	<value>upper</value>
+<component id="d1c0751e-779a-fc81-585d-e90359abe548">
+	<content-type>/component/upper</content-type>
+	<display-template>/templates/web/components/upper.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>d1c0</objectGroupId>
+	<objectId>d1c0751e-779a-fc81-585d-e90359abe548</objectId>
+	<file-name>d1c0751e-779a-fc81-585d-e90359abe548.xml</file-name>
+	<content_1_s>123</content_1_s>
+	<pic_1_s/>
+	<internal-name>upper</internal-name>
+	<pic_1_alt_s>123</pic_1_alt_s>
+	<input_1_s>123</input_1_s>
+	<createdDate>2020-12-09T02:31:32.907Z</createdDate>
+	<createdDate_dt>2020-12-09T02:31:32.907Z</createdDate_dt>
+	<lastModifiedDate>2020-12-09T02:31:32.907Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T02:31:32.907Z</lastModifiedDate_dt>
+</component>
+	</item></upper_o>
+	<createdDate>2020-12-09T02:31:13.701Z</createdDate>
+	<createdDate_dt>2020-12-09T02:31:13.701Z</createdDate_dt>
+	<lastModifiedDate>2020-12-09T02:31:13.701Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T02:31:13.701Z</lastModifiedDate_dt>
+</page>
