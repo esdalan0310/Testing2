@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/contactus</content-type>
+	<display-template>/templates/web/contact_us.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>1ef4</objectGroupId>
+	<objectId>1ef44fb8-f68e-e29b-093e-d8fe65eb6d54</objectId>
+	<contactGroup_o item-list="true">	<item>	<title_s/>
+	<content_s/>
+	</item></contactGroup_o>
+	<file-name>1ef44fb8-f68e-e29b-093e-d8fe65eb6d54.xml</file-name>
+	<internal-name>contact_us</internal-name>
+	<title_s>Contact Us</title_s>
+	<disabled>false</disabled>
+	<createdDate>2020-12-09T09:01:24.526Z</createdDate>
+	<createdDate_dt>2020-12-09T09:01:24.526Z</createdDate_dt>
+	<lastModifiedDate>2020-12-09T09:01:24.526Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T09:01:24.526Z</lastModifiedDate_dt>
+</component>
