@@ -378,12 +378,12 @@
 					<properties>
 						<property>
 							<name>width</name>
-							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value>
+							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;50&quot; }</value>
 							<type>range</type>
 						</property>
 						<property>
 							<name>height</name>
-							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value>
+							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;50&quot; }</value>
 							<type>range</type>
 						</property>
 						<property>
@@ -398,7 +398,7 @@
 						</property>
 						<property>
 							<name>imageManager</name>
-							<value></value>
+							<value>uploadImages,existingImages</value>
 							<type>datasource:image</type>
 						</property>
 						<property>
@@ -468,5 +468,36 @@
 			</fields>
 		</section>
 	</sections>
-	<datasources>	</datasources>
+	<datasources>				<datasource>
+					<type>img-desktop-upload</type>
+					<id>uploadImages</id>
+					<title>Upload Images</title>
+					<interface>image</interface>
+					<properties>
+						<property>
+							<name>repoPath</name>
+							<value>/static-assets/item/images/{yyyy}/{mm}/{dd}/</value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>img-repository-upload</type>
+					<id>existingImages</id>
+					<title>Existing Images</title>
+					<interface>image</interface>
+					<properties>
+						<property>
+							<name>repoPath</name>
+							<value>/static-assets/images/</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>useSearch</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+					</properties>
+				</datasource>
+	</datasources>
 </form>
