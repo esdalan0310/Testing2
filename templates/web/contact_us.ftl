@@ -8,13 +8,13 @@
                 <h4>${item.title_s}</h4>
                 <h5>${item.input_s}</h5>
             </li>
-            </#list>
-                <li>
-                    <h4>${contentModel.title_2_s}</h4>
-                    <#list contentModel.socialMedia_o.item as item2>
-                    <img src="${item2.media_icon_s}" alt="${item2.media_link_s}" width="50" height="50"/>
-                </li>
-            </#list>
+        </#list>
+            <li>
+                <h4>${contentModel.title_2_s}</h4>
+                <#list contentModel.socialMedia_o.item as item2>
+                <img src="${item2.media_icon_s}" alt="${item2.media_link_s}" width="50" height="50"/>
+                </#list>
+            </li>
         </ul>
     </div>
 </article>
