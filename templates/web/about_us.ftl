@@ -49,14 +49,11 @@
 					
 					<!-- Contact Us -->
 					<section <@studio.iceAttr iceGroup="contactus"/>>
-
 						<div class="contactus" <@studio.componentContainerAttr target="contact_us_o" component=contentModel/>>
-
-						    
-							<#if contentModel.contact_us_o?? && contentModel.contact_us_o.item??>
-							  <#list contentModel.contact_us_o.item as feature>
-							      <@renderComponent component=feature />
-							  </#list>
+                            <#if contentModel.features_o?? && contentModel.features_o.item??>
+                                <#list contentModel.features_o.item as feature>
+                                    <@renderComponent component=feature />
+                                </#list>
 							</#if>
 						</div>
 					</section>
