@@ -25,6 +25,17 @@
 				<div class="inner">
 					<!-- Header -->
 					<@renderComponent component=contentModel.header_o.item />
+					
+					<!--About Our Organization-->
+						<section id="aboutOurOrganization" <@studio.iceAttr iceGroup="hero"/>>
+									<div class="content">
+										<header>${contentModel.hero_title_html}</header>
+										${contentModel.hero_text_html}
+									</div>
+									<span class="image object">
+										<img src="${contentModel.hero_image_s !""}" alt="" />
+									</span>
+								</section>
 
 			    </div>
 		    </div>
