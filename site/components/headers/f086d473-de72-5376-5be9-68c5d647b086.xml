@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/componentgbaheader</content-type>
+	<display-template>/templates/web/components/header_gba.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>f086</objectGroupId>
+	<objectId>f086d473-de72-5376-5be9-68c5d647b086</objectId>
+	<file-name>f086d473-de72-5376-5be9-68c5d647b086.xml</file-name>
+	<internal-name>header_gba</internal-name>
+	<disabled>false</disabled>
+	<createdDate>2020-12-09T06:46:27.420Z</createdDate>
+	<createdDate_dt>2020-12-09T06:46:27.420Z</createdDate_dt>
+	<lastModifiedDate>2020-12-09T06:46:27.420Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T06:46:27.420Z</lastModifiedDate_dt>
+</component>
