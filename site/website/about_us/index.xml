@@ -14,12 +14,22 @@
 	<orderDefault_f>11000</orderDefault_f>
 	<createdDate>2020-12-09T05:00:40.440Z</createdDate>
 	<createdDate_dt>2020-12-09T05:00:40.440Z</createdDate_dt>
-	<lastModifiedDate>2020-12-09T06:35:12.343Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-09T06:35:12.343Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-09T06:37:00.065Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-09T06:37:00.065Z</lastModifiedDate_dt>
 	<pageTitle_s>123</pageTitle_s>
 	<subject_s>123</subject_s>
 	<content_html>&lt;p&gt;123&lt;/p&gt;
 &lt;p&gt;123&lt;/p&gt;</content_html>
 	<date_to>06:26:17</date_to>
 	<date_to_tz>EST5EDT</date_to_tz>
+	<header_o item-list="true">	<item datasource="components">	<key>/site/components/headers/e1a5b6c0-df60-49bd-da50-b92a001b4bc2.xml</key>
+	<value>header_gba</value>
+	<include>/site/components/headers/e1a5b6c0-df60-49bd-da50-b92a001b4bc2.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></header_o>
+	<left-rail_o item-list="true">	<item datasource="components">	<key>/site/components/left-rails/left-rail-with-no-articles.xml</key>
+	<value>Left Rail with No Articles</value>
+	<include>/site/components/left-rails/left-rail-with-no-articles.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></left-rail_o>
 </page>
