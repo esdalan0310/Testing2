@@ -13,7 +13,7 @@
                 <h4>${contentModel.title_2_s}</h4>
                 <#list contentModel.socialMedia_o.item as item2>
 
-                <a href="${item2.media_link_s}"><img alt="${item2.media_link_s}" src="${item2.media_icon_s}" /></a>
+                <a href="${item2.media_link_s}"><img alt="${item2.media_link_s}" src="${item2.media_icon_s}" width="30" height="30"/></a>
                 </#list>
             </li>
         </ul>
