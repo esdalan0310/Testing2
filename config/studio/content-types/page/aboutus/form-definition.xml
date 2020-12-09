@@ -836,19 +836,6 @@
 					</properties>
 				</datasource>
 				<datasource>
-					<type>embedded-content</type>
-					<id>features</id>
-					<title>Features</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>contentType</name>
-							<value>/component/feature</value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
 					<type>shared-content</type>
 					<id>sharedFeatures</id>
 					<title>Shared Features</title>
