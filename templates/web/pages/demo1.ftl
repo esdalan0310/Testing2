@@ -55,7 +55,7 @@
 	<footer>
 		<div class="container">
 			<div class="footer-left">
-				&copy; Copyright Lorem Ipsum 2020
+				&copy; Copyright Lorem Ipsum 2020 12312321
 			</div>
 			<div class="footer-right">
 				<ul class="footer-list">
