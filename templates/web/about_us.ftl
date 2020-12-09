@@ -30,7 +30,7 @@
 
 					<!--About Our Organization-->
 					<section id="aboutOurOrganization" <@studio.iceAttr iceGroup="hero1"/>>
-						<div class="content">
+						<div class="aboutOurOrganization">
 							<h2>${contentModel.hero_title_1_html}</h2>
 							${contentModel.hero_text_1_html}
 						</div>
@@ -41,7 +41,7 @@
 								
 					<!--Our Services-->
 					<section id="ourServices" <@studio.iceAttr iceGroup="hero2"/>>
-    					<div class="content">
+    					<div class="ourServices">
     						<h2>${contentModel.hero_title_2_html}</h2>
     						${contentModel.hero_text_2_html}
     					</div>
@@ -50,7 +50,7 @@
 					<!-- Contact Us -->
 					<section <@studio.iceAttr iceGroup="contactus"/>>
 
-						<div class="features" <@studio.componentContainerAttr target="contact_us_o" component=contentModel/>>
+						<div class="contactus" <@studio.componentContainerAttr target="contact_us_o" component=contentModel/>>
 
 						    
 							<#if contentModel.contact_us_o?? && contentModel.contact_us_o.item??>
