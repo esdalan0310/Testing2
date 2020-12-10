@@ -943,8 +943,8 @@
 				</datasource>
 				<datasource>
 					<type>shared-content</type>
-					<id>search</id>
-					<title>Search</title>
+					<id>categories</id>
+					<title>Categories</title>
 					<interface>item</interface>
 					<properties>
 						<property>
