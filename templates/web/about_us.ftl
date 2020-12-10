@@ -47,6 +47,15 @@
     					</div>
 					</section>
 					
+					<!-- News and Media -->
+					<div class="newsAndMedia" <@studio.componentContainerAttr target="contact_us_o" component=contentModel/>>
+                            <#if contentModel.contact_us_o?? && contentModel.contact_us_o.item??>
+                                <#list contentModel.contact_us_o.item as feature>
+                                    <@renderComponent component=feature />
+                                </#list>
+							</#if>
+						</div>
+					
 					<!-- Contact Us -->
 					<section <@studio.iceAttr iceGroup="contactus"/>>
 						<div class="contactus" <@studio.componentContainerAttr target="contact_us_o" component=contentModel/>>
