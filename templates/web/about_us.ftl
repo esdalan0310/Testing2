@@ -65,20 +65,20 @@
 							<h1>Search Results</h1>
 							<h3>Refine by</h3>
 						</header>
-						<form id="categories">
+						
+                        <form id="categories">
 							<div class="row uniform">
-							<#list categories as category>
-								<div class="3u 6u(medium) 12u$(small)">
-									<input type="checkbox" id="${category.key}" name="${category.key}" value="${category.key}">
-									<label for="${category.key}">${category.value}</label>
-								</div>
-							</#list>
+								<#list categories as category>
+									<div class="3u 6u(medium) 12u$(small)">
+										<input type="checkbox" id="${category.key}" name="${category.key}" value="${category.key}">
+										<label for="${category.key}">${category.value}</label>
+							        </div>
+								</#list>
 							</div>
 						</form>
-						
-					<hr class="major"/>
-					<div id="search-results">
-					</div>
+						<hr class="major"/>
+						<div id="search-results">
+						</div>
 					</section>
 					
 					<!-- Contact Us -->
@@ -98,6 +98,21 @@
 				<@renderComponent component=contentModel.left\-rail_o.item />
 
 			</div>
+			
+			
+		<!-- Search Templates -->
+		<script id="search-results-template" type="text/x-handlebars-template">
+			{{#each results}}
+			<div>
+				<h4><a href="{{url}}">{{title}}</a></h4>
+				{{#if highlight}}
+				<p>{{{highlight}}}</p>
+				{{/if}}
+			</div>
+			{{else}}
+			<p>No results found</p>
+			{{/each}}
+		</script>	
 
 		<!-- Scripts -->
 			<script src="/static-assets/js/jquery.min.js"></script>
@@ -106,6 +121,7 @@
 			<script src="/static-assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
+						<script src="/static-assets/js/search.js"></script>
 
 		<@studio.toolSupport/>
 	</body>
