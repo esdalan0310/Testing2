@@ -51,6 +51,7 @@
 					<div class="newsAndMedia" <@studio.componentContainerAttr target="search_o" component=contentModel/>>
                             <#if contentModel.search_o?? && contentModel.search_o.item??>
                                 <#list contentModel.search_o.item as feature>
+                                <h1>123</h1>
                                     <@renderComponent component=feature />
                                 </#list>
 							</#if>
