@@ -698,7 +698,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>search</value>
+							<value></value>
 							<type>datasource:item</type>
 						</property>
 						<property>
