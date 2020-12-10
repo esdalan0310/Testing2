@@ -50,13 +50,36 @@
 					<!-- News and Media -->
 					<div class="newsAndMedia" <@studio.componentContainerAttr target="search_o" component=contentModel/>>
 					<h1>yes/no</h1>
-                            <#if contentModel.search_o?? && contentModel.search_o.item??>
-                                <#list contentModel.search_o.item as feature>
-                                <h1>yes</h1>
-                                    <@renderComponent component=feature />
-                                </#list>
-							</#if>
-						</div>
+                        <#if contentModel.search_o?? && contentModel.search_o.item??>
+                            <#list contentModel.search_o.item as feature>
+                            <h1>yes</h1>
+                                <@renderComponent component=feature />
+                            </#list>
+						</#if>
+					</div>
+					
+					
+					<!-- Section -->
+					<section>
+						<header class="main">
+							<h1>Search Results</h1>
+							<h3>Refine by</h3>
+						</header>
+						<form id="categories">
+							<div class="row uniform">
+							<#list categories as category>
+								<div class="3u 6u(medium) 12u$(small)">
+									<input type="checkbox" id="${category.key}" name="${category.key}" value="${category.key}">
+									<label for="${category.key}">${category.value}</label>
+								</div>
+							</#list>
+							</div>
+						</form>
+						
+					<hr class="major"/>
+					<div id="search-results">
+					</div>
+					</section>
 					
 					<!-- Contact Us -->
 					<section <@studio.iceAttr iceGroup="contactus"/>>
