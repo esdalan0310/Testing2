@@ -889,7 +889,7 @@
 				<datasource>
 					<type>shared-content</type>
 					<id>search</id>
-					<title>search</title>
+					<title>Search</title>
 					<interface>item</interface>
 					<properties>
 						<property>
