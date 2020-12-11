@@ -59,12 +59,12 @@
             
                                 
                                 <div class="3u 6u(medium) 12u$(small)">
-                                    <input type="checkbox" id="2020" name="2020" value="2020">
-                                    <label for="2020">2020</label>
+                                    <input type="checkbox" id="2020-test" name="2020-test" value="2020-test">
+                                    <label for="2020-test">2020-test</label>
                                 </div>
                                 <div class="3u 6u(medium) 12u$(small)">
-                                    <input type="checkbox" id="2021" name="2021" value="2021">
-                                    <label for="2021">2021</label>
+                                    <input type="checkbox" id="2021-test" name="2021-test" value="2021-test">
+                                    <label for="2021-test">2021-test</label>
                                 </div>
                                 <div class="3u 6u(medium) 12u$(small)">
                                     <input type="checkbox" id="health" name="health" value="health">
