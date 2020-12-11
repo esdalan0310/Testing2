@@ -56,13 +56,6 @@
 						
                         <form id="years">
 							<div class="row uniform">
-							
-							<#list about_uss as about_us>
-								<div class="3u 6u(medium) 12u$(small)">
-									<input type="checkbox" id="${about_us.key}" name="${about_us.key}" value="${about_us.key}">
-									<label for="${about_us.key}">${about_us.value}</label>
-						        </div>
-							</#list>
 		
 							<div class="3u 6u(medium) 12u$(small)">
 								<input type="checkbox" id="2020" name="2020" value="2020">
