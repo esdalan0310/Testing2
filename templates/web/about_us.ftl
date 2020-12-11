@@ -48,12 +48,9 @@
 					</section>
 					
 					<!-- News and Media -->
-		
-					
-					<!-- Section -->
 					<section>
 						<header class="main">
-							<h1>Search Results</h1>
+							<h2>News & Media</h2>
 							<h3>Refine by</h3>
 						</header>
 						
