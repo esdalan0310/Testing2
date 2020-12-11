@@ -189,15 +189,15 @@ class SearchHelper {
         
           q = "${q} AND ${userTermQuery}"
         }
-        // if (categories) {
-        //   def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
+        if (categories) {
+          def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
         
-        //   q = "${q} AND ${categoriesQuery}"
-        // }
-        if(years){
-            def yearsQuery = getFieldQueryWithMultipleValues("years_o.key", years)
-            q = "${q} AND ${yearsQuery}"
+          q = "${q} AND ${categoriesQuery}"
         }
+        // if(years){
+        //     def yearsQuery = getFieldQueryWithMultipleValues("years_o.key", years)
+        //     q = "${q} AND ${yearsQuery}"
+        // }
         
         // def highlighter = SearchSourceBuilder.highlight()
         // HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
