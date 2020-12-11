@@ -59,7 +59,7 @@
 										<h2>Featured Articles</h2>
 									</header>
 									<div class="posts">
-										<#list articles as article>
+										<#list articlesw as article>
 										<article>
 											<a href="${article.url}" class="image">
 												<#if article.image??>
