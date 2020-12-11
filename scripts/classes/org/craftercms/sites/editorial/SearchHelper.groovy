@@ -123,6 +123,8 @@ class SearchHelper {
             article.image = doc.image_s
             //end added by alanlee 11-12-2020
             article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)
+            article.category = doc.categories_o
+            article.date = doc.date_dt
 
         if (hit.highlightFields) {
           def articleHighlights = hit.highlightFields.values()*.getFragments().flatten()*.string()
@@ -158,6 +160,8 @@ class SearchHelper {
             //added by alanlee 11-12-2020
             article.image = doc.image_s
             //ended added by alanlee 11-12-2020
+            articles.category = doc.categories_o
+            articles.date = doc.date_dt
         articles << article
       }
     }
