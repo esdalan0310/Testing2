@@ -101,11 +101,11 @@
 			<div>
 				<h4><a href="{{url}}">{{title}}</a></h4>
 				{{#if image}}
-					<image src="{{{image}}}" style="width: 30%; height: auto;" />
+					<image src="{{{image}}}" style="width: 30%; height: auto;" /><br>
 				{{/if}}
 				{{#if highlight}}
 				    <p>{{{highlight}}}</p>
-				    <br>
+
 				{{/if}}
 			</div>
 			{{else}}
