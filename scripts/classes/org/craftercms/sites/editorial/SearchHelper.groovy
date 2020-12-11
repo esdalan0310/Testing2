@@ -27,6 +27,7 @@ import org.elasticsearch.search.sort.SortOrder
 class SearchHelper {
 
   static final String ARTICLE_CONTENT_TYPE_QUERY = "content-type:\"/page/article\""
+  static final String NEWS_N_MEDIA_TYPE_QUERY = "content-type:\"/page/newsandmedia\""
   static final String[] HIGHLIGHT_FIELDS = ["subject_t", "sections_o.item.section_html"]
   static final int DEFAULT_START = 0
   static final int DEFAULT_ROWS = 10
@@ -179,6 +180,7 @@ class SearchHelper {
     //added by alanlee 11-12-2020
     def about_us_search(userTerm, years, start = DEFAULT_START, rows = DEFAULT_ROWS){
         def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
+        // def q = "${NEWS_N_MEDIA_TYPE_QUERY}"
         if (userTerm) {
           if(!userTerm.contains(" ")) {
             userTerm = "${userTerm}~1 OR *${userTerm}*"
@@ -197,14 +199,14 @@ class SearchHelper {
             q = "${q} AND ${yearsQuery}"
         }
         
-        def highlighter = SearchSourceBuilder.highlight()
-        HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
+        // def highlighter = SearchSourceBuilder.highlight()
+        // HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
         
         def builder = new SearchSourceBuilder()
           .query(QueryBuilders.queryStringQuery(q))
           .from(start)
           .size(rows)
-          .highlighter(highlighter)
+        //   .highlighter(highlighter)
         
         def result = elasticsearch.search(new SearchRequest().source(builder))
         
