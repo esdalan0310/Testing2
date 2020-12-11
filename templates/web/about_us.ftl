@@ -57,10 +57,10 @@
                         <form id="categories">
 							<div class="row uniform">
 							
-							<#list about_us as category>
+							<#list about_uss as about_us>
 								<div class="3u 6u(medium) 12u$(small)">
-									<input type="checkbox" id="${category.key}" name="${category.key}" value="${category.key}">
-									<label for="${category.key}">${category.value}</label>
+									<input type="checkbox" id="${about_us.key}" name="${about_us.key}" value="${about_us.key}">
+									<label for="${about_us.key}">${about_us.value}</label>
 						        </div>
 							</#list>
 		
@@ -68,7 +68,10 @@
 								<input type="checkbox" id="2020" name="2020" value="2020">
 								<label for="2020">2020</label>
 					        </div>
-					        
+							<div class="3u 6u(medium) 12u$(small)">
+								<input type="checkbox" id="2021" name="2021" value="2021">
+								<label for="2021">2021</label>
+					        </div>
 							<div class="3u 6u(medium) 12u$(small)">
 								<input type="checkbox" id="health" name="health" value="health">
 								<label for="health">health</label>
