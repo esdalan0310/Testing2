@@ -23,7 +23,7 @@
          params.years = years;
        }
         console.log(params)
-       $.get("/api/searchByYears.json", params).done(function(data) {
+       $.get("/api/about_us.json", params).done(function(data) {
          if (data == null) {
            data = [];
          }
