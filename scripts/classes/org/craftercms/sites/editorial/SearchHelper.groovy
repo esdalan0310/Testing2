@@ -174,4 +174,38 @@ class SearchHelper {
     return "${field}:${values}"
   }
 
+    //added by alanlee 11-12-2020
+    def about_us_search(userTerm, categories, start = DEFAULT_START, rows = DEFAULT_ROWS){
+        def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
+        if (userTerm) {
+          if(!userTerm.contains(" ")) {
+            userTerm = "${userTerm}~1 OR *${userTerm}*"
+          }
+          def userTermQuery = "(subject_t:(${userTerm}) OR sections_o.item.section_html:(${userTerm}))"
+        
+          q = "${q} AND ${userTermQuery}"
+        }
+        if (categories) {
+          def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
+        
+          q = "${q} AND ${categoriesQuery}"
+        }
+        
+        def highlighter = SearchSourceBuilder.highlight()
+        HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
+        
+        def builder = new SearchSourceBuilder()
+          .query(QueryBuilders.queryStringQuery(q))
+          .from(start)
+          .size(rows)
+          .highlighter(highlighter)
+        
+        def result = elasticsearch.search(new SearchRequest().source(builder))
+        
+        if (result) {
+          return processUserSearchResults(result)
+        } else {
+          return []
+        }
+    }
 }
