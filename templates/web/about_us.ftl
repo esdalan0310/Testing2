@@ -51,7 +51,7 @@
 					<section>
 						<header class="main">
 							<h2>News & Media</h2>
-							<h3>Refine by</h3>
+							<h3>Refine By Year</h3>
 						</header>
 						
                         <form id="years">
