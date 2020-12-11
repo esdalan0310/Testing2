@@ -110,6 +110,11 @@
 				{{#if image}}
 					<image src="{{{image}}}" style="width: 30%; height: auto;" />
 				{{/if}}
+				{{#if category}}
+					<h3>{{{category}}}</h3>
+				{{/if}}date}}
+					<h3>{{{date}}}</h3>
+				{{/if}}
 				{{#if highlight}}
 				    <p>{{{highlight}}}</p>
 
