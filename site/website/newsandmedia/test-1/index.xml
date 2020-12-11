@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/pagenewsmedia</content-type>
+	<display-template>/templates/web/news-and-media.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>b0e2</objectGroupId>
+	<objectId>b0e235f3-32b4-c16e-9995-5a243ed3690a</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test-1</folder-name>
+	<internal-name>test-1</internal-name>
+	<navLabel>test-1</navLabel>
+	<categories_o/>
+	<years_o/>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>1000</orderDefault_f>
+	<createdDate>2020-12-11T10:32:09.198Z</createdDate>
+	<createdDate_dt>2020-12-11T10:32:09.198Z</createdDate_dt>
+	<lastModifiedDate>2020-12-11T10:32:09.198Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-11T10:32:09.198Z</lastModifiedDate_dt>
+</page>
