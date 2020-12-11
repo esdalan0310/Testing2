@@ -117,7 +117,7 @@
 				{{/if}}
 			</div>
 			{{else}}
-			<p>No results found</p>
+			<p>No News & Media Matched</p>
 			{{/each}}
 		</script>	
 
