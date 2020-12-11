@@ -57,10 +57,15 @@
                         <form id="categories">
 							<div class="row uniform">
 		
-									<div class="3u 6u(medium) 12u$(small)">
-										<input type="checkbox" id="2020" name="2020" value="2020">
-										<label for="2020">2020</label>
-							        </div>
+							<div class="3u 6u(medium) 12u$(small)">
+								<input type="checkbox" id="2020" name="2020" value="2020">
+								<label for="2020">2020</label>
+					        </div>
+					        
+							<div class="3u 6u(medium) 12u$(small)">
+								<input type="checkbox" id="health" name="health" value="health">
+								<label for="health">health</label>
+					        </div>
 	
 							</div>
 						</form>
