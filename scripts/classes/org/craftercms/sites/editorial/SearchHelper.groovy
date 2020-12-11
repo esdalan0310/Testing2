@@ -118,6 +118,8 @@ class SearchHelper {
         def doc = hit.getSourceAsMap()
         def article = [:]
             article.title = doc.title_t
+            //
+            article.image = doc.image_s
             article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)
 
         if (hit.highlightFields) {
@@ -175,7 +177,7 @@ class SearchHelper {
   }
 
     //added by alanlee 11-12-2020
-    def about_us_search(userTerm, categories, start = DEFAULT_START, rows = DEFAULT_ROWS){
+    def about_us_search(userTerm, years, start = DEFAULT_START, rows = DEFAULT_ROWS){
         def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
         if (userTerm) {
           if(!userTerm.contains(" ")) {
@@ -185,10 +187,14 @@ class SearchHelper {
         
           q = "${q} AND ${userTermQuery}"
         }
-        if (categories) {
-          def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
+        // if (categories) {
+        //   def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
         
-          q = "${q} AND ${categoriesQuery}"
+        //   q = "${q} AND ${categoriesQuery}"
+        // }
+        if(years){
+            def yearsQuery = getFieldQueryWithMultipleValues("years.key", years)
+            q = "${q} AND ${yearsQuery}"
         }
         
         def highlighter = SearchSourceBuilder.highlight()
