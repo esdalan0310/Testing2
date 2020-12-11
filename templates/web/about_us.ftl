@@ -54,7 +54,7 @@
 							<h3>Refine by</h3>
 						</header>
 						
-                        <form id="categories">
+                        <form id="years">
 							<div class="row uniform">
 							
 							<#list about_uss as about_us>
@@ -128,7 +128,8 @@
 			
 			<!--search related-->
 		    <script src="/static-assets/js/handlebars.min-latest.js"></script>
-			<script src="/static-assets/js/search.js"></script>
+			<!--<script src="/static-assets/js/search.js"></script>-->
+			<script src="/static-assets/js/about_us.js"></script>
             <!--end search related-->
 		<@studio.toolSupport/>
 	</body>
