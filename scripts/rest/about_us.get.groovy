@@ -6,6 +6,6 @@ def years = params["years[]"]
 def start = params.start ? params.start as Integer : 0
 def rows = params.rows ? params.rows as Integer : 10
 def searchHelper = new SearchHelper(elasticsearch, urlTransformationService)
-def results = searchHelper.search(userTerm, years, start, rows)
+def results = searchHelper.about_us_search(userTerm, years, start, rows)
 
 return results;
