@@ -75,30 +75,30 @@
 					
 					
 					<!--Home Section Test -->
-							<section>
-								<header class="major">
-									<h2>Featured Articles</h2>
-								</header>
-								<div class="posts">
-									<#list articles as article>
-									<article>
-										<a href="${article.url}" class="image">
-											<#if article.image??>
-												<#assign articleImage = article.image/>
-											<#else>
-												<#assign articleImage = "/static-assets/images/placeholder.png"/>
-											</#if>
-											<img src="${articleImage}" alt="" />
-										</a>
-										<h3><a href="${article.url}">${article.title}</a></h3>
-										<p>${article.summary}</p>
-										<ul class="actions">
-											<li><a href="${article.url}" class="button">More</a></li>
-										</ul>
-									</article>
-									</#list>
-								</div>
-							</section>
+						<section>
+							<header class="major">
+								<h2>Featured Articles</h2>
+							</header>
+							<div class="posts">
+								<#list articles as article>
+								<article>
+									<a href="${article.url}" class="image">
+										<#if article.image??>
+											<#assign articleImage = article.image/>
+										<#else>
+											<#assign articleImage = "/static-assets/images/placeholder.png"/>
+										</#if>
+										<img src="${articleImage}" alt="" />
+									</a>
+									<h3><a href="${article.url}">${article.title}</a></h3>
+									<p>${article.summary}</p>
+									<ul class="actions">
+										<li><a href="${article.url}" class="button">More</a></li>
+									</ul>
+								</article>
+								</#list>
+							</div>
+						</section>
 					
 					<!-- Contact Us -->
 					<section <@studio.iceAttr iceGroup="contactus"/>>
