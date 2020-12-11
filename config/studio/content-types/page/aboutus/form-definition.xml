@@ -298,9 +298,9 @@
 				</field>
 				<field>
 					<type>node-selector</type>
-					<id>categories_o</id>
+					<id>about_us_o</id>
 					<iceId></iceId>
-					<title>Categories</title>
+					<title>About Us</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -317,7 +317,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>categories</value>
+							<value>about_us</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -943,8 +943,8 @@
 				</datasource>
 				<datasource>
 					<type>shared-content</type>
-					<id>categories</id>
-					<title>Categories</title>
+					<id>about_us</id>
+					<title>About_Us</title>
 					<interface>item</interface>
 					<properties>
 						<property>
@@ -959,7 +959,7 @@
 						</property>
 						<property>
 							<name>enableSearchExisting</name>
-							<value>true</value>
+							<value>false</value>
 								<type>boolean</type>
 						</property>
 						<property>
