@@ -56,12 +56,12 @@
 						
                         <form id="categories">
 							<div class="row uniform">
-								<#list categories_o as category>
+		
 									<div class="3u 6u(medium) 12u$(small)">
-										<input type="checkbox" id="${category.key}" name="${category.key}" value="${category.key}">
-										<label for="${category.key}">${category.value}</label>
+										<input type="checkbox" id="2020" name="2020" value="2020">
+										<label for="2020">2020</label>
 							        </div>
-								</#list>
+	
 							</div>
 						</form>
 						<hr class="major"/>
