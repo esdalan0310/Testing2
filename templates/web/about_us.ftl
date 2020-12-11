@@ -56,8 +56,7 @@
 						
                         <form id="years">
                             <div class="row uniform">
-            
-                                
+                       
                                 <div class="3u 6u(medium) 12u$(small)">
                                     <input type="checkbox" id="2020" name="2020" value="2020">
                                     <label for="2020-test">2020</label>
