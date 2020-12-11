@@ -57,7 +57,7 @@
                         <form id="categories">
 							<div class="row uniform">
 							
-							<#list about_us_o as about_us>
+							<#list about_uss as about_us>
 								<div class="3u 6u(medium) 12u$(small)">
 									<input type="checkbox" id="${about_us.key}" name="${about_us.key}" value="${about_us.key}">
 									<label for="${about_us.key}">${about_us.value}</label>
