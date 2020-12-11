@@ -32,7 +32,9 @@
        if (userTerm) {
          params.userTerm = userTerm;
        }
+       
        console.log(categories)
+       
        if (categories) {
          params.categories = categories;
        }
@@ -41,7 +43,7 @@
          if (data == null) {
            data = [];
          }
-
+        console.log(data)
          var context = { results: data };
          var html = template(context);
 
