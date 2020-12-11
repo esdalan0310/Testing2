@@ -112,7 +112,8 @@
 				{{/if}}
 				{{#if category}}
 					<h3>{{{category}}}</h3>
-				{{/if}}date}}
+				{{/if}}
+				{{#if date}}
 					<h3>{{{date}}}</h3>
 				{{/if}}
 				{{#if highlight}}
