@@ -119,8 +119,9 @@ class SearchHelper {
         def doc = hit.getSourceAsMap()
         def article = [:]
             article.title = doc.title_t
-            //
+            //added by alanlee 11-12-2020
             article.image = doc.image_s
+            //end added by alanlee 11-12-2020
             article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)
 
         if (hit.highlightFields) {
@@ -154,8 +155,9 @@ class SearchHelper {
             article.title = doc.subject_t
             article.summary = doc.summary_t
             article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)
+            //added by alanlee 11-12-2020
             article.image = doc.image_s
-
+            //ended added by alanlee 11-12-2020
         articles << article
       }
     }
