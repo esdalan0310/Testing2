@@ -38,14 +38,16 @@
        if (categories) {
          params.categories = categories;
        }
-
+        console.log(params)
        $.get("/api/search.json", params).done(function(data) {
          if (data == null) {
            data = [];
          }
         console.log(data)
          var context = { results: data };
+         console.log(context)
          var html = template(context);
+         console.log(html)
 
          $('#search-results').html(html);
        });
