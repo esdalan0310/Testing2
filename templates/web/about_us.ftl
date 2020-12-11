@@ -56,7 +56,7 @@
 						
                         <form id="categories">
 							<div class="row uniform">
-								<#list categories as category>
+								<#list categories_o as category>
 									<div class="3u 6u(medium) 12u$(small)">
 										<input type="checkbox" id="${category.key}" name="${category.key}" value="${category.key}">
 										<label for="${category.key}">${category.value}</label>
