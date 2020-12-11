@@ -195,7 +195,7 @@ class SearchHelper {
         //   q = "${q} AND ${categoriesQuery}"
         // }
         if(years){
-            def yearsQuery = getFieldQueryWithMultipleValues("years.key", years)
+            def yearsQuery = getFieldQueryWithMultipleValues("years_o.key", years)
             q = "${q} AND ${yearsQuery}"
         }
         
