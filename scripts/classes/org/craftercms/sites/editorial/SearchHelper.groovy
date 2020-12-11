@@ -123,7 +123,7 @@ class SearchHelper {
             article.image = doc.image_s
             //end added by alanlee 11-12-2020
             article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)
-            article.category = doc.categories_o.item.key
+            article.category = doc.categories_o.item
             article.date = doc.date_dt
 
         if (hit.highlightFields) {
@@ -160,7 +160,7 @@ class SearchHelper {
             //added by alanlee 11-12-2020
             article.image = doc.image_s
             //ended added by alanlee 11-12-2020
-            articles.category = doc.categories_o.item.key
+            articles.category = doc.categories_o.item
             articles.date = doc.date_dt
         articles << article
       }
