@@ -32,6 +32,7 @@
        if (userTerm) {
          params.userTerm = userTerm;
        }
+       console.log(categories)
        if (categories) {
          params.categories = categories;
        }
