@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/article</content-type>
+	<display-template>/templates/web/pages/article.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>dd96</objectGroupId>
+	<objectId>dd96f3c4-3183-973b-94df-e319ecb4043c</objectId>
+	<sections_o item-list="true">	<item>	<section_html>&lt;div style="display: none;"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;p&gt;Hi, I am Testing&lt;/p&gt;
+&lt;p&gt;Testing -1&lt;/p&gt;
+&lt;p&gt;Testing -2&lt;/p&gt;
+&lt;p&gt;Testing -3&lt;/p&gt;
+&lt;p&gt;Testing -4&lt;/p&gt;
+&lt;p&gt;Testing -5&lt;/p&gt;</section_html>
+	</item></sections_o>
+	<categories_o>	<item>	<key>style</key>
+	<value_smv>Style</value_smv>
+	</item></categories_o>
+	<segments_o>	<item>	<key>guy</key>
+	<value_smv>Guy</value_smv>
+	</item></segments_o>
+	<years_o/>
+	<header_o item-list="true"/>
+	<left-rail_o item-list="true"/>
+	<disabled>false</disabled>
+	<featured_b>false</featured_b>
+	<internal-name>test_page01</internal-name>
+	<title_t>test_page01</title_t>
+	<subject_t>Test_Page</subject_t>
+	<author_s>Test</author_s>
+	<summary_t>Testing 123</summary_t>
+	<file-name>index.xml</file-name>
+	<folder-name>test_page01</folder-name>
+	<image_s>/static-assets/item/images/2020/12/14/CrafterCMS.png</image_s>
+	<createdDate>2020-12-14T08:40:03.988Z</createdDate>
+	<createdDate_dt>2020-12-14T08:40:03.988Z</createdDate_dt>
+	<lastModifiedDate>2020-12-14T08:40:03.988Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-14T08:40:03.988Z</lastModifiedDate_dt>
+	<date_dt>2020-12-14T05:00:00.000Z</date_dt>
+	<date_dt_tz>EST5EDT</date_dt_tz>
+</page>
