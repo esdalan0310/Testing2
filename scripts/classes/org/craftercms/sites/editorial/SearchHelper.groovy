@@ -59,11 +59,6 @@ class SearchHelper {
       q = "${q} AND ${categoriesQuery}"
     }
     
-
-    // println years_o
-    
-    // println date_dt
-
     def highlighter = SearchSourceBuilder.highlight()
     HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
 
@@ -192,6 +187,21 @@ class SearchHelper {
 
     return "${field}:${values}"
   }
+  
+  
+    private def getFieldQueryWithMultipleValuesAboutUs(field, values) {
+    if (values.class.isArray()) {
+      values = values as List
+    }
+
+    if (values instanceof Iterable) {
+      values = "(" + StringUtils.join((Iterable)values, " OR ") + ")"
+    } else {
+      values = "\"${values}\""
+    }
+
+    return "${field}:${values}"
+  }
 
     //added by alanlee 11-12-2020
     // def about_us_search(userTerm, categories, start = DEFAULT_START, rows = DEFAULT_ROWS){
@@ -213,10 +223,10 @@ class SearchHelper {
         q ="${q} AND years_o.item.key:(2020)"
         // }
         println "QUERY = " + q
-        // if(years){
-        //     // def yearsQuery = getFieldQueryWithMultipleValues("years.key", years)
+        if(years){
+            def yearsQuery = getFieldQueryWithMultipleValuesAboutUs("years.key", years)
         //     // q = "${q} AND date_dt LIKE (${years})"
-        //     // q = "${q} AND ${yearsQuery}"
+            q = "${q} AND ${yearsQuery}"
         // }
         
         // def highlighter = SearchSourceBuilder.highlight()
