@@ -256,7 +256,7 @@
 					<properties>
 						<property>
 							<name>datasource</name>
-							<value></value>
+							<value>years</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
