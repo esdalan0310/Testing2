@@ -244,5 +244,6 @@ class SearchHelper {
         } else {
           return []
         }
+        }
     }
 }
