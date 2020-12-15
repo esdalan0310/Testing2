@@ -28,14 +28,18 @@
 	<date_dt>2016-12-28T05:00:00.000Z</date_dt>
 	<createdDate>2017-3-2T20:48:57.000Z</createdDate>
 	<createdDate_dt>2017-3-2T20:48:57.000Z</createdDate_dt>
-	<lastModifiedDate>2020-12-15T03:45:47.546Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-15T03:45:47.546Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-15T03:51:36.317Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-15T03:51:36.317Z</lastModifiedDate_dt>
 	<featured_b>false</featured_b>
 	<summary_t>Curabitur lobortis laoreet vehicula. Integer condimentum non mauris in bibendum. Morbi et facilisis nisl. In suscipit eros sapien, ut venenatis quam interdum gravida. Praesent ultricies interdum dictum.</summary_t>
 	<image_s>/static-assets/images/book-woman-pic.jpg</image_s>
 	<disabled>false</disabled>
 	<header_o item-list="true"/>
 	<left-rail_o item-list="true"/>
-	<years_o/>
+	<years_o>	<item>	<key>2020</key>
+	<value_smv>2020</value_smv>
+	</item>	<item>	<key>2021</key>
+	<value_smv>2021</value_smv>
+	</item></years_o>
 	<date_dt_tz>EST5EDT</date_dt_tz>
 </page>
