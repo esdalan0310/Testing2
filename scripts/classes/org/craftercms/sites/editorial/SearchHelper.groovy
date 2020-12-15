@@ -203,13 +203,14 @@ class SearchHelper {
         //   def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
         
         //   q = "${q} AND ${categoriesQuery}"
+        q = years_o.item.key:(2020)
         // }
         println "QUERY = " + q
-        if(years){
-            // def yearsQuery = getFieldQueryWithMultipleValues("years.key", years)
-            q = "${q} AND date_dt LIKE (${years})"
-            // q = "${q} AND ${yearsQuery}"
-        }
+        // if(years){
+        //     // def yearsQuery = getFieldQueryWithMultipleValues("years.key", years)
+        //     // q = "${q} AND date_dt LIKE (${years})"
+        //     // q = "${q} AND ${yearsQuery}"
+        // }
         
         // def highlighter = SearchSourceBuilder.highlight()
         // HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
