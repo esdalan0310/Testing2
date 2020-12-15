@@ -255,12 +255,12 @@ class SearchHelper {
                     //     min_doc_count: 1
                     //     ]
                     // ]
-                    //  "years": [
-                    //     terms: [
-                    //     field: "years.item.value_smv",
-                    //     min_doc_count: 1
-                    //     ]
-                    // ]
+                     "years": [
+                        terms: [
+                        field: "years.item.value_smv",
+                        min_doc_count: 1
+                        ]
+                    ]
                 ]
             ])
         // // println result
