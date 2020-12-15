@@ -899,7 +899,7 @@
 				</datasource>
 				<datasource>
 					<type>shared-content</type>
-					<id>years</id>
+					<id>yearss</id>
 					<title>Years</title>
 					<interface>item</interface>
 					<properties>
