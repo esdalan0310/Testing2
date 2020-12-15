@@ -59,11 +59,6 @@ class SearchHelper {
 
     def highlighter = SearchSourceBuilder.highlight()
     HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
-    
-    println years_o.item.key
-    println date_dt
-
-    println "QUERY = " + q
 
     def builder = new SearchSourceBuilder()
       .query(QueryBuilders.queryStringQuery(q))
