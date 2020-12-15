@@ -226,8 +226,8 @@ class SearchHelper {
             def yearsQuery = getFieldQueryWithMultipleValuesAboutUs("years_o.item.key", years)
         //     // q = "${q} AND date_dt LIKE (${years})"
             q = "${q} AND ${yearsQuery}"
-        // }
-        
+        }
+
         // def highlighter = SearchSourceBuilder.highlight()
         // HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
         def builder = new SearchSourceBuilder()
@@ -246,7 +246,6 @@ class SearchHelper {
           return processUserSearchResults(result)
         } else {
           return []
-        }
         }
     }
 }
