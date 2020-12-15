@@ -968,7 +968,7 @@
 						</property>
 						<property>
 							<name>type</name>
-							<value>/taxonomy/years</value>
+							<value>/taxonomy</value>
 								<type>string</type>
 						</property>
 					</properties>
