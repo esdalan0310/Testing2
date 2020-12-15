@@ -236,9 +236,8 @@ class SearchHelper {
           .size(rows)
         //   .highlighter(highlighter)
         
-            println "q = " + q
-      
-    println "BUILDER QUERY = " + builder
+        println "q = " + q
+        println "BUILDER QUERY = " + builder
         
         def result = elasticsearch.search(new SearchRequest().source(builder))
         
