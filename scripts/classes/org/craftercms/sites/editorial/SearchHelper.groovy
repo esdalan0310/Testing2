@@ -244,7 +244,6 @@ class SearchHelper {
         
         def result = elasticsearch.search([
             query: [ query_string: [query: q as String
-            q:item
             ]]
                 
                 //     from: start,
