@@ -60,7 +60,10 @@ class SearchHelper {
     def highlighter = SearchSourceBuilder.highlight()
     HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
     
-            q ="${q} AND years_o.item.key:(2020)"
+    println years_o.item.key
+    println date_dt
+    
+    q ="${q} AND years_o.item.key:(2020)"
 
     println "QUERY = " + q
 
