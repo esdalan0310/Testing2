@@ -242,10 +242,41 @@ class SearchHelper {
         
         // def result = elasticsearch.search(new SearchRequest().source(builder))
         
-        // if (result) {
-        //   return processUserSearchResults(result)
-        // } else {
-        //   return []
-        // }
+        def result = elasticsearch.search([
+            query q {
+  page_article {
+    items {
+      author_s
+      date_dt
+      disabled
+      featured_b
+      file__name
+      image_s
+      internal__name
+      localId
+      meta_keywords_t
+      navLabel
+      orderDefault_f
+      placeInNav
+      subject_t
+      summary_t
+      title_t
+      years_o {
+        item {
+          key
+          value_smv
+        }
+      }
+    }
+  }
+}
+
+            ])
+        
+        if (result) {
+          return processUserSearchResults(result)
+        } else {
+          return []
+        }
     }
 }
