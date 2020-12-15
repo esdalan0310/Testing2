@@ -222,10 +222,10 @@ class SearchHelper {
         //   q = "${q} AND ${categoriesQuery}"
         // }
 
-        if(years){
-            def yearsQuery = getFieldQueryWithMultipleValuesAboutUs("years_o.item.key", years)
-            q = "${q} AND ${yearsQuery}"
-        }
+        // if(years){
+        //     def yearsQuery = getFieldQueryWithMultipleValuesAboutUs("years_o.item.key", years)
+        //     q = "${q} AND ${yearsQuery}"
+        // }
 
         // def highlighter = SearchSourceBuilder.highlight()
         // HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
