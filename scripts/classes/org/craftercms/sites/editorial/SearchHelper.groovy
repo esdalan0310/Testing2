@@ -243,21 +243,18 @@ class SearchHelper {
         // def result = elasticsearch.search(new SearchRequest().source(builder))
         
         def result = elasticsearch.search([
-            query: [
-                query_string: [
-                    query: q as String
-                ]
-                ],  
-                    from: start,
-                    size: rows,
-                    aggs: []
-                    // "categories": [
-                    //     terms: [
-                    //     field: "categories.item.value_smv",
-                    //     min_doc_count: 1
-                    //     ]
-                    
-                
+            query: [ query_string: [query: q as String]]
+                // ,  
+                //     from: start,
+                //     size: rows,
+                //     aggs: [
+                //     "categories": [
+                //         terms: [
+                //         field: "categories.item.value_smv",
+                //         min_doc_count: 1
+                //         ]
+                //     ]
+                // ]
             ])
         // println result
         if (result) {
