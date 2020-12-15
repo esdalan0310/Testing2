@@ -246,16 +246,16 @@ class SearchHelper {
             query: [ query_string: [query: q as String
             ]]
                 
-        //         //     from: start,
-        //         //     size: rows,
-        //         //     aggs: [
-        //         //     "categories": [
-        //         //         terms: [
-        //         //         field: "categories.item.value_smv",
-        //         //         min_doc_count: 1
-        //         //         ]
-        //         //     ]
-        //         // ]
+                    from: start,
+                    size: rows,
+                    aggs: [
+                    "categories": [
+                        terms: [
+                        field: "categories.item.value_smv",
+                        min_doc_count: 1
+                        ]
+                    ]
+                ]
             ])
         // // println result
         if (result) {
