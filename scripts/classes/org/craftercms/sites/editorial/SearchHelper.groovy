@@ -250,14 +250,14 @@ class SearchHelper {
                 ],  
                     from: start,
                     size: rows,
-                    aggs: [
+                    aggs: []
                     // "categories": [
                     //     terms: [
                     //     field: "categories.item.value_smv",
                     //     min_doc_count: 1
                     //     ]
-                    ]
-                ]
+                    
+                
             ])
         // println result
         if (result) {
