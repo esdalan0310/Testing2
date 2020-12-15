@@ -56,6 +56,12 @@ class SearchHelper {
 
       q = "${q} AND ${categoriesQuery}"
     }
+    
+    println q
+    
+    println years_o
+    
+    println date_dt
 
     def highlighter = SearchSourceBuilder.highlight()
     HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
