@@ -249,9 +249,15 @@ class SearchHelper {
                     from: start,
                     size: rows,
                     aggs: [
-                    "categories": [
+                    // "categories": [
+                    //     terms: [
+                    //     field: "categories.item.value_smv",
+                    //     min_doc_count: 1
+                    //     ]
+                    // ]
+                     "years": [
                         terms: [
-                        field: "categories.item.value_smv",
+                        field: "years.item.value_smv",
                         min_doc_count: 1
                         ]
                     ]
