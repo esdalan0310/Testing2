@@ -56,12 +56,7 @@
 						
                         <form id="years">
                             <div class="row uniform">
-                                <#list years as year>
-    							<div class="3u 6u(medium) 12u$(small)">
-    								<input type="checkbox" id="${year.key}" name="${year.key}" value="${year.key}">
-    								<label for="${year.key}">${year.value}</label>
-    							</div>
-					            </#list>								
+  			
                                 <div class="3u 6u(medium) 12u$(small)">
                                     <input type="checkbox" id="2020" name="2020" value="2020">
                                     <label for="2020">2020</label>
