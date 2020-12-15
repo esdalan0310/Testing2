@@ -54,11 +54,10 @@ class SearchHelper {
     if (categories) {
       def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
 
-      q = "${q} AND ${categoriesQuery}"
+      q = "${q} AND ${categoriesQuery} AND date_dt:[${now} TO *]"
     }
     
 
-    
     // println years_o
     
     // println date_dt
