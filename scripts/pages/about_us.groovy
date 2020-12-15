@@ -1,5 +1,5 @@
 def yearsItem = siteItemService.getSiteItem(contentModel.years_o.item.key.text)
-templateModel.years = yearsItem.items.item
+templateModel.yearss = yearsItem.items.item
 
 
 // import org.craftercms.sites.editorial.SearchHelper
