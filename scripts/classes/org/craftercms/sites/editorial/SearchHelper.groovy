@@ -240,12 +240,12 @@ class SearchHelper {
         println "q = " + q
         println "BUILDER QUERY = " + builder
         
-        def result = elasticsearch.search(new SearchRequest().source(builder))
+        // def result = elasticsearch.search(new SearchRequest().source(builder))
         
-        if (result) {
-          return processUserSearchResults(result)
-        } else {
-          return []
-        }
+        // if (result) {
+        //   return processUserSearchResults(result)
+        // } else {
+        //   return []
+        // }
     }
 }
