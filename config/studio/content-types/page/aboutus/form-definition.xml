@@ -317,7 +317,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>years</value>
+							<value>yearss</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
