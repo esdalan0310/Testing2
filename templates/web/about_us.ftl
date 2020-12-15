@@ -57,22 +57,21 @@
                         <form id="years">
                             <div class="row uniform">
                                 <#if years??>
-                                    <#list years as year>
-    									<div class="3u 6u(medium) 12u$(small)">
-    										<input type="checkbox" id="${year.key}" name="${year.key}" value="${year.key}">
-    										<label for="${year.key}">${year.value}</label>
-    									</div>
-						            </#list>								
+                                <#list years as year>
+    							<div class="3u 6u(medium) 12u$(small)">
+    								<input type="checkbox" id="${year.key}" name="${year.key}" value="${year.key}">
+    								<label for="${year.key}">${year.value}</label>
+    							</div>
+					            </#list>								
 					            <#else>
-                                    <hr>
-                                <div class="3u 6u(medium) 12u$(small)">
-                                    <input type="checkbox" id="2020" name="2020" value="2020">
-                                    <label for="2020">2020</label>
-                                </div>
-                                <div class="3u 6u(medium) 12u$(small)">
-                                    <input type="checkbox" id="2021" name="2021" value="2021">
-                                    <label for="2021">2021</label>
-                                </div>
+                                    <div class="3u 6u(medium) 12u$(small)">
+                                        <input type="checkbox" id="2020" name="2020" value="2020">
+                                        <label for="2020">2020</label>
+                                    </div>
+                                    <div class="3u 6u(medium) 12u$(small)">
+                                        <input type="checkbox" id="2021" name="2021" value="2021">
+                                        <label for="2021">2021</label>
+                                    </div>
                                     <h5>no source from yearss</h5>
 								</#if>
                             </div>
