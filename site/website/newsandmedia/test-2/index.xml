@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/pagenewsmedia</content-type>
+	<display-template>/templates/web/news-and-media.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>43a6</objectGroupId>
+	<objectId>43a62323-49e4-e985-f42e-2d662acc8ec1</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test-2</folder-name>
+	<internal-name>test-2</internal-name>
+	<navLabel>test-2</navLabel>
+	<title_t>test-2</title_t>
+	<meta_keywords_t>seo</meta_keywords_t>
+	<subject_s>test-2</subject_s>
+	<author_s>test-2</author_s>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>2000</orderDefault_f>
+	<years_o>	<item>	<key>2020</key>
+	<value_smv>2020</value_smv>
+	</item>	<item>	<key>2019</key>
+	<value_smv>2019</value_smv>
+	</item>	<item>	<key>2021</key>
+	<value_smv>2021</value_smv>
+	</item></years_o>
+	<content_t>test-2</content_t>
+	<image_s/>
+	<createdDate>2020-12-15T07:54:04.716Z</createdDate>
+	<createdDate_dt>2020-12-15T07:54:04.716Z</createdDate_dt>
+	<lastModifiedDate>2020-12-15T07:54:04.716Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-15T07:54:04.716Z</lastModifiedDate_dt>
+	<date_dt>2020-12-15T07:54:04.000Z</date_dt>
+	<date_dt_tz>EST5EDT</date_dt_tz>
+</page>
