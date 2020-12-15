@@ -244,8 +244,7 @@ class SearchHelper {
         
         def result = elasticsearch.search([
             query: [ query_string: [query: q as String]]
-                ,
-                data: page_article
+                
                 //     from: start,
                 //     size: rows,
                 //     aggs: [
