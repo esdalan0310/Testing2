@@ -60,11 +60,11 @@
 								
                                 <div class="3u 6u(medium) 12u$(small)">
                                     <input type="checkbox" id="2020" name="2020" value="2020">
-                                    <label for="2020-test">2020</label>
+                                    <label for="2020">2020</label>
                                 </div>
                                 <div class="3u 6u(medium) 12u$(small)">
                                     <input type="checkbox" id="2021" name="2021" value="2021">
-                                    <label for="2021-test">2021</label>
+                                    <label for="2021">2021</label>
                                 </div>
              
                             </div>
