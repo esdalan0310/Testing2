@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/taxonomy</content-type>
+	<display-template/>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>385d</objectGroupId>
+	<objectId>385d518b-0c40-8631-b94d-99ea81a979c1</objectId>
+	<items item-list="true">	<item>	<key>2020</key>
+	<value>2020</value>
+	</item>	<item>	<key>2021</key>
+	<value>2021</value>
+	</item></items>
+	<file-name>years.xml</file-name>
+	<folder-name/>
+	<internal-name>years</internal-name>
+	<createdDate>2020-12-15T03:44:43.000Z</createdDate>
+	<createdDate_dt>2020-12-15T03:44:43.000Z</createdDate_dt>
+	<lastModifiedDate>2020-12-15T03:44:43.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-15T03:44:43.000Z</lastModifiedDate_dt>
+</component>
