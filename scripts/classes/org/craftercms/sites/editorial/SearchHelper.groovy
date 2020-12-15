@@ -244,15 +244,16 @@ class SearchHelper {
         
         def result = elasticsearch.search([
             query: [ query_string: [query: q as String
-            ],
-            page_article:[
-                items[
-                    author_s,
-                    date_dt
-                    ]
-                ]
             ]
-                // ,
+            // ,
+            // page_article:[
+            //     items[
+            //         author_s,
+            //         date_dt
+            //         ]
+            //     ]
+            // ]
+            //     // ,
                 //     from: start,
                 //     size: rows,
                 //     aggs: [
