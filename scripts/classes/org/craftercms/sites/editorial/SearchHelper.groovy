@@ -259,7 +259,7 @@ class SearchHelper {
             ]
             ]
             ])
-        
+        println result
         if (result) {
           return processUserSearchResults(result)
         } else {
