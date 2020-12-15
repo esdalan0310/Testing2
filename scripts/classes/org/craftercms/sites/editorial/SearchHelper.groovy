@@ -206,8 +206,9 @@ class SearchHelper {
     //added by alanlee 11-12-2020
     // def about_us_search(userTerm, categories, start = DEFAULT_START, rows = DEFAULT_ROWS){
     def about_us_search(userTerm, years, start = DEFAULT_START, rows = DEFAULT_ROWS){
-        // def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
-        def q = "${NEWS_N_MEDIA_TYPE_QUERY}"
+        def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
+        //def q = "${NEWS_N_MEDIA_TYPE_QUERY}"
+        
         if (userTerm) {
           if(!userTerm.contains(" ")) {
             userTerm = "${userTerm}~1 OR *${userTerm}*"
@@ -216,6 +217,7 @@ class SearchHelper {
         
           q = "${q} AND ${userTermQuery}"
         }
+        
         // if (categories) {
         //   def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
         
