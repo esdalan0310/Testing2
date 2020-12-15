@@ -59,7 +59,7 @@ class SearchHelper {
     
     println q
     
-    println years_o
+    // println years_o
     
     println date_dt
 
