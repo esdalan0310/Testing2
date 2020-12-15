@@ -29,17 +29,30 @@
 							<!-- Header -->
 							<@renderComponent component = contentModel.header_o.item />
 
-							
+							<!-- Content -->
+							<section>
+								<header class="main" <@studio.iceAttr iceGroup="subject"/>>
+									<h1>${contentModel.subject_t!""}</h1>
+									<h2>by ${contentModel.author_s!""}</h2>
+								</header>
+								<#if contentModel.image_s??>
+									<#assign image = contentModel.image_s/>
+								<#else>
+									<#assign image = "/static-assets/images/placeholder.png"/>
+								</#if>
+								<span class="image main"><img src="${image}" alt="" /></span>
+								<#list contentModel.sections_o.item as item>
+									<div <@studio.iceAttr iceGroup="article"/>>
+										${item.section_html}
+									</div>
+									<hr class="major" />
+								</#list>
+							</section>
 						</div>
 					</div>
-
-
-
 					<!-- Left Rail -->
 					<@renderComponent component = contentModel.left\-rail_o.item additionalModel = additionalModel />
-
 			</div>
-
 		<!-- Scripts -->
 			<script src="/static-assets/js/jquery.min.js"></script>
 			<script src="/static-assets/js/jquery-ui.min.js"></script>
