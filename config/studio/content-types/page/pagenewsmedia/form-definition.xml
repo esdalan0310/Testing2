@@ -364,7 +364,7 @@
 						</property>
 						<property>
 							<name>populateDateExp</name>
-							<value>now</value>
+							<value></value>
 							<type>string</type>
 						</property>
 						<property>
