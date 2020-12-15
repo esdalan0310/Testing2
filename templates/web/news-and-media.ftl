@@ -39,7 +39,7 @@
 								<#if contentModel.image_s??>
 									<#assign image = contentModel.image_s/>
 								<#else>
-									<#assign image = "/static-assets/images/placeholder.png" width="25%"/>
+									<#assign image = "/static-assets/images/placeholder.png" style="width:500px;height:600px;">
 								</#if>
 								<span class="image main"><img src="${image}" alt="" /></span>
 								${contentModel.content_t!""}
