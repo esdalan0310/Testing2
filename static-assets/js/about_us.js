@@ -31,7 +31,6 @@
          var context = { results: data };
          console.log(context)
          var html = template(context);
-        //  console.log(html)
 
          $('#search-results').html(html);
        });
