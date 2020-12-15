@@ -42,7 +42,7 @@ class SearchHelper {
 
   def search(userTerm, categories, start = DEFAULT_START, rows = DEFAULT_ROWS) {
     def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
-
+    println "userterm = " + userTerm
     if (userTerm) {
       if(!userTerm.contains(" ")) {
         userTerm = "${userTerm}~1 OR *${userTerm}*"
@@ -52,6 +52,8 @@ class SearchHelper {
       q = "${q} AND ${userTermQuery}"
     }
     if (categories) {
+    println "categories = " + categories
+
       def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
 
       q = "${q} AND ${categoriesQuery}"
