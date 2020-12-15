@@ -59,12 +59,17 @@ class SearchHelper {
 
     def highlighter = SearchSourceBuilder.highlight()
     HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
+    
+    println "QUERY = " + q
 
     def builder = new SearchSourceBuilder()
       .query(QueryBuilders.queryStringQuery(q))
       .from(start)
       .size(rows)
       .highlighter(highlighter)
+      
+    println "BUILDER QUERY = " + builder
+
     
     def result = elasticsearch.search(new SearchRequest().source(builder))
 
