@@ -59,9 +59,9 @@ class SearchHelper {
     
     println q
     
-    // println years_o
+    println years_o
     
-    println date_dt
+    // println date_dt
 
     def highlighter = SearchSourceBuilder.highlight()
     HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
