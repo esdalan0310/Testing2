@@ -199,7 +199,7 @@ class SearchHelper {
         
         //   q = "${q} AND ${categoriesQuery}"
         // }
-        println q
+        println "QUERY = " + q
         if(years){
             // def yearsQuery = getFieldQueryWithMultipleValues("years.key", years)
             q = "${q} AND date_dt LIKE (${years})"
