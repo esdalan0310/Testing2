@@ -244,24 +244,31 @@ class SearchHelper {
         
         def result = elasticsearch.search([
             query: [ query_string: [query: q as String
-            ]]
-                ,
-                    from: start,
-                    size: rows,
-                    aggs: [
-                    // "categories": [
-                    //     terms: [
-                    //     field: "categories.item.value_smv",
-                    //     min_doc_count: 1
-                    //     ]
-                    // ]
-                     "years": [
-                        terms: [
-                        field: "years.item.value_smv",
-                        min_doc_count: 1
-                        ]
+            ],
+            page_article:[
+                items[
+                    author_s,
+                    date_dt
                     ]
                 ]
+            ]
+                // ,
+                //     from: start,
+                //     size: rows,
+                //     aggs: [
+                //     // "categories": [
+                //     //     terms: [
+                //     //     field: "categories.item.value_smv",
+                //     //     min_doc_count: 1
+                //     //     ]
+                //     // ]
+                //      "years": [
+                //         terms: [
+                //         field: "years.item.value_smv",
+                //         min_doc_count: 1
+                //         ]
+                //     ]
+                // ]
             ])
         // // println result
         if (result) {
