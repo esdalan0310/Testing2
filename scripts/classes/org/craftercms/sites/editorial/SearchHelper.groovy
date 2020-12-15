@@ -57,9 +57,9 @@ class SearchHelper {
       q = "${q} AND ${categoriesQuery}"
     }
     
-    println q
+
     
-    println years_o
+    // println years_o
     
     // println date_dt
 
@@ -71,6 +71,8 @@ class SearchHelper {
       .from(start)
       .size(rows)
       .highlighter(highlighter)
+      
+    println "q = " + q
       
     println "BUILDER QUERY = " + builder
 
