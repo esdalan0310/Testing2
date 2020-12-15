@@ -223,7 +223,7 @@ class SearchHelper {
         // }
 
         if(years){
-            def yearsQuery = getFieldQueryWithMultipleValuesAboutUs("years.item.key", years)
+            def yearsQuery = getFieldQueryWithMultipleValuesAboutUs("years_o.item.key", years)
         //     // q = "${q} AND date_dt LIKE (${years})"
             q = "${q} AND ${yearsQuery}"
         // }
