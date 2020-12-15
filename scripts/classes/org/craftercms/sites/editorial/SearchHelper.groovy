@@ -62,8 +62,6 @@ class SearchHelper {
     
     println years_o.item.key
     println date_dt
-    
-    q ="${q} AND years_o.item.key:(2020)"
 
     println "QUERY = " + q
 
