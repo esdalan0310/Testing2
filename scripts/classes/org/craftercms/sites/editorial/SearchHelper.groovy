@@ -201,7 +201,7 @@ class SearchHelper {
         // }
         if(years){
             // def yearsQuery = getFieldQueryWithMultipleValues("years.key", years)
-            q = "${q} AND (date_dt:(${years})
+            q = "${q} AND date_dt:(${years})"
             // q = "${q} AND ${yearsQuery}"
         }
         
