@@ -256,7 +256,7 @@ class SearchHelper {
                     //     field: "categories.item.value_smv",
                     //     min_doc_count: 1
                     //     ]
-                    // ]
+                    ]
                 ]
             ])
         // println result
