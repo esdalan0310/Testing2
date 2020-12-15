@@ -4,7 +4,7 @@
 	<objectType>page</objectType>
 	<content-type>/page/pagenewsmedia</content-type>
 	<imageThumbnail>undefined</imageThumbnail>
-	<quickCreate>false</quickCreate>
+	<quickCreate>true</quickCreate>
 	<quickCreatePath></quickCreatePath>
 	<properties>		<property>
 			<name>display-template</name>
@@ -34,7 +34,7 @@
 					<type>file-name</type>
 					<id>file-name</id>
 					<iceId></iceId>
-					<title>Page URL</title>
+					<title>Page - Article</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -76,6 +76,21 @@
 							<name>maxlength</name>
 							<value>50</value>
 							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>escapeContent</name>
+							<value>false</value>
+							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
@@ -155,7 +170,7 @@
 				<field>
 					<type>input</type>
 					<id>title_t</id>
-					<iceId></iceId>
+					<iceId>core</iceId>
 					<title>Title</title>
 					<description></description>
 					<defaultValue></defaultValue>
@@ -207,44 +222,6 @@
 			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
-				<field>
-					<type>checkbox-group</type>
-					<id>categories_o</id>
-					<iceId></iceId>
-					<title>Categories</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>datasource</name>
-							<value></value>
-							<type>datasource:item</type>
-						</property>
-						<property>
-							<name>selectAll</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>listDirection</name>
-							<value>[{&quot;value&quot;:&quot;horizontal&quot;,&quot;label&quot;:&quot;Horizonal&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;vertical&quot;,&quot;label&quot;:&quot;Vertical&quot;,&quot;selected&quot;:false}]</value>
-							<type>dropdown</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>minSize</name>
-							<value><![CDATA[]]></value>
-							<type>int</type>
-						</constraint>
-					</constraints>
-				</field>
 				<field>
 					<type>checkbox-group</type>
 					<id>years_o</id>
@@ -554,24 +531,6 @@
 		</section>
 	</sections>
 	<datasources>				<datasource>
-					<type>site-component</type>
-					<id>categories</id>
-					<title>Categories</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>dataType</name>
-							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;Data Type&quot;,&quot;selected&quot;:false}]</value>
-								<type>dropdown</type>
-						</property>
-						<property>
-							<name>componentPath</name>
-							<value>/site/taxonomy/categories.xml</value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
 					<type>site-component</type>
 					<id>years</id>
 					<title>Years</title>
