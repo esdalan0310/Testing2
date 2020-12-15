@@ -243,7 +243,9 @@ class SearchHelper {
         // def result = elasticsearch.search(new SearchRequest().source(builder))
         
         def result = elasticsearch.search([
-            query: [ query_string: [query: q as String]]
+            query: [ query_string: [query: q as String
+            q:item
+            ]]
                 
                 //     from: start,
                 //     size: rows,
