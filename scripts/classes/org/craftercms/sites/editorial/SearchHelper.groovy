@@ -220,9 +220,8 @@ class SearchHelper {
         //   def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
         
         //   q = "${q} AND ${categoriesQuery}"
-        q ="${q} AND years_o.item.key:(2020)"
         // }
-        println "QUERY = " + q
+
         if(years){
             def yearsQuery = getFieldQueryWithMultipleValuesAboutUs("years.key", years)
         //     // q = "${q} AND date_dt LIKE (${years})"
@@ -231,7 +230,7 @@ class SearchHelper {
         
         // def highlighter = SearchSourceBuilder.highlight()
         // HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
-        
+                println "QUERY = " + q
         def builder = new SearchSourceBuilder()
           .query(QueryBuilders.queryStringQuery(q))
           .from(start)
