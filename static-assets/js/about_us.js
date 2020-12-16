@@ -54,6 +54,8 @@
 $(document).ready(function() {
 var source2 = $("#search-results-template-2").html();
 var template2 = Handlebars.compile(source2);
+var filters = '';
+
             $("#btnTest").click(function() {
                $("#testDiv").html('loading....');
                $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
@@ -89,10 +91,10 @@ var template2 = Handlebars.compile(source2);
             });
          });
 
-     $('#years input').click(function() {
+     $('#years-2 input').click(function() {
       var years = [];
 
-      $('#years input:checked').each(function() {
+      $('#years-2 input:checked').each(function() {
          years.push($(this).val());
       });
 
