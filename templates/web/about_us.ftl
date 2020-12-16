@@ -113,18 +113,18 @@ $(document).ready(function() {
                      query:`{
   page_article {
     items {
-      author_s
+      
       date_dt
-      disabled
-      featured_b
-      file__name
+      
+      
+      
       image_s
-      internal__name
-      localId
-      meta_keywords_t
-      navLabel
-      orderDefault_f
-      placeInNav
+      
+      
+      
+      
+      
+      
       subject_t
       summary_t
     }
