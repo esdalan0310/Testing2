@@ -48,7 +48,7 @@
       }
         console.log(params)
     //   $.get("/api/about_us.json", params).done(function(data) {
-      $.post("/api/1/site/graphql").done(function(data) {
+      $.post("/api/1/site/graphql",query ).done(function(data) {
          if (data == null) {
           data = [];
          }
