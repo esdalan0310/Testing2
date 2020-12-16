@@ -77,7 +77,8 @@
 //=================
 
 $(document).ready(function() {
-
+var source = $("#search-results-template").html();
+var template = Handlebars.compile(source);
             $("#btnTest").click(function() {
                $("#testDiv").html('loading....');
                //https://kannan-first-graphql-app.herokuapp.com/graphql
@@ -86,19 +87,22 @@ $(document).ready(function() {
                   type:'POST',
                   data: JSON.stringify({
                      query:`{
-  page_article {
-    items {
-      date_dt
-      image_s
-      subject_t
-      summary_t
-    }
-  }
-}`
+                          page_article {
+                            items {
+                              date_dt
+                              image_s
+                              subject_t
+                              summary_t
+                            }
+                          }
+                        }`
                   }),
                   success: function(result) {
-                  console.log(result)
-                     $("#testDiv").html("<h1>"+result+"</h1>");
+                    console.log(result)
+                      var html = template(context);
+                       $('#search-results').html(html);
+
+                    //  $("#testDiv").html("<h1>"+result+"</h1>");
                   }
                });
             });
