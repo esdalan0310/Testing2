@@ -146,7 +146,7 @@
 			</div>
 			{{else}}
 			<p>No News & Media Matched</p>
-			result
+			{{{result}}}
 			{{/each}}
 		</script>	
 
