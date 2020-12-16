@@ -103,7 +103,7 @@
 		
 			
 		<!-- Search Templates -->
-		<script id="search-results-template" type="text/x-handlebars-template">
+		<script id="search-results-template-2" type="text/x-handlebars-template">
 			{{#each results}}
 			<div>
 				<h4><a href="{{url}}">{{title}}</a></h4>
