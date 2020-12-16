@@ -56,7 +56,6 @@ var source = $("#search-results-template").html();
 var template = Handlebars.compile(source);
             $("#btnTest").click(function() {
                $("#testDiv").html('loading....');
-               //https://kannan-first-graphql-app.herokuapp.com/graphql
                $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
                   contentType: "application/json",
                   type:'POST',
@@ -73,6 +72,8 @@ var template = Handlebars.compile(source);
                         }`
                   }),
                   success: function(result) {
+                    console.log(result)
+                    result = result.page_article
                     console.log(result)
                       var html = template(result.page_article);
                        $('#search-results').html(html);
