@@ -78,6 +78,7 @@
 					
                     <section>
                     <h2> Graphql </h2>
+                    <!--
                     <form id ="years-2">
                      <div class="row uniform">
                          <div class="3u 6u(medium) 12u$(small)">
@@ -88,7 +89,7 @@
                             <input type="checkbox" id="2020" name="2017" value="2017">
                             <label for="2020">2020</label>
                         </div>
-                        
+                        -->
                          <button id = "btnTest">2020</button>
                          <br/> <br/>
                         
