@@ -75,10 +75,10 @@
 						<div id="search-results">
 						</div>
 					</section>
-					<!--
+					
                     <section>
                     <h2> Graphql </h2>
-                    <!--
+                    
                     <form id ="years-2">
                      <div class="row uniform">
                          <div class="3u 6u(medium) 12u$(small)">
@@ -94,8 +94,10 @@
                          <br/> <br/>
                         
                      </div>
-                         <div id = "testDiv"> </div>
                          </form>
+                         <hr class="major"/>
+                         <div id = "testDiv"> </div>
+
                     </section>
 -->
 					
