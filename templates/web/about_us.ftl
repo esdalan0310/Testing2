@@ -90,10 +90,11 @@
                             <input type="checkbox" id="2020" name="2017" value="2017">
                             <label for="2020">2020</label>
                         </div>
-                        -->
+                        -->                         <div class="3u 6u(medium) 12u$(small)">
+
                          <button id = "btnTest">2020</button>
-                         <br/> <br/>
-                        
+                         </div>
+          
                      </div>
                          </form>
                          <hr class="major"/>
