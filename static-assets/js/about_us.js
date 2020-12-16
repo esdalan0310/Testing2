@@ -99,7 +99,7 @@ var template = Handlebars.compile(source);
                   }),
                   success: function(result) {
                     console.log(result)
-                      var html = template(result.data.page_article);
+                      var html = template(result.page_article);
                        $('#search-results').html(html);
 
                     //  $("#testDiv").html("<h1>"+result+"</h1>");
