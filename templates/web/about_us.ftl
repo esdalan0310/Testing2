@@ -77,7 +77,7 @@
 					</section>
 					
                     <section>
-                     <button id = "btnTest">test</button>
+                     <button id = "btnTest">2020</button>
                      <br/> <br/>
                      <div id = "testDiv"> </div>
                     </section>
