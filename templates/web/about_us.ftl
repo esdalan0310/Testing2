@@ -123,7 +123,7 @@ $(document).ready(function() {
                   }),
                   success: function(result) {
                   console.log(result)
-                     $("#testDiv").html("<h1>"+"</h1>");
+                     $("#testDiv").html("<h1>"+result+"</h1>");
                   }
                });
             });
