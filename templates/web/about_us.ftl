@@ -130,18 +130,17 @@
 		<script id="search-results-template-2" type="text/x-handlebars-template">
 			{{#each results}}
 			<div>
-				<h4><a href="{{url}}">{{title}}</a></h4>
-				{{#if image}}
-					<image src="{{{image}}}" style="width: 30%; height: auto;" />
+			<h3>graphql</h4>
+				<h4><a href="{{url}}">{{subject_t}}</a></h4>
+				{{#if image_s}}
+					<image src="{{{image_s}}}" style="width: 30%; height: auto;" />
 				{{/if}}
-				{{#if category}}
-					<h3>{{{category}}}</h3>
+
+				{{#if date_dt}}
+					<h3>{{{date_dt}}}</h3>
 				{{/if}}
-				{{#if date}}
-					<h3>{{{date}}}</h3>
-				{{/if}}
-				{{#if highlight}}
-				    <p>{{{highlight}}}</p>
+				{{#if summary_t}}
+				    <p>{{{summary_t}}}</p>
 
 				{{/if}}
 			</div>
