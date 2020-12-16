@@ -94,14 +94,12 @@
 
                          <button id = "btnTest">2020</button>
                          </div>
-          
-                     </div>
                          </form>
-                         <hr class="major"/>
-                         <div id = "testDiv"> </div>
+  						<hr class="major"/>
+						<div id="search-results">
+						</div>
+					</section>
 
-                    </section>
--->
 					
 					<!-- Contact Us -->
 					<section <@studio.iceAttr iceGroup="contactus"/>>
