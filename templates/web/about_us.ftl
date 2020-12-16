@@ -50,10 +50,10 @@
 					
 					<!-- News and Media -->
 					<section>
-						<header class="main">
+						<h2 class="main">
 							<h2>News & Media</h2>
 							<!--<h3>Refine By Year</h3>-->
-						</header>
+						</h2>
 						
                         <form id="years">
                             <div class="row uniform">
