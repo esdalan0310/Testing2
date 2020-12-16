@@ -77,9 +77,23 @@
 					</section>
 					
                     <section>
-                     <button id = "btnTest">2020</button>
-                     <br/> <br/>
-                     <div id = "testDiv"> </div>
+                    <form id ="years-2">
+                     <div class="row uniform">
+                         <div class="3u 6u(medium) 12u$(small)">
+                            <input type="checkbox" id="2017" name="2017" value="2017">
+                            <label for="2017">2017</label>
+                        </div>
+                         <div class="3u 6u(medium) 12u$(small)">
+                            <input type="checkbox" id="2020" name="2017" value="2017">
+                            <label for="2020">2020</label>
+                        </div>
+                        <!--
+                         <button id = "btnTest">2020</button>
+                         <br/> <br/>
+                         -->
+                     </div>
+                         <div id = "testDiv"> </div>
+                         </form>
                     </section>
 
 					
