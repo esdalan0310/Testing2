@@ -128,7 +128,7 @@
 		
 		
 		<script id="search-results-template-2" type="text/x-handlebars-template">
-			{{#each results}}
+			{{#each result}}
 			<div>
 			<h3>graphql</h4>
 				<h4><a href="{{url}}">{{subject_t}}</a></h4>
