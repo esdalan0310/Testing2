@@ -103,6 +103,30 @@
 		
 			
 		<!-- Search Templates -->
+		<script id="search-results-template" type="text/x-handlebars-template">
+			{{#each results}}
+			<div>
+				<h4><a href="{{url}}">{{title}}</a></h4>
+				{{#if image}}
+					<image src="{{{image}}}" style="width: 30%; height: auto;" />
+				{{/if}}
+				{{#if category}}
+					<h3>{{{category}}}</h3>
+				{{/if}}
+				{{#if date}}
+					<h3>{{{date}}}</h3>
+				{{/if}}
+				{{#if highlight}}
+				    <p>{{{highlight}}}</p>
+
+				{{/if}}
+			</div>
+			{{else}}
+			<p>No News & Media Matched</p>
+			{{/each}}
+		</script>	
+		
+		
 		<script id="search-results-template-2" type="text/x-handlebars-template">
 			{{#each results}}
 			<div>
