@@ -96,7 +96,7 @@
                          </div>
                         <!-- </form>-->
   						<hr class="major"/>
-						<div id="search-results">
+						<div id="testDiv">
 						</div>
 					</section>
 
