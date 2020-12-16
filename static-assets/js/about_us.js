@@ -52,8 +52,8 @@
 //=================
 
 $(document).ready(function() {
-var source = $("#search-results-template-2").html();
-var template = Handlebars.compile(source);
+var source2 = $("#search-results-template-2").html();
+var template2 = Handlebars.compile(source2);
             $("#btnTest").click(function() {
                $("#testDiv").html('loading....');
                $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
@@ -76,7 +76,7 @@ var template = Handlebars.compile(source);
                     console.log(result)
                     result = result.data.page_article.items
                     console.log(result)
-                      var html = template(result.page_article);
+                      var html = template2(result.page_article);
                       $("#testDiv").html(html);
                     //   $('#search-results').html(html);
 
