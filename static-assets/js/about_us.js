@@ -79,7 +79,7 @@ var template2 = Handlebars.compile(source2);
                     console.log(results)
                     var context = { resultss: results };
                     console.log(context)
-                    var html = template(context);
+                    var html = template2(context);
                     //   var html = template2(result);
                       console.log(html)
                       $("#testDiv").html(html);
