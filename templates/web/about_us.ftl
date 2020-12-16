@@ -113,18 +113,8 @@ $(document).ready(function() {
                      query:`{
   page_article {
     items {
-      
       date_dt
-      
-      
-      
       image_s
-      
-      
-      
-      
-      
-      
       subject_t
       summary_t
     }
