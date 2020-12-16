@@ -74,6 +74,12 @@
 						<div id="search-results">
 						</div>
 					</section>
+					
+                    <section>
+                     <button id = "btnTest">test</button>
+                     <br/> <br/>
+                     <div id = "testDiv"> </div>
+                    </section>
 
 					
 					<!-- Contact Us -->
@@ -93,7 +99,45 @@
 				<@renderComponent component=contentModel.left\-rail_o.item />
 
 			</div>
-			
+		<script>
+$(document).ready(function() {
+
+            $("#btnTest").click(function() {
+               $("#testDiv").html('loading....');
+               //https://kannan-first-graphql-app.herokuapp.com/graphql
+               $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
+                  contentType: "application/json",
+                  type:'POST',
+                  data: JSON.stringify({
+                     query:`{
+  page_article {
+    items {
+      author_s
+      date_dt
+      disabled
+      featured_b
+      file__name
+      image_s
+      internal__name
+      localId
+      meta_keywords_t
+      navLabel
+      orderDefault_f
+      placeInNav
+      subject_t
+      summary_t
+    }
+  }
+}`
+                  }),
+                  success: function(result) {
+                     $("#testDiv").html("<h1>"+result.data.page_article.items+"</h1>");
+                  }
+               });
+            });
+         });
+		
+		</script>
 			
 		<!-- Search Templates -->
 		<script id="search-results-template" type="text/x-handlebars-template">
