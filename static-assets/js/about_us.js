@@ -52,7 +52,7 @@
 //=================
 
 $(document).ready(function() {
-var source = $("#search-results-template").html();
+var source = $("#search-results-template-2").html();
 var template = Handlebars.compile(source);
             $("#btnTest").click(function() {
                $("#testDiv").html('loading....');
