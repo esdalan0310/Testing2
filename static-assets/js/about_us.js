@@ -72,12 +72,15 @@ var template2 = Handlebars.compile(source2);
                           }
                         }`
                   }),
-                  success: function(result) {
-                    console.log(result)
+                  success: function(results) {
+                    console.log(results)
 
-                    result = result.data.page_article.items
-                    console.log(result)
-                      var html = template2(result);
+                    results = results.data.page_article.items
+                    console.log(results)
+                    var context = { results: data };
+                    console.log(context)
+                    var html = template(context);
+                    //   var html = template2(result);
                       console.log(html)
                       $("#testDiv").html(html);
                     //   $('#search-results').html(html);
