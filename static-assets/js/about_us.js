@@ -74,9 +74,11 @@ var template2 = Handlebars.compile(source2);
                   }),
                   success: function(result) {
                     console.log(result)
+
                     result = result.data.page_article.items
                     console.log(result)
                       var html = template2(result);
+                      console.log(html)
                       $("#testDiv").html(html);
                     //   $('#search-results').html(html);
 
