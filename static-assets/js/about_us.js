@@ -9,6 +9,33 @@
 
      var source = $("#search-results-template").html();
      var template = Handlebars.compile(source);
+     
+     
+     var query = `query q {
+                  page_article {
+                    items {
+                      author_s
+                      date_dt
+                      disabled
+                      featured_b
+                      file__name
+                      image_s
+                      internal__name
+                      localId
+                      meta_keywords_t
+                      navLabel
+                      orderDefault_f
+                      placeInNav
+                      subject_t
+                      summary_t
+                    }
+                  }
+                }
+                `
+    var body = data: JSON.stringify({
+   query: query,
+   variables: { entry: entry }
+})
 
      var doSearch = function(userTerm, years) {
        var params = {};
@@ -24,7 +51,7 @@
        }
         console.log(params)
     //   $.get("/api/about_us.json", params).done(function(data) {
-       $.post("/api/1/site/graphql").done(function(data) {
+       $.post("/api/1/site/graphql", body).done(function(data) {
          if (data == null) {
            data = [];
          }
