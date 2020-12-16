@@ -76,7 +76,33 @@
 // })(jQuery);
 //=================
 
+$(document).ready(function() {
 
+            $("#btnTest").click(function() {
+               $("#testDiv").html('loading....');
+               //https://kannan-first-graphql-app.herokuapp.com/graphql
+               $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
+                  contentType: "application/json",
+                  type:'POST',
+                  data: JSON.stringify({
+                     query:`{
+  page_article {
+    items {
+      date_dt
+      image_s
+      subject_t
+      summary_t
+    }
+  }
+}`
+                  }),
+                  success: function(result) {
+                  console.log(result)
+                     $("#testDiv").html("<h1>"+result+"</h1>");
+                  }
+               });
+            });
+         });
 
 
 
