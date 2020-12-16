@@ -89,6 +89,15 @@ var template2 = Handlebars.compile(source2);
             });
          });
 
+     $('#years input').click(function() {
+      var years = [];
+
+      $('#years input:checked').each(function() {
+         years.push($(this).val());
+      });
+
+    //   doFilter(queryParam, years);
+     });
 
 
 // var entry = $('#entry').val()
