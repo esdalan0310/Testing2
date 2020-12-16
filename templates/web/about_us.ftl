@@ -131,7 +131,8 @@ $(document).ready(function() {
 }`
                   }),
                   success: function(result) {
-                     $("#testDiv").html("<h1>"+result.data.page_article.items+"</h1>");
+                  console.log(result)
+                     $("#testDiv").html("<h1>"+"</h1>");
                   }
                });
             });
