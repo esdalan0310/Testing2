@@ -63,6 +63,7 @@ var template = Handlebars.compile(source);
                      query:`{
                           page_article {
                             items {
+                            localId
                               date_dt
                               image_s
                               subject_t
