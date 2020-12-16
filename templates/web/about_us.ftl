@@ -104,7 +104,7 @@
 			
 		<!-- Search Templates -->
 		<script id="search-results-template" type="text/x-handlebars-template">
-			{{#each results}}
+			{{#each data.page_article.items}}
 			<div>
 				<h4><a href="{{url}}">{{title}}</a></h4>
 				{{#if image}}
