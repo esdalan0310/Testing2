@@ -23,7 +23,8 @@
          params.years = years;
        }
         console.log(params)
-       $.get("/api/about_us.json", params).done(function(data) {
+    //   $.get("/api/about_us.json", params).done(function(data) {
+       $.post("/api/1/site/graphl").done(function(data) {
          if (data == null) {
            data = [];
          }
