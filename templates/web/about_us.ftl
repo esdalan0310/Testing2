@@ -15,7 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="/static-assets/css/icons.css">
   	<link rel="stylesheet" type="text/css" href="/static-assets/css/main.css">
   	  	<link rel="stylesheet" type="text/css" href="/static-assets/css/demo/main.css">
-
+			<script src="/static-assets/js/jquery.min.js"></script>
+			<script src="/static-assets/js/jquery-ui.min.js"></script>
 </head>
 	<body>
 		<!-- Wrapper -->
@@ -165,8 +166,7 @@ $(document).ready(function() {
 		</script>	
 
 		<!-- Scripts -->
-			<script src="/static-assets/js/jquery.min.js"></script>
-			<script src="/static-assets/js/jquery-ui.min.js"></script>
+
 			<script src="/static-assets/js/skel.min.js"></script>
 			<script src="/static-assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
