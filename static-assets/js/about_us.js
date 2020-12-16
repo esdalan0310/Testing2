@@ -77,7 +77,7 @@ var template2 = Handlebars.compile(source2);
 
                     results = results.data.page_article.items
                     console.log(results)
-                    var context = { results: data };
+                    var context = { resultss: results };
                     console.log(context)
                     var html = template(context);
                     //   var html = template2(result);
