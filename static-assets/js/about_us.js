@@ -74,7 +74,7 @@ var doGraphql = function (yearFilterQuery) {
             results = results.data.page_article.items
             console.log(results);
             var context = { resultss: results };
-            console.log(context);
+            console.log(results);
             var html = template2(context);
             $("#testDiv").html(html);
         }else{
