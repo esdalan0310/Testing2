@@ -56,37 +56,8 @@ var source2 = $("#search-results-template-2").html();
 var template2 = Handlebars.compile(source2);
 var yearFilterQuery = '{page_article {items {localId image_s subject_t summary_t}}}';
 
-//      var doGraphql = function(yearss) {
-//       var params = {};
-      
-//       if(yearss){
-//           yearss.foreach(formYearFilter);
-//           function formYearFilter(item){
-//               yearFilterQuery = yearFilterQuery + 
-//           }
-//       }
-       
-//       console.log(years)
-       
-//       if (years) {
-//          params.years = years;
-//       }
-//         console.log(params)
-//       $.get("/api/about_us.json", params).done(function(data) {
-//          if (data == null) {
-//           data = [];
-//          }
-//         console.log(data)
-//          var context = { results: data };
-//          console.log(context)
-//          var html = template(context);
-
-//          $('#search-results').html(html);
-//       });
-//      }
      
-// var filters = '';
-            $("#btnTest2020").click(function() {
+    function doGraphql (yearFilterQuery) {
                $("#testDiv").html('loading....');
                $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
                   contentType: "application/json",
@@ -118,18 +89,16 @@ var yearFilterQuery = '{page_article {items {localId image_s subject_t summary_t
                     //  $("#testDiv").html("<h1>"+result+"</h1>");
                   }
                });
-            });
-         });
+            }
 
-     $('#years-2 input').click(function() {
-      var years = [];
+     $('#btnTest2020').click(function() {
+      yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat('date_dt(filter: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z"})}}}');
+      doGraphql(yearFilterQuery);
+ });
+      $('#btnTest2017').each(function() {
+      yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat('date_dt(filter: {gte: "2017-01-01T00:00:00Z", lte: "2017-12-31T23:59:59Z"})}}}');
+      doGraphql(yearFilterQuery);
 
-      $('#years-2 input:checked').each(function() {
-         years.push($(this).val());
-      });
-     var yearss = { yearss: years };
-     console.log(yearss);
-    //   doFilter(queryParam, years);
      });
 
 
