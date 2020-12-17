@@ -103,7 +103,7 @@ var doGraphql = function (yearFilterQuery) {
     var year = $(this).val();
       resetQuery();
       yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat(' date_dt(filter: {gte: "'+year+'-01-01T00:00:00Z", lte: "'+year+'-12-31T23:59:59Z"})}}}');
-    //   console.log(yearFilterQuery);
+      console.log(yearFilterQuery);
       doGraphql(yearFilterQuery);
     //   $('#years input:click').each(function() {
     //     //  years.push($(this).val());
