@@ -96,7 +96,7 @@ var template2 = Handlebars.compile(source2);
                           page_article {
                             items {
                             localId
-      date_dt(filter: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z"})
+      date_dt(filter: {gte: "2018-01-01T00:00:00Z", lte: "2018-12-31T23:59:59Z"})
                               image_s
                               subject_t
                               summary_t
