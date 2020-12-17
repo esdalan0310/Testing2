@@ -96,7 +96,6 @@ var doGraphql = function (yearFilterQuery) {
     $('#years input').click(function() {
     //   var years = [];
     console.log($(this).val())
-    console.log($(this).name())
 
     //   $('#years input:click').each(function() {
     //     //  years.push($(this).val());
