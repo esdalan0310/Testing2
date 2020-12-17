@@ -110,7 +110,7 @@
 		
 		
 		<script id="search-results-template-2" type="text/x-handlebars-template">
-			{{#each results}}
+			{{#each resultss}}
 			<div>
 				<h4><a href="{{localId}}">{{subject_t}}</a></h4>
 				{{#if image_s}}
