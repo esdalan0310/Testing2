@@ -100,7 +100,7 @@ var doGraphql = function (yearFilterQuery) {
 
     //   $('#years input:click').each(function() {
     //     //  years.push($(this).val());
-    //   });
+      });
 
      $('#btnTest2020').click(function() {
          resetQuery();
