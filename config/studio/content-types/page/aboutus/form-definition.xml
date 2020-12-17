@@ -936,7 +936,7 @@
 					<properties>
 						<property>
 							<name>contentType</name>
-							<value></value>
+							<value>/component/contactus</value>
 								<type>string</type>
 						</property>
 					</properties>
