@@ -42,10 +42,10 @@
          years.push($(this).val());
       });
 
-    //   doSearch(queryParam, years);
+      doSearch(queryParam, years);
      });
 
-    //  doSearch(queryParam);
+     doSearch(queryParam);
   });
 
 })(jQuery);
@@ -60,39 +60,39 @@ function resetQuery(){
     yearFilterQuery = '{page_article {items {localId image_s subject_t summary_t}}}';
 }
      
-    var doGraphql = function (yearFilterQuery) {
-               $("#testDiv").html('loading....');
-               $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
-                  contentType: "application/json",
-                  type:'POST',
-                  data: JSON.stringify({
-                     query: yearFilterQuery
-                  }),
-                  success: function(results) {
-                    console.log(results)
-                    if(results){
-                        results = results.data.page_article.items
-                        console.log(results)
-                        var context = { resultss: results };
-                        console.log(results)
-                        var context = { resultss: results };
-                        var html = template2(context);
-                        $("#testDiv").html(html);
-                    }else{
-                        $("#testDiv").html("<h1> No News & Media Matched </h1>");
+var doGraphql = function (yearFilterQuery) {
+   $("#testDiv").html('loading....');
+   $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
+      contentType: "application/json",
+      type:'POST',
+      data: JSON.stringify({
+         query: yearFilterQuery
+      }),
+      success: function(results) {
+        console.log(results)
+        if(results){
+            results = results.data.page_article.items
+            console.log(results)
+            var context = { resultss: results };
+            console.log(results)
+            var context = { resultss: results };
+            var html = template2(context);
+            $("#testDiv").html(html);
+        }else{
+            $("#testDiv").html("<h1> No News & Media Matched </h1>");
 
-                    }
-                    // var context = { resultss: results };
-                    // console.log(context)
-                    // var html = template2(context);
-                    //   var html = template2(result);
-                    //   console.log(html)
-                    //   $("#testDiv").html(html);
-                    //   $('#search-results').html(html);
-                    //  $("#testDiv").html("<h1>"+result+"</h1>");
-                  }
-               });
-            }
+        }
+        // var context = { resultss: results };
+        // console.log(context)
+        // var html = template2(context);
+        //   var html = template2(result);
+        //   console.log(html)
+        //   $("#testDiv").html(html);
+        //   $('#search-results').html(html);
+        //  $("#testDiv").html("<h1>"+result+"</h1>");
+      }
+   });
+}
 
      $('#btnTest2020').click(function() {
          resetQuery();
