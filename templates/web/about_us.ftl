@@ -152,7 +152,7 @@
 		
 		<script id="search-results-template-2" type="text/x-handlebars-template">
 			{{#each resultss}}
-			${resultss.localId?replace('/site/website',  '')}
+			${localId?replace('/site/website',  '')}
 
 			<div>
 			<h3>graphql</h3>
