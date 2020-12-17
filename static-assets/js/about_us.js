@@ -73,7 +73,6 @@ var doGraphql = function (yearFilterQuery) {
         if(results){
             results = results.data.page_article.items
             console.log(results)
-            results.foreach(results.localId = results.localId.replace('/site/website',''));
             var context = { resultss: results };
             var html = template2(context);
             $("#testDiv").html(html);
