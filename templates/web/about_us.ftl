@@ -68,7 +68,7 @@
                         <hr class="major"/>
 						<div id="testDiv">
 						</div>
-						</div>
+					
 					</section>
 					
 					<!-- Contact Us -->
