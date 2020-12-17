@@ -92,17 +92,7 @@ var template2 = Handlebars.compile(source2);
                   contentType: "application/json",
                   type:'POST',
                   data: JSON.stringify({
-                     query:`{
-                          page_article {
-                            items {
-                            localId
-      date_dt(filter: {gte: "2018-01-01T00:00:00Z", lte: "2018-12-31T23:59:59Z"})
-                              image_s
-                              subject_t
-                              summary_t
-                            }
-                          }
-                        }`
+                     query:`{page_article {items {localId image_s subject_t summary_t}}}`
                   }),
                   success: function(results) {
                     console.log(results)
