@@ -382,7 +382,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value><![CDATA[]]></value>
+							<value><![CDATA[false]]></value>
 							<type>boolean</type>
 						</constraint>
 						<constraint>
