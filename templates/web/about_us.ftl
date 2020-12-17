@@ -75,6 +75,20 @@
 						<div id="search-results">
 						</div>
 					</section>
+
+					<section>
+    					<form id ="years-2">
+                        <div class="row uniform">
+                            <div class="3u 6u(medium) 12u$(small)">
+                                <input type="checkbox" id="2017" name="2017" value="2017">
+                                <label for="2017">2017</label>
+                            </div>
+                            <div class="3u 6u(medium) 12u$(small)">
+                                <input type="checkbox" id="2020" name="2020" value="2020">
+                                <label for="2020">2020</label>
+                            </div>
+                        </form>
+					</section>
 					
                     <section>
                     <h2> Graphql </h2>
