@@ -49,48 +49,6 @@
 					</section>
 					
 					<!-- News and Media -->
-					<section>
-						<h2 class="main">
-							<h2>News & Media</h2>
-							<!--<h3>Refine By Year</h3>-->
-						</h2>
-						<!--
-                        <form id="years">
-                            <div class="row uniform">
-                                <div class="3u 6u(medium) 12u$(small)">
-                                    <input type="checkbox" id="2019" name="2019" value="2019">
-                                    <label for="2019">2019</label>
-                                </div>
-                                <div class="3u 6u(medium) 12u$(small)">
-                                    <input type="checkbox" id="2020" name="2020" value="2020">
-                                    <label for="2020">2020</label>
-                                </div>
-                                <div class="3u 6u(medium) 12u$(small)">
-                                    <input type="checkbox" id="2021" name="2021" value="2021">
-                                    <label for="2021">2021</label>
-                                </div>
-                            </div>
-                        </form>
-                        -->
-						<hr class="major"/>
-						<div id="search-results">
-						</div>
-					</section>
-
-					<section>
-    					<form id ="years-2">
-                        <div class="row uniform">
-                            <div class="3u 6u(medium) 12u$(small)">
-                                <input type="checkbox" id="2017" name="2017" value="2017">
-                                <label for="2017">2017</label>
-                            </div>
-                            <div class="3u 6u(medium) 12u$(small)">
-                                <input type="checkbox" id="2020" name="2020" value="2020">
-                                <label for="2020">2020</label>
-                            </div>
-                        </form>
-					</section>
-					
                     <section>
                     <h2> Graphql </h2>
         
