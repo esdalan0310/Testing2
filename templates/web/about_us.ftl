@@ -48,26 +48,7 @@
     					</div>
 					</section>
 					
-					<!-- years_o -->
-					<section>
-						<header class="main">
-							<h1>Search Results</h1>
-							<h3>Refine by</h3>
-						</header>
-						<form id="years">
-							<div class="row uniform">
-							<#list years as year>
-    							<div class="3u 6u(medium) 12u$(small)">
-    								<input type="checkbox" id="${year.key}" name="${year.key}" value="${year.key}">
-    								<label for="${year.key}">${year.value}</label>
-    							</div>
-					            </#list>					
-							</div>
-						</form>
-						<hr class="major"/>
-						<div id="search-results">
-						</div>
-					</section>
+				
 
 					
 					
