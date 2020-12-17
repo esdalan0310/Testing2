@@ -55,9 +55,10 @@ $(document).ready(function() {
 var source2 = $("#search-results-template-2").html();
 var template2 = Handlebars.compile(source2);
 var yearFilterQuery = '{page_article {items {localId image_s subject_t summary_t}}}';
-document.getElementById("btnTest2020").click(); // Click on the checkbox
 
-
+function resetQuery(){
+    yearFilterQuery = '{page_article {items {localId image_s subject_t summary_t}}}';
+}
      
     var doGraphql = function (yearFilterQuery) {
                $("#testDiv").html('loading....');
@@ -94,11 +95,13 @@ document.getElementById("btnTest2020").click(); // Click on the checkbox
             }
 
      $('#btnTest2020').click(function() {
+         resetQuery();
       yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat(' date_dt(filter: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z"})}}}');
       console.log(yearFilterQuery);
       doGraphql(yearFilterQuery);
  });
       $('#btnTest2017').click(function() {
+          resetQuery();
       yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat(' date_dt(filter: {gte: "2017-01-01T00:00:00Z", lte: "2017-12-31T23:59:59Z"})}}}');
       console.log(yearFilterQuery);
       doGraphql(yearFilterQuery);
