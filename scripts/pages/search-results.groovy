@@ -16,5 +16,5 @@
 
 
 def categoriesItem = siteItemService.getSiteItem(contentModel.categories_o.item.key.text)
-
+println 90839021839021893021
 templateModel.categories = categoriesItem.items.item
