@@ -49,29 +49,11 @@
 					</section>
 					
 				
-
-					
-					
-					<!-- News and Media -->
-                    <section>
-                    <h2> Graphql </h2>
-        
-                        <div class="3u 6u(medium) 12u$(small)">
-                         <button id = "btnTest2020">2020</button>
-                         </div>
-                         <div class="3u 6u(medium) 12u$(small)">
-                         <button id = "btnTest2017">2017</button>
-                         </div>
-
-  						<hr class="major"/>
-						<div id="testDiv">
-						</div>
-					</section>
 	<!-- years_o -->
 					<section>
 						<header class="main">
 							<h1>News & Media</h1>
-							<h3>Refine by years</h3>
+						<!--	<h3>Refine by years</h3>-->
 						</header>
 						<form id="years">
 							<div class="row uniform">
@@ -83,8 +65,9 @@
 					            </#list>					
 							</div>
 						</form>
-						<hr class="major"/>
-						<div id="search-results">
+                        <hr class="major"/>
+						<div id="testDiv">
+						</div>
 						</div>
 					</section>
 					
