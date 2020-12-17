@@ -125,7 +125,7 @@ var filters = '';
          years.push($(this).val());
       });
      var yearss = { yearss: years };
-     console.log("yearss = "+yearss);
+     console.log(yearss);
     //   doFilter(queryParam, years);
      });
 
