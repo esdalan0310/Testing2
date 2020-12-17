@@ -55,6 +55,8 @@ $(document).ready(function() {
 var source2 = $("#search-results-template-2").html();
 var template2 = Handlebars.compile(source2);
 var yearFilterQuery = '{page_article {items {localId image_s subject_t summary_t}}}';
+document.getElementById("btnTest2020").click(); // Click on the checkbox
+
 
      
     var doGraphql = function (yearFilterQuery) {
