@@ -54,8 +54,35 @@
 $(document).ready(function() {
 var source2 = $("#search-results-template-2").html();
 var template2 = Handlebars.compile(source2);
-var filters = '';
 
+
+//  var doSearch = function(years) {
+//   var params = {};
+
+//   if (years) {
+//      params.userTerm = userTerm;
+//   }
+   
+//   console.log(years)
+   
+//   if (years) {
+//      params.years = years;
+//   }
+//     console.log(params)
+//   $.get("/api/about_us.json", params).done(function(data) {
+//      if (data == null) {
+//       data = [];
+//      }
+//     console.log(data)
+//      var context = { results: data };
+//      console.log(context)
+//      var html = template(context);
+
+//      $('#search-results').html(html);
+//   });
+//  }
+
+var filters = '';
             $("#btnTest").click(function() {
                $("#testDiv").html('loading....');
                $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
@@ -97,7 +124,8 @@ var filters = '';
       $('#years-2 input:checked').each(function() {
          years.push($(this).val());
       });
-
+     var yearss = { yearss: years };
+     console.log(yearss);
     //   doFilter(queryParam, years);
      });
 
