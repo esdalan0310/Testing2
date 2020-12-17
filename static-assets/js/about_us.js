@@ -92,6 +92,16 @@ var doGraphql = function (yearFilterQuery) {
    });
 }
 
+
+    $('#years input').click(function() {
+    //   var years = [];
+    console.log($(this).val())
+    console.log($(this).name())
+
+    //   $('#years input:click').each(function() {
+    //     //  years.push($(this).val());
+    //   });
+
      $('#btnTest2020').click(function() {
          resetQuery();
       yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat(' date_dt(filter: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z"})}}}');
