@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
-	<meta name="description" content="This is an example.">
-
+	<meta name="description" content="${contentModel.meta_description_tag_s}">
 	<title>${contentModel.pageTitle_s}</title>
 		<!--[if lte IE 8]><script src="/static-assets/js/ie/html5shiv.js"></script><![endif]-->
 		<!--<link rel="stylesheet" href="/static-assets/css/main.css?v=${siteContext.siteName}" />-->
