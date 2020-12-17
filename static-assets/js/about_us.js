@@ -1,55 +1,55 @@
-(function($) {
+// (function($) {
 
-  $(function() {
-     var queryParam = $.urlParam('q');
-     if (queryParam) {
-      queryParam = decodeURI(queryParam).trim();
-      $('#query').val(queryParam);
-     }
+//   $(function() {
+//      var queryParam = $.urlParam('q');
+//      if (queryParam) {
+//       queryParam = decodeURI(queryParam).trim();
+//       $('#query').val(queryParam);
+//      }
 
-     var source = $("#search-results-template").html();
-     var template = Handlebars.compile(source);
-     var doSearch = function(userTerm, years) {
-      var params = {};
+//      var source = $("#search-results-template").html();
+//      var template = Handlebars.compile(source);
+//      var doSearch = function(userTerm, years) {
+//       var params = {};
 
-      if (userTerm) {
-         params.userTerm = userTerm;
-      }
+//       if (userTerm) {
+//          params.userTerm = userTerm;
+//       }
        
-      console.log(years)
+//       console.log(years)
        
-      if (years) {
-         params.years = years;
-      }
-        console.log(params)
-      $.get("/api/about_us.json", params).done(function(data) {
-         if (data == null) {
-          data = [];
-         }
-        console.log(data)
-         var context = { results: data };
-         console.log(context)
-         var html = template(context);
+//       if (years) {
+//          params.years = years;
+//       }
+//         console.log(params)
+//       $.get("/api/about_us.json", params).done(function(data) {
+//          if (data == null) {
+//           data = [];
+//          }
+//         console.log(data)
+//          var context = { results: data };
+//          console.log(context)
+//          var html = template(context);
 
-         $('#search-results').html(html);
-      });
-     }
+//          $('#search-results').html(html);
+//       });
+//      }
 
-     $('#years input').click(function() {
-      var years = [];
+//      $('#years input').click(function() {
+//       var years = [];
 
-      $('#years input:checked').each(function() {
-         years.push($(this).val());
-      });
+//       $('#years input:checked').each(function() {
+//          years.push($(this).val());
+//       });
 
-    //   doSearch(queryParam, years);
-     });
+//     //   doSearch(queryParam, years);
+//      });
 
-    //  doSearch(queryParam);
-  });
+//     //  doSearch(queryParam);
+//   });
 
-})(jQuery);
-//=================
+// })(jQuery);
+// //=================
 
 $(document).ready(function() {
 var source2 = $("#search-results-template-2").html();
@@ -95,24 +95,28 @@ var doGraphql = function (yearFilterQuery) {
 
     $('#years input').click(function() {
     //   var years = [];
-    console.log($(this).val())
-
+    console.log($(this).val());
+    var year = $(this).val();
+      resetQuery();
+      yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat(' date_dt(filter: {gte: "'+year+'-01-01T00:00:00Z", lte: "'+year+'-12-31T23:59:59Z"})}}}');
+      console.log(yearFilterQuery);
+      doGraphql(yearFilterQuery);
     //   $('#years input:click').each(function() {
     //     //  years.push($(this).val());
       });
 
-     $('#btnTest2020').click(function() {
-         resetQuery();
-      yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat(' date_dt(filter: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z"})}}}');
-      console.log(yearFilterQuery);
-      doGraphql(yearFilterQuery);
- });
-      $('#btnTest2017').click(function() {
-          resetQuery();
-      yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat(' date_dt(filter: {gte: "2017-01-01T00:00:00Z", lte: "2017-12-31T23:59:59Z"})}}}');
-      console.log(yearFilterQuery);
-      doGraphql(yearFilterQuery);
- });
+//      $('#btnTest2020').click(function() {
+//          resetQuery();
+//       yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat(' date_dt(filter: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z"})}}}');
+//       console.log(yearFilterQuery);
+//       doGraphql(yearFilterQuery);
+//  });
+//       $('#btnTest2017').click(function() {
+//           resetQuery();
+//       yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat(' date_dt(filter: {gte: "2017-01-01T00:00:00Z", lte: "2017-12-31T23:59:59Z"})}}}');
+//       console.log(yearFilterQuery);
+//       doGraphql(yearFilterQuery);
+//  });
 });
 
 
