@@ -86,7 +86,7 @@
                             <label for="2017">2017</label>
                         </div>
                          <div class="3u 6u(medium) 12u$(small)">
-                            <input type="checkbox" id="2020" name="2017" value="2017">
+                            <input type="checkbox" id="2020" name="2020" value="2020">
                             <label for="2020">2020</label>
                     </div>
                    
