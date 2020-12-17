@@ -54,14 +54,14 @@
 							<h1>Search Results</h1>
 							<h3>Refine by</h3>
 						</header>
-						<form id="categories">
+						<form id="yearss">
 							<div class="row uniform">
-							<#list categories as category>
-								<div class="3u 6u(medium) 12u$(small)">
-									<input type="checkbox" id="${category.key}" name="${category.key}" value="${category.key}">
-									<label for="${category.key}">${category.value}</label>
-								</div>
-							</#list>
+							<#list years as year>
+    							<div class="3u 6u(medium) 12u$(small)">
+    								<input type="checkbox" id="${year.key}" name="${year.key}" value="${year.key}">
+    								<label for="${year.key}">${year.value}</label>
+    							</div>
+					            </#list>					
 							</div>
 						</form>
 						<hr class="major"/>
