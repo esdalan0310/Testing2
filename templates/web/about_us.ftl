@@ -152,8 +152,6 @@
 		
 		<script id="search-results-template-2" type="text/x-handlebars-template">
 			{{#each resultss}}
-			${localId?replace('/site/website',  '')}
-
 			<div>
 			<h3>graphql</h3>
 				<h4><a href="{{localId}}">{{subject_t}}</a></h4>
