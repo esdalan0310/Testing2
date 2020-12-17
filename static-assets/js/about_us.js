@@ -75,8 +75,8 @@ var doGraphql = function (yearFilterQuery) {
             console.log(results);
             var context = { resultss: results };
             for(var i=0; i < context.resultss.length; i++) {
-            //  context[i].localId = context[i].localId.replace(/,/g, '');
-                console.log(context.resultss[i].localId)
+                context.resultss[i].localId = context.resultss[i].localId.replace('/site/website','').replace('/index.xml','');
+                // console.log(context.resultss[i].localId)
             }
             // console.log(results);
             var html = template2(context);
