@@ -45,7 +45,7 @@
          }
         // console.log(data)
          var context = { results: data };
-         console.log(context)
+        //  console.log(context)
          var html = template(context);
         //  console.log(html)
 
