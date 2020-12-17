@@ -64,11 +64,10 @@
     								<!--<label for="${year.key}">${year.value}</label>-->
     							</div>
 					            </#list>		
-					            							<div class="3u 6u(medium) 12u$(small)"
+							</div>
+					            <div class="3u 6u(medium) 12u$(small)"
 							    <input type="button" id="clean" name="Clean Result" value="clean">
-							</div>
-							</div>
-
+							    </div>
 						</form>
                         <hr class="major"/>
 						<div id="testDiv">
