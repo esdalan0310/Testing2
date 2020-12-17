@@ -54,7 +54,7 @@
 							<h2>News & Media</h2>
 							<!--<h3>Refine By Year</h3>-->
 						</h2>
-						
+						<!--
                         <form id="years">
                             <div class="row uniform">
                                 <div class="3u 6u(medium) 12u$(small)">
@@ -71,6 +71,7 @@
                                 </div>
                             </div>
                         </form>
+                        -->
 						<hr class="major"/>
 						<div id="search-results">
 						</div>
