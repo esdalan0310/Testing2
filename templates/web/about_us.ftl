@@ -94,7 +94,10 @@
                     <section>
                     <h2> Graphql </h2>
                         <div class="3u 6u(medium) 12u$(small)">
-                         <button id = "btnTest">2020</button>
+                         <button id = "btnTest2020">2020</button>
+                         </div>
+                         <div class="3u 6u(medium) 12u$(small)">
+                         <button id = "btnTest2017">2017</button>
                          </div>
 
   						<hr class="major"/>
