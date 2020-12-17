@@ -34,7 +34,7 @@
 										<h1>Search Results</h1>
 										<h3>Refine by</h3>
 									</header>
-									<form id="categories">
+									<form id="categoriess">
 										<div class="row uniform">
 										<#list categories as category>
 											<div class="3u 6u(medium) 12u$(small)">
