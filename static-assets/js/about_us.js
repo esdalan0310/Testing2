@@ -57,7 +57,7 @@ var template2 = Handlebars.compile(source2);
 var yearFilterQuery = '{page_article {items {localId image_s subject_t summary_t}}}';
 
      
-    var doGraphql (yearFilterQuery) {
+    var doGraphql = function (yearFilterQuery) {
                $("#testDiv").html('loading....');
                $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
                   contentType: "application/json",
