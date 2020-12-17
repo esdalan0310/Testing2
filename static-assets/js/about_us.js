@@ -91,15 +91,15 @@ var yearFilterQuery = '{page_article {items {localId image_s subject_t summary_t
                });
             }
 
-     $('#btnTest2020').click(function() {
-      yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat('date_dt(filter: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z"})}}}');
-      doGraphql(yearFilterQuery);
- });
-      $('#btnTest2017').each(function() {
-      yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat('date_dt(filter: {gte: "2017-01-01T00:00:00Z", lte: "2017-12-31T23:59:59Z"})}}}');
-      doGraphql(yearFilterQuery);
- });
-     });
+//      $('#btnTest2020').click(function() {
+//       yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat('date_dt(filter: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z"})}}}');
+//       doGraphql(yearFilterQuery);
+//  });
+//       $('#btnTest2017').each(function() {
+//       yearFilterQuery = yearFilterQuery.substring(0, yearFilterQuery.length -3).concat('date_dt(filter: {gte: "2017-01-01T00:00:00Z", lte: "2017-12-31T23:59:59Z"})}}}');
+//       doGraphql(yearFilterQuery);
+//  });
+});
 
 
 // var entry = $('#entry').val()
