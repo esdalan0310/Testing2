@@ -93,12 +93,7 @@
 					
                     <section>
                     <h2> Graphql </h2>
-            
-					<form id="categories">
-						<div class="row uniform">
-						
-						</div>
-					</form>	
+        
                         <div class="3u 6u(medium) 12u$(small)">
                          <button id = "btnTest2020">2020</button>
                          </div>
