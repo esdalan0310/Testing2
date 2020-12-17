@@ -42,10 +42,10 @@
          years.push($(this).val());
       });
 
-      doSearch(queryParam, years);
+    //   doSearch(queryParam, years);
      });
 
-     doSearch(queryParam);
+    //  doSearch(queryParam);
   });
 
 })(jQuery);
