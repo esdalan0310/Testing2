@@ -70,14 +70,14 @@
 	<!-- years_o -->
 					<section>
 						<header class="main">
-							<h1>Search Results</h1>
-							<h3>Refine by years_o</h3>
+							<h1>News & Media</h1>
+							<h3>Refine by years</h3>
 						</header>
 						<form id="years">
 							<div class="row uniform">
 							<#list years as year>
     							<div class="3u 6u(medium) 12u$(small)">
-    								<input type="checkbox" id="${year.key}" name="${year.key}" value="${year.key}">
+    								<input type="button" id="${year.key}" name="${year.key}" value="${year.key}">
     								<label for="${year.key}">${year.value}</label>
     							</div>
 					            </#list>					
