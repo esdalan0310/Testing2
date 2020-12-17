@@ -107,7 +107,7 @@ var doGraphql = function (yearFilterQuery) {
         console.log(yearFilterQuery);
         doGraphql(yearFilterQuery);
     }else{
-        if(year == 'clean'){
+        if(year === 'clean'){
             resetQuery();
             $("#testDiv").html("");
         }
