@@ -54,34 +54,37 @@
 $(document).ready(function() {
 var source2 = $("#search-results-template-2").html();
 var template2 = Handlebars.compile(source2);
+var yearFilterQuery = '';
 
+     var doGraphql = function(yearss) {
+      var params = {};
+      
+      if(yearss){
+          yearss.foreach(formYearFilter);
+          function formYearFilter(item){
+              yearFilterQuery = yearFilterQuery + 
+          }
+      }
+       
+      console.log(years)
+       
+      if (years) {
+         params.years = years;
+      }
+        console.log(params)
+      $.get("/api/about_us.json", params).done(function(data) {
+         if (data == null) {
+          data = [];
+         }
+        console.log(data)
+         var context = { results: data };
+         console.log(context)
+         var html = template(context);
 
-//  var doSearch = function(years) {
-//   var params = {};
-
-//   if (years) {
-//      params.userTerm = userTerm;
-//   }
-   
-//   console.log(years)
-   
-//   if (years) {
-//      params.years = years;
-//   }
-//     console.log(params)
-//   $.get("/api/about_us.json", params).done(function(data) {
-//      if (data == null) {
-//       data = [];
-//      }
-//     console.log(data)
-//      var context = { results: data };
-//      console.log(context)
-//      var html = template(context);
-
-//      $('#search-results').html(html);
-//   });
-//  }
-
+         $('#search-results').html(html);
+      });
+     }
+     
 var filters = '';
             $("#btnTest").click(function() {
                $("#testDiv").html('loading....');
@@ -93,7 +96,7 @@ var filters = '';
                           page_article {
                             items {
                             localId
-      date_dt(filter: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z"})
+      date_dt(filter: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z", and: {gte: "2020-01-01T00:00:00Z", lte: "2020-12-31T23:59:59Z"}})
                               image_s
                               subject_t
                               summary_t
