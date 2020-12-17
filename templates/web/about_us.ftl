@@ -49,7 +49,7 @@
 					</section>
 					
 				
-	<!-- years_o -->
+	                <!-- News & Media -->
 					<section>
 						<header class="main">
 							<h1>News & Media</h1>
@@ -68,7 +68,6 @@
                         <hr class="major"/>
 						<div id="testDiv">
 						</div>
-					
 					</section>
 					
 					<!-- Contact Us -->
@@ -81,7 +80,6 @@
 							</#if>
 						</div>
 					</section>
-					
 			    </div>
 		    </div>
 				<!-- Left Rail -->
