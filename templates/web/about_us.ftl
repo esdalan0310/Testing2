@@ -94,12 +94,16 @@
                     <section>
                     <h2> Graphql </h2>
             
-                    <#list years as year>
-						<div class="3u 6u(medium) 12u$(small)">
-							<input type="button" id="${year.key}" name="${year.key}" value="${year.key}">
-							<label for="${year.key}">${year.value}</label>
+					<form id="categories">
+						<div class="row uniform">
+						<#list categories as category>
+							<div class="3u 6u(medium) 12u$(small)">
+								<input type="checkbox" id="${category.key}" name="${category.key}" value="${category.key}">
+								<label for="${category.key}">${category.value}</label>
+							</div>
+						</#list>
 						</div>
-		            </#list>	
+					</form>	
                         <div class="3u 6u(medium) 12u$(small)">
                          <button id = "btnTest2020">2020</button>
                          </div>
