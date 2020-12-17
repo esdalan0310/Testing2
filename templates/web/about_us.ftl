@@ -154,7 +154,7 @@
 			{{#each resultss}}
 			<div>
 			<h3>graphql</h3>
-				<h4><a href="{{localId}?replace("/site/website","")}">{{subject_t}}</a></h4>
+				<h4><a href="{{localId}}">{{subject_t}}</a></h4>
 				{{#if image_s}}
 					<image src="{{{image_s}}}" style="width: 30%; height: auto;" />
 				{{/if}}
