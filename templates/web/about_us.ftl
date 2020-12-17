@@ -65,6 +65,7 @@
     							</div>
 					            </#list>					
 							</div>
+							<input type="button" id="clean" name="Clean Result" value="clean">
 						</form>
                         <hr class="major"/>
 						<div id="testDiv">
