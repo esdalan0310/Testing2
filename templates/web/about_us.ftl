@@ -54,7 +54,7 @@
 							<h1>Search Results</h1>
 							<h3>Refine by</h3>
 						</header>
-						<form id="yearss">
+						<form id="years">
 							<div class="row uniform">
 							<#list years as year>
     							<div class="3u 6u(medium) 12u$(small)">
