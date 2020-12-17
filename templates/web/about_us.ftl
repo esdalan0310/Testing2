@@ -154,8 +154,8 @@
 			{{#each resultss}}
 			<div>
 			<h3>graphql</h3>
-			    {{localId}} = ${localId?replace("/site/website", "")}
-			    {{localId}} = ${localId?replace("/index.xml", "")}
+			    {localId?replace("/site/website", "")}
+			    {localId?replace("/index.xml", "")}
 				<h4><a href="{{localId}}">{{subject_t}}</a></h4>
 				{{#if image_s}}
 					<image src="{{{image_s}}}" style="width: 30%; height: auto;" />
