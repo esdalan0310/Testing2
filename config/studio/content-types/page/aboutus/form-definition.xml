@@ -753,7 +753,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>contactus</value>
+							<value>contact_us</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -924,6 +924,19 @@
 						<property>
 							<name>type</name>
 							<value>/taxonomy</value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>embedded-content</type>
+					<id>contact_us</id>
+					<title>Contact Us</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>contentType</name>
+							<value></value>
 								<type>string</type>
 						</property>
 					</properties>
