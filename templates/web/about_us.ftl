@@ -65,7 +65,7 @@
     							</div>
 					            </#list>	
 					            <div class="3u 6u(medium) 12u$(small)">
-							    <input type="button" id="clean" name="clean" value="">
+							    <input type="button" id="clean" name="clean" value="clean">
 							    </div>
 							</div>
 
