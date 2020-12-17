@@ -73,9 +73,9 @@ var doGraphql = function (yearFilterQuery) {
         if(results){
             results = results.data.page_article.items
             console.log(results);
-            var context = { resultss: results };
-            console.log(results);
-            var html = template2(context);
+            // var context = { resultss: results };
+            // console.log(results);
+            var html = template2(results);
             $("#testDiv").html(html);
         }else{
             $("#testDiv").html("<h1> No News & Media Matched </h1>");
