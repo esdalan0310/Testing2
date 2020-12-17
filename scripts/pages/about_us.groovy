@@ -1,3 +1,3 @@
-def categoriesItem = siteItemService.getSiteItem(contentModel.years_o.item.key.text)
-println categoriesItem
-templateModel.years = categoriesItem.items.item
+def yearsItem = siteItemService.getSiteItem(contentModel.years_o.item.key.text)
+println yearsItem
+templateModel.years = yearsItem.items.item
