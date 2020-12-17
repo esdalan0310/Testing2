@@ -152,10 +152,10 @@
 		
 		<script id="search-results-template-2" type="text/x-handlebars-template">
 			{{#each resultss}}
+			${resultss.localId?replace('/site/website|/index.xml', '', '')}
+
 			<div>
 			<h3>graphql</h3>
-			    {localId?replace("/site/website", "")}
-			    {localId?replace("/index.xml", "")}
 				<h4><a href="{{localId}}">{{subject_t}}</a></h4>
 				{{#if image_s}}
 					<image src="{{{image_s}}}" style="width: 30%; height: auto;" />
