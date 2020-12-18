@@ -1,97 +1,150 @@
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
 
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>0 Hello World</title>
-    </head>
-    <body>
+	<head>
+		<title>${contentModel.title_t}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="/static-assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/static-assets/css/main.css?v=${siteContext.siteName}" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="/static-assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="/static-assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="/static-assets/css/jquery-ui.min.css" />
+	</head>
+	<body>
+		<!-- Wrapper -->
+		
+			<div id="wrapper">
 
-        <div id="app">
-            <ul id="example-1">
-              <li v-for="movie in movies" :movie="movie.objectId">
-                    <div :key="movie.objectId">
-                        <h3>{{ movie.objectId }}</h3>
-                        <p>{{ movie.title_t }}</p>
-                        <p>{{ movie.video_s }}</p>
-                        <video poster="{{movie.thumbnail_s}}" preload="auto">
-                            <source src="{{movie.video_s}}" type="video/mp4">
-                            <p>Your browser does not support H.264/mp4</p>
-                        </video>
-                        <div>
-                            <span>{{movie.duration_s}}</span>
-                        </div>
-                     </div>
-                     
-              </li>
-            </ul>
-        </div>
-        
-        
-        
-         
-        
-            
-        
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+							<@renderComponent component=contentModel.header_o.item />
+
+							<!-- Section -->
+								<section>
+									<header class="main">
+										<h1>Search Results</h1>
+										<h3>Refine by</h3>
+									</header>
+									<form id="categories">
+										<div class="row uniform">
+									
+										</div>
+									</form>
+									<hr class="major"/>
+									<div id="search-results">
+									
+									
+									</div>
+							
+									    
+                                        
+                                        <div id="app">
+                                            <ul id="example-1">
+                                              <li v-for="movie in items" :movie="movie.title_t">
+                                                    <div :key="movie.title_t">
+                                                        <h3>{{ movie.title_t }}</h3>
+                                                        <p>{{ movie.title_t }}</p>
+                                                        <p>{{ movie.title_t }}</p>
+                                                        
+                                                        <div>
+                                                            <span>{{movie.title_t}}</span>
+                                                        </div>
+                                                     </div>
+                                                     
+                                              </li>
+                                            </ul>
+                                        </div>
+
+								</section>
+
+						</div>
+					</div>
+
+					<!-- Left Rail -->
+					<@renderComponent component=contentModel.left\-rail_o.item />
+
+			</div>
+
+			<!-- Handlebar Templates -->
+			<script id="search-results-template" type="text/x-handlebars-template">
+				{{#each results}}
+				<div>
+					<h4><a href="{{url}}">{{items}}</a></h4>
+					{{#if highlight}}
+					<p>{{{highlight}}}</p>
+					{{/if}}
+				</div>
+				{{else}}
+				<p>No results found</p>
+				{{/each}}
+			</script>
+
+		<!-- Scripts -->
+			
+			
+			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script>
             new Vue({
-  el: '#app',
-  data () {
-    return {
-      movies: null
-    }
-  },
-  mounted () {
-    
-      document.cookie="crafterSite=test;";
-      axios({
-          url: 'http://18.163.110.47:8080/api/1/site/graphql',
-          method: 'post',
-          data: {
-              query: `query MyQuery {
-                      page_page__video {
-                        items {
-                          thumbnail_s
-                          title_t
-                          video_s
-                          objectId
-                          dateFormat_s
-                          description_t
-                          duration_s
-                          author_t
-                          tags_o {
-                            item {
-                              tagName_t
-                              tagUrl_s
-                            }
-                          }
-                        }
-                      }
-                    }`
-              
-          }, 
-            headers: {
-              'Content-Type': 'application/json'
-            },
-
-        }).then((result) => {
-          console.log(result.data)
-          this.movies = result.data.data.page_page__video.items
-          document.cookie="crafterSite=vue-test;";
-        });
-        
-  }
-})
+                  el: '#app',
+                  data () {
+                    return {
+                      items: null
+                    }
+                  },
+                  mounted () {
+                    
+                      axios({
+                          url: 'http://18.163.110.47:8080/api/1/site/graphql',
+                          method: 'post',
+                          data: {
+                              query: `query MyQuery {
+                                     page_pagenewsmedia {
+                                        items {
+                                          title_t
+                                          subject_s
+                                          author_s
+                                          content_t
+                                          image_s
+                                          date_dt(filter: {gt: "2020-11-15T06:40:33Z", lte: "2020-12-31T06:40:33Z"})
+                                        }
+                                      }
+                                    }`
+                              
+                          }, 
+                            headers: {
+                              'Content-Type': 'application/json'
+                            },
+                
+                        }).then((result) => {
+                          console.log(result.data.data.page_pagenewsmedia)
+                          this.items = result.data.data.page_pagenewsmedia
+                        });
+                        
+                  }
+                })
         </script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         
-      
+        <script src="/static-assets/js/jquery.min.js"></script>
+			<script src="/static-assets/js/jquery-ui.min.js"></script>
+			<script src="/static-assets/js/skel.min.js"></script>
+			<script src="/static-assets/js/handlebars.min-latest.js"></script>
+			<script src="/static-assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
+			<script src="/static-assets/js/search.js"></script>
 			
-		
+			
 
 		<@studio.toolSupport/>
 	</body>
