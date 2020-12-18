@@ -43,10 +43,7 @@
 
 							
 
-					<!-- Left Rail -->
-					<@renderComponent component=contentModel.left\-rail_o.item />
-
-			</div>
+				
 
 			<!-- Handlebar Templates -->
 			<script id="search-results-template" type="text/x-handlebars-template">
