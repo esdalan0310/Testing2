@@ -68,14 +68,7 @@
 			</script>
 
 		<!-- Scripts -->
-			<script src="/static-assets/js/jquery.min.js"></script>
-			<script src="/static-assets/js/jquery-ui.min.js"></script>
-			<script src="/static-assets/js/skel.min.js"></script>
-			<script src="/static-assets/js/handlebars.min-latest.js"></script>
-			<script src="/static-assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
-			<script src="/static-assets/js/search.js"></script>
+			
 			
 			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -119,6 +112,15 @@
                   }
                 })
         </script>
+        
+        <script src="/static-assets/js/jquery.min.js"></script>
+			<script src="/static-assets/js/jquery-ui.min.js"></script>
+			<script src="/static-assets/js/skel.min.js"></script>
+			<script src="/static-assets/js/handlebars.min-latest.js"></script>
+			<script src="/static-assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
+			<script src="/static-assets/js/search.js"></script>
 			
 			
 
