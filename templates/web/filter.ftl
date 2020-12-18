@@ -117,7 +117,7 @@
                 
                         }).then((result) => {
                           console.log(result.data)
-                          this.movies = result.data.data.page_page__video.items
+                          this.movies = result.data
                         });
                         
                   }
