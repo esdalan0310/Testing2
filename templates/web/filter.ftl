@@ -105,8 +105,8 @@
                             },
                 
                         }).then((result) => {
-                          console.log(result.data)
-                          this.items = result.data
+                          console.log(result.data.data)
+                          this.items = result.data.data
                         });
                         
                   }
