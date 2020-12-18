@@ -46,19 +46,24 @@
 									
 									</div>
 							
-									    <ul id="app">
-                                          <li v-for="item in items" :item="item.title_t">
-                                            <div :key="item.title_t">
-                                                <span>{{ item.title_t }}</span><br>
-                                                <span>{{ item.subject_s }}</span><br>
-                                                <span>{{ item.author_s }}</span><br>
-                                                <span>{{ item.content_t }}</span><br>
-                                                <span>{{ item.image_s }}</span><br>
-                                                <span>{{ item.date_dt }}</span><br>
-                                            </div>
-                                            
-                                          </li>
-                                        </ul>
+									    
+                                        
+                                        <div id="app">
+                                            <ul id="example-1">
+                                              <li v-for="movie in items" :movie="movie.title_t">
+                                                    <div :key="movie.title_t">
+                                                        <h3>{{ movie.title_t }}</h3>
+                                                        <p>{{ movie.title_t }}</p>
+                                                        <p>{{ movie.title_t }}</p>
+                                                        
+                                                        <div>
+                                                            <span>{{movie.title_t}}</span>
+                                                        </div>
+                                                     </div>
+                                                     
+                                              </li>
+                                            </ul>
+                                        </div>
 
 								</section>
 
