@@ -47,8 +47,8 @@
 									</div>
 							
 									    <ul id="app">
-                                          <li v-for="item in items" :key="item.title_t">
-                                            <div>
+                                          <li v-for="item in items" :item="item.title_t">
+                                            <div :key="item.title_t">
                                                 <span>{{ item.title_t }}</span><br>
                                                 <span>{{ item.subject_s }}</span><br>
                                                 <span>{{ item.author_s }}</span><br>
@@ -94,24 +94,7 @@
                   el: '#app',
                   data () {
                     return {
-                      items: [
-                {
-                    "title_t": "test-1",
-                    "subject_s": "test-1",
-                    "author_s": "Author",
-                    "content_t": "123456",
-                    "image_s": null,
-                    "date_dt": "2020-12-15T06:40:33Z"
-                },
-                {
-                    "title_t": "test-2",
-                    "subject_s": "test-2",
-                    "author_s": "test-2",
-                    "content_t": "test-2",
-                    "image_s": null,
-                    "date_dt": "2020-12-15T07:54:04Z"
-                }
-            ]
+                      items: null
                     }
                   },
                   mounted () {
