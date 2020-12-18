@@ -43,8 +43,9 @@
 									<hr class="major"/>
 									<div id="search-results">
 									
-									<div id="app">{{items}}</div>
+									
 									</div>
+									<div id="app">{{items}}</div>
 									
 								</section>
 
