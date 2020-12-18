@@ -19,6 +19,7 @@
 	</head>
 	<body>
 		<!-- Wrapper -->
+		<div id="app">{{}}</div>
 			<div id="wrapper">
 
 				<!-- Main -->
@@ -42,7 +43,7 @@
 									<hr class="major"/>
 									<div id="search-results">
 									</div>
-									<div id="app">{{}}</div>
+									
 								</section>
 
 						</div>
