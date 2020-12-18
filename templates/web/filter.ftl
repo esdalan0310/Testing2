@@ -45,7 +45,22 @@
 									
 									
 									</div>
-									<div id="app">{{items}}</div>
+									<div id="app">
+									    {{items}}
+									    <ul id="example-1">
+                                          <li v-for="item in items" :key="item.message">
+                                            <div>
+                                                <span>{{ item.title_t }}</span><br>
+                                                <span>{{ item.subject_s }}</span><br>
+                                                <span>{{ item.author_s }}</span><br>
+                                                <span>{{ item.content_t }}</span><br>
+                                                <span>{{ item.image_s }}</span><br>
+                                                <span>{{ item.date_dt }}</span><br>
+                                            </div>
+                                            
+                                          </li>
+                                        </ul>
+									</div>
 									
 								</section>
 
