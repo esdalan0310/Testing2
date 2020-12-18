@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<!-- Wrapper -->
-		<div id="app">{{}}</div>
+		<div id="app">{{items}}</div>
 			<div id="wrapper">
 
 				<!-- Main -->
