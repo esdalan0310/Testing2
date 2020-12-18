@@ -47,7 +47,7 @@
 									</div>
 									<div id="app">
 									    {{items}}
-									    <ul id="example-1">
+									    <ul>
                                           <li v-for="item in items" :key="item.title_t">
                                             <div>
                                                 <span>{{ item.title_t }}</span><br>
