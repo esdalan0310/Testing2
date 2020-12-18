@@ -47,6 +47,7 @@
 									<hr class="major"/>
 									<div id="search-results">
 									</div>
+									<div id="app">{{}}</div>
 								</section>
 
 						</div>
@@ -61,7 +62,7 @@
 			<script id="search-results-template" type="text/x-handlebars-template">
 				{{#each results}}
 				<div>
-					<h4><a href="{{url}}">{{title}}</a></h4>
+					<h4><a href="{{url}}">{{items}}</a></h4>
 					{{#if highlight}}
 					<p>{{{highlight}}}</p>
 					{{/if}}
@@ -88,7 +89,7 @@
                   el: '#app',
                   data () {
                     return {
-                      movies: null
+                      items: null
                     }
                   },
                   mounted () {
@@ -117,7 +118,7 @@
                 
                         }).then((result) => {
                           console.log(result.data)
-                          this.movies = result.data
+                          this.items = result.data
                         });
                         
                   }
