@@ -26,7 +26,7 @@
 		</property>
 	</properties>
 	<sections>		<section>
-			<title>Page - Filter Properties</title>
+			<title>Page - Search Results Properties</title>
 			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
@@ -59,7 +59,7 @@
 					</constraints>
 				</field>
 				<field>
-					<type>input</type>
+					<type>internal-name</type>
 					<id>internal-name</id>
 					<iceId></iceId>
 					<title>Internal Name</title>
@@ -79,18 +79,13 @@
 						</property>
 					</properties>
 					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[true]]></value>
-							<type>boolean</type>
-						</constraint>
 					</constraints>
 				</field>
 				<field>
-					<type>page-nav-order</type>
-					<id>placeInNav</id>
+					<type>checkbox</type>
+					<id>disablePage_b</id>
 					<iceId></iceId>
-					<title>Place in Nav</title>
+					<title>Disable Page</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -111,9 +106,9 @@
 				</field>
 				<field>
 					<type>input</type>
-					<id>navLabel</id>
+					<id>title_s</id>
 					<iceId></iceId>
-					<title>Nav Label</title>
+					<title>Title</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -128,6 +123,21 @@
 							<value>50</value>
 							<type>int</type>
 						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>escapeContent</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
@@ -135,10 +145,273 @@
 							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value><![CDATA[]]></value>
+							<type>string</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>node-selector</type>
+					<id>header_o</id>
+					<iceId></iceId>
+					<title>Header</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>minSize</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxSize</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>componentsHeader</value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>allowDuplicates</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>node-selector</type>
+					<id>leftRail_o</id>
+					<iceId></iceId>
+					<title>Left Rail</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>minSize</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxSize</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>componentsLeftRail</value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>allowDuplicates</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>node-selector</type>
+					<id>leftRail_o</id>
+					<iceId></iceId>
+					<title>Left Rail</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>minSize</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxSize</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>categories</value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>allowDuplicates</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
 					</constraints>
 				</field>
 			</fields>
 		</section>
 	</sections>
-	<datasources>	</datasources>
+	<datasources>				<datasource>
+					<type>shared-content</type>
+					<id>componentsHeader</id>
+					<title>Components Header</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>repoPath</name>
+							<value>/site/components/headers/</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>browsePath</name>
+							<value></value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>type</name>
+							<value></value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>shared-content</type>
+					<id>componentsLeftRail</id>
+					<title>Components Left Rail</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>repoPath</name>
+							<value>/site/components/left-rails/</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>browsePath</name>
+							<value></value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>type</name>
+							<value></value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>shared-content</type>
+					<id>categories</id>
+					<title>Categories</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>repoPath</name>
+							<value>/site/taxonomy</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>browsePath</name>
+							<value>/site/taxonomy</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>type</name>
+							<value>/taxonomy</value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+	</datasources>
 </form>
