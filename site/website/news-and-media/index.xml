@@ -8,7 +8,7 @@
 	<objectId>7c247eb7-f7e1-4b57-ba88-47c8f54c2a8a</objectId>
 	<file-name>index.xml</file-name>
 	<folder-name>news-and-media</folder-name>
-	<internal-name>news-and-media</internal-name>
+	<internal-name>News and Media</internal-name>
 	<title_t>News and Media</title_t>
 	<header/>
 	<left-rail_o item-list="true">	<item>	<key>/site/components/left-rails/left-rail-with-latest-articles.xml</key>
@@ -18,8 +18,8 @@
 	</item></left-rail_o>
 	<createdDate>2017-3-23T23:47:15.000Z</createdDate>
 	<createdDate_dt>2017-3-23T23:47:15.000Z</createdDate_dt>
-	<lastModifiedDate>2020-12-18T08:54:31.126Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-18T08:54:31.126Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-18T08:55:27.147Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-18T08:55:27.147Z</lastModifiedDate_dt>
 	<disabled>false</disabled>
 	<categories_o item-list="true">	<item datasource="categories">	<key>/site/taxonomy/categories.xml</key>
 	<value>Categories</value>
