@@ -93,7 +93,6 @@
                   },
                   mounted () {
                     
-                      document.cookie="crafterSite=test;";
                       axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
                           method: 'post',
@@ -119,7 +118,6 @@
                         }).then((result) => {
                           console.log(result.data)
                           this.movies = result.data.data.page_page__video.items
-                          document.cookie="crafterSite=vue-test;";
                         });
                         
                   }
