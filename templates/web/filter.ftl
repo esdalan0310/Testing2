@@ -20,31 +20,7 @@
 	<body>
 		<!-- Wrapper -->
 		
-			<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-
-							<!-- Header -->
-							<@renderComponent component=contentModel.header_o.item />
-
-							<!-- Section -->
-								<section>
-									<header class="main">
-										<h1>Search Results</h1>
-										<h3>Refine by</h3>
-									</header>
-									<form id="categories">
-										<div class="row uniform">
-									
-										</div>
-									</form>
-									<hr class="major"/>
-									<div id="search-results">
-									
-									
-									</div>
 							
 									    
                                         
@@ -65,10 +41,7 @@
                                             </ul>
                                         </div>
 
-								</section>
-
-						</div>
-					</div>
+							
 
 					<!-- Left Rail -->
 					<@renderComponent component=contentModel.left\-rail_o.item />
