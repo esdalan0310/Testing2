@@ -48,7 +48,7 @@
 									<div id="app">
 									    {{items}}
 									    <ul id="example-1">
-                                          <li v-for="item in items" :key="item.message">
+                                          <li v-for="item in items" :key="item.title_t">
                                             <div>
                                                 <span>{{ item.title_t }}</span><br>
                                                 <span>{{ item.subject_s }}</span><br>
