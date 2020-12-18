@@ -80,6 +80,53 @@
 			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
 			<script src="/static-assets/js/search.js"></script>
+			
+			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            new Vue({
+                  el: '#app',
+                  data () {
+                    return {
+                      movies: null
+                    }
+                  },
+                  mounted () {
+                    
+                      document.cookie="crafterSite=test;";
+                      axios({
+                          url: 'http://18.163.110.47:8080/api/1/site/graphql',
+                          method: 'post',
+                          data: {
+                              query: `query MyQuery {
+                                     page_pagenewsmedia {
+                                        items {
+                                          title_t
+                                          subject_s
+                                          author_s
+                                          content_t
+                                          image_s
+                                          date_dt(filter: {gt: "2020-11-15T06:40:33Z", lte: "2020-12-31T06:40:33Z"})
+                                        }
+                                      }
+                                    }`
+                              
+                          }, 
+                            headers: {
+                              'Content-Type': 'application/json'
+                            },
+                
+                        }).then((result) => {
+                          console.log(result.data)
+                          this.movies = result.data.data.page_page__video.items
+                          document.cookie="crafterSite=vue-test;";
+                        });
+                        
+                  }
+                })
+        </script>
+			
+			
 
 		<@studio.toolSupport/>
 	</body>
