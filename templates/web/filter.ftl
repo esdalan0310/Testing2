@@ -45,9 +45,8 @@
 									
 									
 									</div>
-									<div id="app">
-									    {{items}}
-									    <ul>
+							
+									    <ul id="app">
                                           <li v-for="item in items" :key="item.title_t">
                                             <div>
                                                 <span>{{ item.title_t }}</span><br>
@@ -60,8 +59,7 @@
                                             
                                           </li>
                                         </ul>
-									</div>
-									
+
 								</section>
 
 						</div>
