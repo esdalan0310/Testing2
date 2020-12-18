@@ -105,8 +105,8 @@
                             },
                 
                         }).then((result) => {
-                          console.log(result.data.data)
-                          this.items = result.data.data
+                          console.log(result.data.data.page_pagenewsmedia)
+                          this.items = result.data.data.page_pagenewsmedia
                         });
                         
                   }
