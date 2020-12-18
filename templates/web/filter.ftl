@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<!-- Wrapper -->
-		<div id="app">{{items}}</div>
+		
 			<div id="wrapper">
 
 				<!-- Main -->
@@ -42,6 +42,8 @@
 									</form>
 									<hr class="major"/>
 									<div id="search-results">
+									
+									<div id="app">{{items}}</div>
 									</div>
 									
 								</section>
