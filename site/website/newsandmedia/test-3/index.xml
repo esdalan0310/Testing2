@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/pagenewsmedia</content-type>
+	<display-template>/templates/web/news-and-media.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>ffb4</objectGroupId>
+	<objectId>ffb48ce7-bc3d-a623-5450-2278a6a05efc</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test-3</folder-name>
+	<internal-name>test-3</internal-name>
+	<navLabel>test-3</navLabel>
+	<title_t>test-3</title_t>
+	<meta_keywords_t>SEO</meta_keywords_t>
+	<subject_s>test-3</subject_s>
+	<author_s>test-3</author_s>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>3000</orderDefault_f>
+	<years_o/>
+	<content_t>test-3</content_t>
+	<image_s/>
+	<date_dt>2021-01-01T08:02:04.000Z</date_dt>
+	<createdDate>2020-12-21T08:02:04.396Z</createdDate>
+	<createdDate_dt>2020-12-21T08:02:04.396Z</createdDate_dt>
+	<lastModifiedDate>2020-12-21T08:02:04.396Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-21T08:02:04.396Z</lastModifiedDate_dt>
+	<date_dt_tz>EST5EDT</date_dt_tz>
+</page>
