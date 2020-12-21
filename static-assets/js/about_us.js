@@ -72,7 +72,7 @@ var doGraphql = function (yearFilterQuery) {
       success: function(results) {
         console.log(results)
         if(results){
-            // results = results.data.page_article.items
+            results = results.data.page_pagenewsmedia.items
             console.log(results);
             var context = { resultss: results };
             for(var i=0; i < context.resultss.length; i++) {
