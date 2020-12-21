@@ -121,7 +121,7 @@
 		<script id="search-results-template-2" type="text/x-handlebars-template">
 			{{#each resultss}}
 			<div>
-				<h4><a href="{{localId}}">{{subject_t}}</a></h4>
+				<h4><a href="{{localId}}">{{subject_s}}</a></h4>
 				{{#if image_s}}
 					<image src="{{{image_s}}}" style="width: 30%; height: auto;" />
 				{{/if}}
@@ -129,8 +129,8 @@
 				{{#if date_dt}}
 					<h3>{{{date_dt}}}</h3>
 				{{/if}}
-				{{#if summary_t}}
-				    <p>{{{summary_t}}}</p>
+				{{#if title_t}}
+				    <p>{{{title_t}}}</p>
 
 				{{/if}}
 			</div>
