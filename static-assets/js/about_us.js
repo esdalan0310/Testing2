@@ -70,16 +70,16 @@ var doGraphql = function (yearFilterQuery) {
          query: yearFilterQuery
       }),
       success: function(results) {
-        // console.log(results)
+        console.log(results)
         if(results){
             results = results.data.page_article.items
-            // console.log(results);
+            console.log(results);
             var context = { resultss: results };
             for(var i=0; i < context.resultss.length; i++) {
                 context.resultss[i].localId = context.resultss[i].localId.replace('/site/website','').replace('/index.xml','');
                 // console.log(context.resultss[i].localId)
             }
-            // console.log(results);
+            console.log(results);
             var html = template2(context);
             $("#testDiv").html(html);
         }else{
