@@ -9,12 +9,12 @@
 	<objectId>d6b0df51-c2d8-9366-c7e6-67615c8f2919</objectId>
 	<internal-name>test01</internal-name>
 	<navLabel>test01</navLabel>
-	<placeInNav>false</placeInNav>
-	<orderDefault_f>-1</orderDefault_f>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>1000</orderDefault_f>
 	<file-name>index.xml</file-name>
 	<folder-name>test01</folder-name>
 	<createdDate>2020-12-22T07:29:29.524Z</createdDate>
 	<createdDate_dt>2020-12-22T07:29:29.524Z</createdDate_dt>
-	<lastModifiedDate>2020-12-22T07:29:29.524Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-22T07:29:29.524Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-22T07:32:18.668Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-22T07:32:18.668Z</lastModifiedDate_dt>
 </page>
