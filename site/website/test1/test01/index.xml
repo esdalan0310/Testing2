@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/pagedemo1</content-type>
+	<content-type>/page/pagedemo1</content-type>
+	<display-template/>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>d6b0</objectGroupId>
+	<objectId>d6b0df51-c2d8-9366-c7e6-67615c8f2919</objectId>
+	<internal-name>test01</internal-name>
+	<navLabel>test01</navLabel>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<file-name>index.xml</file-name>
+	<folder-name>test01</folder-name>
+	<createdDate>2020-12-22T07:29:29.524Z</createdDate>
+	<createdDate_dt>2020-12-22T07:29:29.524Z</createdDate_dt>
+	<lastModifiedDate>2020-12-22T07:29:29.524Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-22T07:29:29.524Z</lastModifiedDate_dt>
+</page>
