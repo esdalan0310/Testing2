@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/aboutus</content-type>
+	<display-template>/templates/web/about_us.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>ee0e</objectGroupId>
+	<objectId>ee0ed50c-af82-627f-8c63-80da02317e3d</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test-cn</folder-name>
+	<internal-name>test-cn</internal-name>
+	<navLabel>test-cn</navLabel>
+	<pageTitle_s>test-cn</pageTitle_s>
+	<meta_description_tag_s>test-cn</meta_description_tag_s>
+	<heroImage_1_s/>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>0</orderDefault_f>
+	<header_o item-list="true"/>
+	<left-rail_o item-list="true"/>
+	<years_o item-list="true">	<item datasource="years">	<key>/site/taxonomy/years.xml</key>
+	<value>years</value>
+	<include>/site/taxonomy/years.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></years_o>
+	<contact_us_o item-list="true">	<item datasource="contact_us" inline="true">	<key>09ca7d45-7ebd-7558-22df-f0bf7f0fac3f</key>
+	<value>test-cn</value>
+<component id="09ca7d45-7ebd-7558-22df-f0bf7f0fac3f">
+	<content-type>/component/contactus</content-type>
+	<display-template>/templates/web/contact_us.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>09ca</objectGroupId>
+	<objectId>09ca7d45-7ebd-7558-22df-f0bf7f0fac3f</objectId>
+	<contactGroup_o item-list="true">	<item>	<title_s>test-cn</title_s>
+	<input_s>test-cn</input_s>
+	</item></contactGroup_o>
+	<file-name>09ca7d45-7ebd-7558-22df-f0bf7f0fac3f.xml</file-name>
+	<disabled>false</disabled>
+	<internal-name>test-cn</internal-name>
+	<title_s>test-cn</title_s>
+	<title_2_s>test-cn</title_2_s>
+	<createdDate>2020-12-23T03:03:52.867Z</createdDate>
+	<createdDate_dt>2020-12-23T03:03:52.867Z</createdDate_dt>
+	<lastModifiedDate>2020-12-23T03:03:52.867Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-23T03:03:52.867Z</lastModifiedDate_dt>
+</component>
+	</item></contact_us_o>
+	<hero_title_1_html>&lt;p&gt;test-cn&lt;/p&gt;</hero_title_1_html>
+	<hero_text_1_html>&lt;p&gt;test-cn&lt;/p&gt;</hero_text_1_html>
+	<hero_title_2_html>&lt;p&gt;test-cn&lt;/p&gt;</hero_title_2_html>
+	<hero_text_2_html>&lt;p&gt;test-cn&lt;/p&gt;</hero_text_2_html>
+	<createdDate>2020-12-23T03:03:23.895Z</createdDate>
+	<createdDate_dt>2020-12-23T03:03:23.895Z</createdDate_dt>
+	<lastModifiedDate>2020-12-23T03:03:23.895Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-23T03:03:23.895Z</lastModifiedDate_dt>
+</page>
