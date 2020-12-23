@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/aboutus</content-type>
+	<display-template>/templates/web/about_us.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>84de</objectGroupId>
+	<objectId>84de1639-722d-7b32-b609-7c37d616222c</objectId>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>15000</orderDefault_f>
+	<heroImage_1_s/>
+	<internal-name>123</internal-name>
+	<navLabel>123</navLabel>
+	<pageTitle_s>123</pageTitle_s>
+	<meta_description_tag_s>2133333</meta_description_tag_s>
+	<file-name>index.xml</file-name>
+	<folder-name>123</folder-name>
+	<header_o item-list="true"/>
+	<left-rail_o item-list="true"/>
+	<years_o item-list="true">	<item datasource="years">	<key>/site/taxonomy/years.xml</key>
+	<value>years</value>
+	<include>/site/taxonomy/years.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></years_o>
+	<contact_us_o item-list="true">	<item datasource="contact_us" inline="true">	<key>a12396ed-919c-7026-3368-a0b0c7f5b4e7</key>
+	<value>1231</value>
+<component id="a12396ed-919c-7026-3368-a0b0c7f5b4e7">
+	<content-type>/component/contactus</content-type>
+	<display-template>/templates/web/contact_us.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>a123</objectGroupId>
+	<objectId>a12396ed-919c-7026-3368-a0b0c7f5b4e7</objectId>
+	<contactGroup_o item-list="true">	<item>	<title_s/>
+	<input_s/>
+	</item></contactGroup_o>
+	<file-name>a12396ed-919c-7026-3368-a0b0c7f5b4e7.xml</file-name>
+	<internal-name>1231</internal-name>
+	<title_s>123</title_s>
+	<title_2_s/>
+	<disabled>false</disabled>
+	<createdDate>2020-12-23T06:54:25.355Z</createdDate>
+	<createdDate_dt>2020-12-23T06:54:25.355Z</createdDate_dt>
+	<lastModifiedDate>2020-12-23T06:54:25.355Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-23T06:54:25.355Z</lastModifiedDate_dt>
+</component>
+	</item></contact_us_o>
+	<hero_title_1_html>&lt;p&gt;123&lt;/p&gt;</hero_title_1_html>
+	<hero_text_1_html>&lt;p&gt;123&lt;/p&gt;</hero_text_1_html>
+	<hero_title_2_html>&lt;p&gt;123&lt;/p&gt;</hero_title_2_html>
+	<hero_text_2_html>&lt;p&gt;213&lt;/p&gt;</hero_text_2_html>
+	<createdDate>2020-12-23T06:53:27.791Z</createdDate>
+	<createdDate_dt>2020-12-23T06:53:27.791Z</createdDate_dt>
+	<lastModifiedDate>2020-12-23T06:53:27.791Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-23T06:53:27.791Z</lastModifiedDate_dt>
+</page>
