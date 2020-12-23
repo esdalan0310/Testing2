@@ -32,12 +32,12 @@
     <!--</targeting>-->
     
      <!--CORS headers for REST API -->
-  <!--<cors>-->
-  <!--  <enable>true</enable>-->
-  <!--  <accessControlMaxAge>3600</accessControlMaxAge>-->
-  <!--  <accessControlAllowOrigin>http://dscms2.zignup.com:9080/</accessControlAllowOrigin>-->
-  <!--  <accessControlAllowMethods>GET\, POST\, PUT</accessControlAllowMethods>-->
-  <!--  <accessControlAllowHeaders>Content-Type</accessControlAllowHeaders>-->
-  <!--  <accessControlAllowCredentials>true</accessControlAllowCredentials>-->
-  <!--</cors>-->
+  <cors>
+    <enable>true</enable>
+    <accessControlMaxAge>3600</accessControlMaxAge>
+    <accessControlAllowOrigin>http://dscms2.zignup.com:9080/</accessControlAllowOrigin>
+    <accessControlAllowMethods>GET\, POST\, PUT</accessControlAllowMethods>
+    <accessControlAllowHeaders>Content-Type</accessControlAllowHeaders>
+    <accessControlAllowCredentials>true</accessControlAllowCredentials>
+  </cors>
 </site>    
