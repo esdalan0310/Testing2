@@ -33,9 +33,9 @@
     
      <!--CORS headers for REST API -->
   <cors>
-    <enable>false</enable>
+    <enable>true</enable>
     <accessControlMaxAge>3600</accessControlMaxAge>
-    <accessControlAllowOrigin>*</accessControlAllowOrigin>
+    <accessControlAllowOrigin>http://18.166.53.73:9080/</accessControlAllowOrigin>
     <accessControlAllowMethods>GET\, POST\, PUT</accessControlAllowMethods>
     <accessControlAllowHeaders>Content-Type</accessControlAllowHeaders>
     <accessControlAllowCredentials>true</accessControlAllowCredentials>
