@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/aboutus</content-type>
+	<display-template>/templates/web/about_us.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>8e6b</objectGroupId>
+	<objectId>8e6b88b9-1f76-5513-7aa9-5a7a204488b4</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test-1</folder-name>
+	<internal-name>test-1</internal-name>
+	<navLabel>test-1</navLabel>
+	<pageTitle_s>test</pageTitle_s>
+	<meta_description_tag_s/>
+	<header_o item-list="true"/>
+	<left-rail_o item-list="true"/>
+	<years_o item-list="true">	<item datasource="years">	<key>/site/taxonomy/years.xml</key>
+	<value>years</value>
+	<include>/site/taxonomy/years.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></years_o>
+	<contact_us_o item-list="true">	<item datasource="contact_us" inline="true">	<key>e0d318c2-0f1c-947b-cf0f-09aed7df8cd6</key>
+	<value>test-1</value>
+<component id="e0d318c2-0f1c-947b-cf0f-09aed7df8cd6">
+	<content-type>/component/contactus</content-type>
+	<display-template>/templates/web/contact_us.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>e0d3</objectGroupId>
+	<objectId>e0d318c2-0f1c-947b-cf0f-09aed7df8cd6</objectId>
+	<contactGroup_o item-list="true">	<item>	<title_s>test-1</title_s>
+	<input_s>test-1</input_s>
+	</item></contactGroup_o>
+	<file-name>e0d318c2-0f1c-947b-cf0f-09aed7df8cd6.xml</file-name>
+	<internal-name>test-1</internal-name>
+	<title_s>test-1</title_s>
+	<title_2_s>test-1</title_2_s>
+	<disabled>false</disabled>
+	<socialMedia_o item-list="true">	<item>	<media_link_s>test-1</media_link_s>
+	<media_icon_s/>
+	</item></socialMedia_o>
+	<createdDate>2020-12-23T02:31:12.305Z</createdDate>
+	<createdDate_dt>2020-12-23T02:31:12.305Z</createdDate_dt>
+	<lastModifiedDate>2020-12-23T02:31:12.305Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-23T02:31:12.305Z</lastModifiedDate_dt>
+</component>
+	</item></contact_us_o>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>0</orderDefault_f>
+	<heroImage_1_s/>
+	<hero_title_1_html>&lt;p&gt;123&lt;/p&gt;</hero_title_1_html>
+	<hero_text_1_html>&lt;p&gt;123&lt;/p&gt;</hero_text_1_html>
+	<hero_title_2_html>&lt;p&gt;1232&lt;/p&gt;</hero_title_2_html>
+	<hero_text_2_html>&lt;p&gt;123&lt;/p&gt;</hero_text_2_html>
+	<createdDate>2020-12-23T02:29:59.455Z</createdDate>
+	<createdDate_dt>2020-12-23T02:29:59.455Z</createdDate_dt>
+	<lastModifiedDate>2020-12-23T02:29:59.455Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-23T02:29:59.455Z</lastModifiedDate_dt>
+</page>
