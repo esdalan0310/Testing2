@@ -129,7 +129,7 @@ class SearchHelper {
             //added by alanlee 11-12-2020
             article.image = doc.image_s
             //end added by alanlee 11-12-2020
-            article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)
+            article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId) + "?crafterSite=demo"
             article.category = doc.categories_o.item.value_smv
             article.date = doc.date_dt
 
@@ -163,7 +163,7 @@ class SearchHelper {
         def article = [:]
             article.title = doc.subject_t
             article.summary = doc.summary_t
-            article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)
+            article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId) + ?crafterSite=demo
             //added by alanlee 11-12-2020
             article.image = doc.image_s
             //ended added by alanlee 11-12-2020
