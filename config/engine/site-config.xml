@@ -33,7 +33,7 @@
     
     <!-- CORS headers for REST API -->
   <cors>
-    <enable>false</enable>
+    <enable>true</enable>
     <accessControlMaxAge>3600</accessControlMaxAge>
     <accessControlAllowOrigin>*</accessControlAllowOrigin>
     <accessControlAllowMethods>GET\, POST\, PUT</accessControlAllowMethods>
