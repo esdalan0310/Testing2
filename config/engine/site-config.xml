@@ -35,9 +35,9 @@
   <cors>
     <enable>false</enable>
     <accessControlMaxAge>3600</accessControlMaxAge>
-    <accessControlAllowOrigin>*,http://dscms2.zignup.com:9080/</accessControlAllowOrigin>
-    <accessControlAllowMethods>GET\, POST\, PUT</accessControlAllowMethods>
-    <accessControlAllowHeaders>Content-Type</accessControlAllowHeaders>
+    <accessControlAllowOrigin>*/</accessControlAllowOrigin>
+    <accessControlAllowMethods>*</accessControlAllowMethods>
+    <accessControlAllowHeaders>*</accessControlAllowHeaders>
     <accessControlAllowCredentials>true</accessControlAllowCredentials>
   </cors>
 </site>    
