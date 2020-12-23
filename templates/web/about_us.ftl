@@ -8,17 +8,17 @@
 	<title>${contentModel.pageTitle_s}</title>
 		<!--[if lte IE 8]><script src="/static-assets/js/ie/html5shiv.js"></script><![endif]-->
 		<!--<link rel="stylesheet" href="/static-assets/css/main.css?v=${siteContext.siteName}" />-->
-				<link rel="stylesheet" href="/static-assets/css/main.css?crafterSite=${siteContext.siteName}" />
+				<link rel="stylesheet" href="/static-assets/css/main.css" />
 		<!--[if lte IE 9]>< link rel="stylesheet" href="/static-assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="/static-assets/css/ie8.css" /><![endif]-->
 		
-	<link rel="stylesheet" href="/static-assets/css/jquery-ui.min.css?crafterSite=${siteContext.siteName}"" />
-	<link rel="stylesheet" type="text/css" href="/static-assets/css/bootstrap.css?crafterSite=${siteContext.siteName}"">
-	<link rel="stylesheet" type="text/css" href="/static-assets/css/icons.css?crafterSite=${siteContext.siteName}"">
-  	<link rel="stylesheet" type="text/css" href="/static-assets/css/main.css?crafterSite=${siteContext.siteName}"">
-  	  	<link rel="stylesheet" type="text/css" href="/static-assets/css/demo/main.css?crafterSite=${siteContext.siteName}"">
-			<script src="/static-assets/js/jquery.min.js?crafterSite=${siteContext.siteName}""></script>
-			<script src="/static-assets/js/jquery-ui.min.js?crafterSite=${siteContext.siteName}""></script>
+	<link rel="stylesheet" href="/static-assets/css/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="/static-assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/static-assets/css/icons.css">
+  	<link rel="stylesheet" type="text/css" href="/static-assets/css/main.css">
+  	  	<link rel="stylesheet" type="text/css" href="/static-assets/css/demo/main.css">
+			<script src="/static-assets/js/jquery.min.js"></script>
+			<script src="/static-assets/js/jquery-ui.min.js"></script>
 </head>
 	<body>
 		<!-- Wrapper -->
@@ -143,15 +143,15 @@
 
 		<!-- Scripts -->
 
-			<script src="/static-assets/js/skel.min.js?crafterSite=${siteContext.siteName}""></script>
-			<script src="/static-assets/js/util.js?crafterSite=${siteContext.siteName}""></script>
+			<script src="/static-assets/js/skel.min.js"></script>
+			<script src="/static-assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/static-assets/js/main.js?crafterSite=${siteContext.siteName}""></script>
+			<script src="/static-assets/js/main.js"></script>
 			
 			<!--search related-->
-		    <script src="/static-assets/js/handlebars.min-latest.js?crafterSite=${siteContext.siteName}""></script>
+		    <script src="/static-assets/js/handlebars.min-latest.js"></script>
 			<!--<script src="/static-assets/js/search.js"></script>-->
-			<script src="/static-assets/js/about_us.js?crafterSite=${siteContext.siteName}""></script>
+			<script src="/static-assets/js/about_us.js"></script>
             <!--end search related-->
 		<@studio.toolSupport/>
 	</body>
