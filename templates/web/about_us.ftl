@@ -143,15 +143,15 @@
 
 		<!-- Scripts -->
 
-			<script src="/static-assets/js/skel.min.js"></script>
-			<script src="/static-assets/js/util.js"></script>
+			<script src="/static-assets/js/skel.min.js?crafterSite=${siteContext.siteName}""></script>
+			<script src="/static-assets/js/util.js?crafterSite=${siteContext.siteName}""></script>
 			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
+			<script src="/static-assets/js/main.js?crafterSite=${siteContext.siteName}""></script>
 			
 			<!--search related-->
-		    <script src="/static-assets/js/handlebars.min-latest.js"></script>
+		    <script src="/static-assets/js/handlebars.min-latest.js?crafterSite=${siteContext.siteName}""></script>
 			<!--<script src="/static-assets/js/search.js"></script>-->
-			<script src="/static-assets/js/about_us.js?v=${siteContext.siteName}"></script>
+			<script src="/static-assets/js/about_us.js?crafterSite=${siteContext.siteName}""></script>
             <!--end search related-->
 		<@studio.toolSupport/>
 	</body>
