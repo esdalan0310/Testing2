@@ -163,7 +163,7 @@ class SearchHelper {
         def article = [:]
             article.title = doc.subject_t
             article.summary = doc.summary_t
-            article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId) + ?crafterSite=demo
+            article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)
             //added by alanlee 11-12-2020
             article.image = doc.image_s
             //ended added by alanlee 11-12-2020
