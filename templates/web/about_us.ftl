@@ -150,7 +150,7 @@
 			<!--search related-->
 		    <script src="/static-assets/js/handlebars.min-latest.js"></script>
 			<!--<script src="/static-assets/js/search.js"></script>-->
-			<script src="/static-assets/js/about_us.js"></script>
+			<script src="/static-assets/js/about_us.js?v=${siteContext.siteName}"></script>
             <!--end search related-->
 		<@studio.toolSupport/>
 	</body>
