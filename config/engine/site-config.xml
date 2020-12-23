@@ -21,23 +21,23 @@
 
 <site>
     <version>2</version>
-    <targeting>
-        <enabled>true</enabled>
-        <rootFolders>/site/website</rootFolders>
-        <excludePatterns>/site/website/index\.xml</excludePatterns>
-        <availableTargetIds>en,zh_cn,zh_tw</availableTargetIds>
-        <fallbackTargetId>en</fallbackTargetId>
-        <mergeFolders>true</mergeFolders>
-        <redirectToTargetedUrl>false</redirectToTargetedUrl>
-    </targeting>
+  <!--  <targeting>-->
+  <!--      <enabled>true</enabled>-->
+  <!--      <rootFolders>/site/website</rootFolders>-->
+  <!--      <excludePatterns>/site/website/index\.xml</excludePatterns>-->
+  <!--      <availableTargetIds>en,zh_cn,zh_tw</availableTargetIds>-->
+  <!--      <fallbackTargetId>en</fallbackTargetId>-->
+  <!--      <mergeFolders>true</mergeFolders>-->
+  <!--      <redirectToTargetedUrl>false</redirectToTargetedUrl>-->
+  <!--  </targeting>-->
     
     <!-- CORS headers for REST API -->
-  <cors>
-    <enable>true</enable>
-    <accessControlMaxAge>3600</accessControlMaxAge>
-    <accessControlAllowOrigin>*</accessControlAllowOrigin>
-    <accessControlAllowMethods>GET\, POST\, PUT</accessControlAllowMethods>
-    <accessControlAllowHeaders>Content-Type</accessControlAllowHeaders>
-    <accessControlAllowCredentials>true</accessControlAllowCredentials>
-  </cors>
+  <!--<cors>-->
+  <!--  <enable>true</enable>-->
+  <!--  <accessControlMaxAge>3600</accessControlMaxAge>-->
+  <!--  <accessControlAllowOrigin>*</accessControlAllowOrigin>-->
+  <!--  <accessControlAllowMethods>GET\, POST\, PUT</accessControlAllowMethods>-->
+  <!--  <accessControlAllowHeaders>Content-Type</accessControlAllowHeaders>-->
+  <!--  <accessControlAllowCredentials>true</accessControlAllowCredentials>-->
+  <!--</cors>-->
 </site>    
