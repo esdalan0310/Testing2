@@ -19,6 +19,8 @@
 	</head>
     <body>
 
+
+    <div id="wrapper">
         <div id="app">
             <ul id="example-1">
               <li v-for="movie in items" :movie="movie.title_t">
@@ -35,6 +37,7 @@
               </li>
             </ul>
         </div>
+    </div>
         
         
         
