@@ -102,37 +102,8 @@
                   el: '#app',
                   data () {
                     return {
-                      items: null
+                      items: this.filter(null)
                     }
-                  },
-                  mounted () {
-                      axios({
-                          url: 'http://18.163.110.47:8080/api/1/site/graphql',
-                          method: 'post',
-                          data: {
-                              query: `query MyQuery {
-                                                     page_pagenewsmedia {
-                                                        items {
-                                                          title_t
-                                                          subject_s
-                                                          author_s
-                                                          content_t
-                                                          image_s
-                                                          date_dt
-                                                        }
-                                                      }
-                                                    }`
-                              
-                          }, 
-                            headers: {
-                              'Content-Type': 'application/json'
-                            },
-                
-                        }).then((result) => {
-                          console.log(result.data.data.page_pagenewsmedia)
-                          this.items = result.data.data.page_pagenewsmedia.items
-                        });
-                        
                   },
                    methods: {
                     prompt() {
