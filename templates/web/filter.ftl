@@ -44,7 +44,7 @@
 							    
 							</div>
 							 <div id="app">
-							 <button type="button" @click="filter()">All</button>
+							 <button type="button" @click="filter('1997', '2047')">All</button>
 							 <button type="button" @click="filter('2017', '2018')">2017</button>
 							 <button type="button" @click="filter('2018', '2019')">2018</button>
 							 <button type="button" @click="filter('2019', '2020')">2019</button>
