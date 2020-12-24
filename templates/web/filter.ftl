@@ -56,7 +56,7 @@
                                             <p>{{ item.subject_s }}</p>
                                             <p>{{ item.author_s }}</p>
                                             <p>{{ item.content_t }}</p>
-                                            <img v-bind:src="item.image_s"  alt=image" width="300" height="150"/> 
+                                            <button v-on:click="getPath(item.objectId)"><img v-bind:src="item.image_s"  alt=image" width="300" height="150"/> </button>
                                             <div>
                                                 <span>{{item.date_dt}}</span>
                                             </div>
