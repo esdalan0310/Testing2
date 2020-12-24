@@ -114,7 +114,21 @@
                                 console.log(response.data.id)
                                 axios
                                   .get('http://18.163.110.47:8080/api/1/content_store/tree.json?contextId='+ response.data.id+'&url=/site/website/newsandmedia&depth=1')
-                                  .then(response => (console.log(response.data.children)))
+                                  .then(response => 
+                                    {
+                                        console.log(response.data.children)
+                                        var items = response.data.children
+                                        var result = ""
+                                        var i;
+                                            for (i = 0; i < items.length; i++) {
+                                              if(items[i].name == title) {
+                                                  result = items[i].url
+                                              }
+                                            }
+                                            console.log(result)
+                                            return result
+                                    }
+                                  )
                             }
                           )
                           
@@ -152,7 +166,7 @@
                         }).then((result) => {
                           console.log(result.data.data.page_pagenewsmedia)
                           this.items = result.data.data.page_pagenewsmedia.items
-                          this.getPath()
+                          this.getPath("abc")
                         });
                     }
                   }
