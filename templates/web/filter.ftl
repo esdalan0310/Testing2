@@ -51,7 +51,7 @@
                                             <p>{{ item.subject_s }}</p>
                                             <p>{{ item.author_s }}</p>
                                             <p>{{ item.content_t }}</p>
-                                            
+                                            <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
                                             <div>
                                                 <span>{{item.date_dt}}</span>
                                             </div>
