@@ -113,7 +113,7 @@
                             {
                                 console.log(response.data.id)
                                 axios
-                                  .get('http://18.163.110.47:8080/api/1/content_store/tree.json?contextId='+ response.data.id+'&url=/site/website/newsandmedia&depth=1')
+                                  .get('http://18.163.110.47:8080/api/1/content_store/tree.json?contextId='+ response.data.id+'&url=/site/website/newsandmedia&depth=2')
                                   .then(response => 
                                     {
                                         console.log(response.data.children)
@@ -121,7 +121,7 @@
                                         var result = ""
                                         var i;
                                             for (i = 0; i < items.length; i++) {
-                                              if(items[i].name == title) {
+                                              if(items[i].descriptorDom.component.objectId == title) {
                                                   result = items[i].url
                                               }
                                             }
