@@ -48,7 +48,14 @@
 							
 									    
                                         
-                                        <div id="app">
+                                       
+
+								</section>
+
+						</div>
+					</div>
+					
+					 <div id="app">
                                             <ul id="example-1">
                                               <li v-for="movie in items" :movie="movie.title_t">
                                                     <div :key="movie.title_t">
@@ -64,11 +71,6 @@
                                               </li>
                                             </ul>
                                         </div>
-
-								</section>
-
-						</div>
-					</div>
 
 					<!-- Left Rail -->
 					<@renderComponent component=contentModel.left\-rail_o.item />
