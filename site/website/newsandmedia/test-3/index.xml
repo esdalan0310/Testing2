@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <page>
+	<savedAsDraft>true</savedAsDraft>
 	<content-type>/page/pagenewsmedia</content-type>
 	<display-template>/templates/web/news-and-media.ftl</display-template>
 	<no-template-required/>
@@ -19,10 +20,10 @@
 	<years_o/>
 	<content_t>test-3</content_t>
 	<image_s>/static-assets/item/images/2020/12/24/2019.jpg</image_s>
-	<date_dt>2021-01-01T08:02:04.000Z</date_dt>
+	<date_dt>2018-12-25T08:02:04.000Z</date_dt>
 	<createdDate>2020-12-21T08:02:04.396Z</createdDate>
 	<createdDate_dt>2020-12-21T08:02:04.396Z</createdDate_dt>
-	<lastModifiedDate>2020-12-24T03:39:57.579Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-24T03:39:57.579Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-12-24T03:40:35.932Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-24T03:40:35.932Z</lastModifiedDate_dt>
 	<date_dt_tz>EST5EDT</date_dt_tz>
 </page>
