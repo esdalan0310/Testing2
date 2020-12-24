@@ -139,6 +139,8 @@
                       alert("按鈕被按了！監聽到 click 事件");
                     },
                     filter(start, end) {
+                    console.log(start)
+                    console.log(end)
                         axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
                           method: 'post',
