@@ -44,6 +44,7 @@
 							    
 							</div>
 							 <div id="app">
+							 <button type="button" @click="prompt">All</button>
 							 <button type="button" @click="prompt">2017</button>
 							 <button type="button" @click="prompt">2018</button>
 							 <button type="button" @click="prompt">2019</button>
