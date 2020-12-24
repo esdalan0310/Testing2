@@ -55,14 +55,7 @@
 						</div>
 					</div>
 					
-					
-
-					<!-- Left Rail -->
-					<@renderComponent component=contentModel.left\-rail_o.item />
-
-			</div>
-			
-			 <div id="app">
+					 <div id="app">
                                             <ul id="example-1">
                                               <li v-for="movie in items" :movie="movie.title_t">
                                                     <div :key="movie.title_t">
@@ -79,25 +72,15 @@
                                             </ul>
                                         </div>
 
-			<!-- Handlebar Templates -->
-			<script id="search-results-template" type="text/x-handlebars-template">
-				{{#each results}}
-				<div>
-					<h4><a href="{{url}}">{{items}}</a></h4>
-					{{#if highlight}}
-					<p>{{{highlight}}}</p>
-					{{/if}}
-				</div>
-				{{else}}
-				<p>No results found</p>
-				{{/each}}
-			</script>
 
-		<!-- Scripts -->
-			
+			</div>
+
+		
+
 			
 			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script>
             new Vue({
                   el: '#app',
@@ -139,14 +122,7 @@
                 })
         </script>
         
-        <script src="/static-assets/js/jquery.min.js"></script>
-			<script src="/static-assets/js/jquery-ui.min.js"></script>
-			<script src="/static-assets/js/skel.min.js"></script>
-			<script src="/static-assets/js/handlebars.min-latest.js"></script>
-			<script src="/static-assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
-			<script src="/static-assets/js/search.js"></script>
+       
 			
 			
 
