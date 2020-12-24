@@ -131,7 +131,7 @@
                                               }
                                             }
                                             console.log(result)
-                                            return result
+                                            window.location.href = result;
                                     }
                                   )
                             }
