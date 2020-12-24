@@ -121,12 +121,11 @@
                                         var result = ""
                                         var i;
                                             for (i = 0; i < items.length; i++) {
-                                            if(items[i].descriptorDom.page != null) {
-                                                    console.log(items[i].descriptorDom.page)
+                                            if(items[i].children != null) {
+                                                    console.log(items[i].children[0].descriptorDom.page.objectId)
 
-                                                    console.log(items[i].descriptorDom.page.objectId)
                                                     console.log(objId)
-                                                  if(items[i].descriptorDom.page.objectId == objId) {
+                                                  if(items[i].children[0].descriptorDom.page.objectId == objId) {
                                                       result = items[i].url
                                                   }
                                               }
