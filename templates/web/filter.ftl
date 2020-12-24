@@ -139,8 +139,8 @@
                       alert("按鈕被按了！監聽到 click 事件");
                     },
                     filter(start, end) {
-                    console.log(start)
-                    console.log(end)
+                    console.log(start + "-01-01T00:00:00Z")
+                    console.log(end + "-12-31T23:59:59Z")
                         axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
                           method: 'post',
