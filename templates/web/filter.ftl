@@ -69,6 +69,9 @@
                   </li>
                 </ul>
             </div>
+            
+            <!-- Left Rail -->
+			<@renderComponent component=contentModel.left\-rail_o.item />
     </div>
         
         
