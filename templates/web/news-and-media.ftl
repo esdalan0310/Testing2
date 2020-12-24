@@ -46,7 +46,8 @@
 								<span class="image main"><img src="${image}" alt="" /></span>
 								${contentModel.content_t!""}
 								<div id="app">
-								    <button onclick="back">back</button>
+								    <button type="button" @click="back()">back</button>
+				
 								</div>
 							</section>
 						</div>
@@ -61,11 +62,6 @@
 			<script src="/static-assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
-			<script>
-			    function back() {
-                  window.top.location.href = "/studio/preview/#/?page=/filter&site=demo"
-                }
-			</script>
 			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script>
@@ -108,7 +104,11 @@
                         });
                         
                   },
-                  method
+                  methods : {
+                      function back() {
+                          window.top.location.href = "/studio/preview/#/?page=/filter&site=demo"
+                        }
+                  }
                 })
         </script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
