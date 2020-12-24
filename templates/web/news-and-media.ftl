@@ -33,7 +33,7 @@
 							<!-- Content -->
 							<section>
 								<header class="main" <@studio.iceAttr iceGroup="subject"/>>
-							    	<button>back<button
+							    	
 									<h1>${contentModel.subject_s!""}</h1>
 									<h2>by ${contentModel.author_s!""}</h2>
 									<h2>Date: ${contentModel.date_t!""}</h2>
