@@ -121,7 +121,7 @@
                                         var result = ""
                                         var i;
                                             for (i = 0; i < items.length; i++) {
-                                            console.log(items[i].descriptorDom)
+                                            console.log(items[i].descriptorDom.component.objectId)
                                               if(items[i].descriptorDom.component.objectId == title) {
                                                   result = items[i].url
                                               }
