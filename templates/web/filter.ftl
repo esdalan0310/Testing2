@@ -129,7 +129,7 @@
                             },
                 
                         }).then((result) => {
-                          console.log(result.data.data.page_pagenewsmedia)
+                          console.log(result.data)
                           this.items = result.data.data.page_pagenewsmedia
                         });
                         
