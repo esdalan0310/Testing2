@@ -67,7 +67,7 @@
             },
 
         }).then((result) => {
-          console.log(result.data)
+          console.log(result.data.data.page_pagenewsmedia)
           this.items = result.data.data.page_pagenewsmedia
           document.cookie="crafterSite=demo;";
         });
