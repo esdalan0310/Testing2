@@ -153,6 +153,7 @@
                               query: `query MyQuery {
                                                      page_pagenewsmedia {
                                                         items {
+                                                          objectId
                                                           title_t
                                                           subject_s
                                                           author_s
