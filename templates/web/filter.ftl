@@ -44,7 +44,7 @@
 							    
 							</div>
 							 <div id="app">
-							 <button type="button" @click="filter">All</button>
+							 <button type="button" @click="filter('1')">All</button>
 							 <button type="button" @click="prompt">2017</button>
 							 <button type="button" @click="prompt">2018</button>
 							 <button type="button" @click="prompt">2019</button>
@@ -138,7 +138,8 @@
                     prompt() {
                       alert("按鈕被按了！監聽到 click 事件");
                     },
-                    filter() {
+                    filter(data) {
+                    alert(data)
                         axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
                           method: 'post',
