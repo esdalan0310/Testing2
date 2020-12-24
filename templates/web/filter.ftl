@@ -10,17 +10,14 @@
 
         <div id="app">
             <ul id="example-1">
-              <li v-for="movie in movies" :movie="movie.objectId">
-                    <div :key="movie.objectId">
-                        <h3>{{ movie.objectId }}</h3>
+              <li v-for="movie in items" :movie="movie.title_t">
+                    <div :key="movie.title_t">
+                        <h3>{{ movie.title_t }}</h3>
                         <p>{{ movie.title_t }}</p>
-                        <p>{{ movie.video_s }}</p>
-                        <video poster="{{movie.thumbnail_s}}" preload="auto">
-                            <source src="{{movie.video_s}}" type="video/mp4">
-                            <p>Your browser does not support H.264/mp4</p>
-                        </video>
+                        <p>{{ movie.title_t }}</p>
+                        
                         <div>
-                            <span>{{movie.duration_s}}</span>
+                            <span>{{movie.title_t}}</span>
                         </div>
                      </div>
                      
