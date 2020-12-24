@@ -72,7 +72,7 @@
         }).then((result) => {
           console.log(result.data)
           this.movies = result.data.data.page_page__video.items
-          document.cookie="crafterSite=vue-test;";
+          document.cookie="crafterSite=demo;";
         });
         
   }
