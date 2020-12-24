@@ -61,7 +61,7 @@
 			<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
 			<script>
 			    function back() {
-                  window.top.location.href = /studio/preview/#/?page=/newsandmedia/test-1&site=demo
+                  window.top.location.href = "/studio/preview/#/?page=/filter&site=demo"
                 }
 			</script>
 			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
