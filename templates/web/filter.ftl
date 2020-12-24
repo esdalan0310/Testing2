@@ -130,8 +130,8 @@
                                                   }
                                               }
                                             }
-                                            console.log(result)
-                                            window.location.href = "http://18.163.110.47:8080/studio/preview/#/?page=/newsandmedia/" + result+ "&site=demo";
+                                            console.log("http://18.163.110.47:8080/studio/preview/#/?page=/newsandmedia/" + result+ "&site=demo")
+                                            window.location.href = ;
                                     }
                                   )
                             }
