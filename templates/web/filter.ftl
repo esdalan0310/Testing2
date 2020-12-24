@@ -55,7 +55,14 @@
 						</div>
 					</div>
 					
-					 <div id="app">
+					
+
+					<!-- Left Rail -->
+					<@renderComponent component=contentModel.left\-rail_o.item />
+
+			</div>
+			
+			 <div id="app">
                                             <ul id="example-1">
                                               <li v-for="movie in items" :movie="movie.title_t">
                                                     <div :key="movie.title_t">
@@ -71,11 +78,6 @@
                                               </li>
                                             </ul>
                                         </div>
-
-					<!-- Left Rail -->
-					<@renderComponent component=contentModel.left\-rail_o.item />
-
-			</div>
 
 			<!-- Handlebar Templates -->
 			<script id="search-results-template" type="text/x-handlebars-template">
