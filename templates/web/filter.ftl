@@ -45,14 +45,15 @@
 							</div>
 							 <div id="app">
                                 <ul id="example-1">
-                                  <li v-for="movie in items" :movie="movie.title_t">
-                                        <div :key="movie.title_t">
-                                            <h3>{{ movie.title_t }}</h3>
-                                            <p>{{ movie.title_t }}</p>
-                                            <p>{{ movie.title_t }}</p>
+                                  <li v-for="new in items" :movie="new.title_t">
+                                        <div :key="new.title_t">
+                                            <h3>{{ new.title_t }}</h3>
+                                            <p>{{ new.subject_s }}</p>
+                                            <p>{{ new.author_s }}</p>
+                                            <p>{{ new.content_t }}</p>
                                             
                                             <div>
-                                                <span>{{movie.title_t}}</span>
+                                                <span>{{new.date_dt}}</span>
                                             </div>
                                          </div>
                                          
