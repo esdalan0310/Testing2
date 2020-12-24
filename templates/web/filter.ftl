@@ -44,7 +44,7 @@
 							    
 							</div>
 							 <div id="app">
-							 <button type="button" @click="prompt">All</button>
+							 <button type="button" @click="filter">All</button>
 							 <button type="button" @click="prompt">2017</button>
 							 <button type="button" @click="prompt">2018</button>
 							 <button type="button" @click="prompt">2019</button>
@@ -106,9 +106,40 @@
                     }
                   },
                   mounted () {
-    
-                      document.cookie="crafterSite=demo;";
                       axios({
+                          url: 'http://18.163.110.47:8080/api/1/site/graphql',
+                          method: 'post',
+                          data: {
+                              query: `query MyQuery {
+                                                     page_pagenewsmedia {
+                                                        items {
+                                                          title_t
+                                                          subject_s
+                                                          author_s
+                                                          content_t
+                                                          image_s
+                                                          date_dt
+                                                        }
+                                                      }
+                                                    }`
+                              
+                          }, 
+                            headers: {
+                              'Content-Type': 'application/json'
+                            },
+                
+                        }).then((result) => {
+                          console.log(result.data.data.page_pagenewsmedia)
+                          this.items = result.data.data.page_pagenewsmedia.items
+                        });
+                        
+                  },
+                   methods: {
+                    prompt() {
+                      alert("按鈕被按了！監聽到 click 事件");
+                    },
+                    filter() {
+                        axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
                           method: 'post',
                           data: {
@@ -133,13 +164,7 @@
                         }).then((result) => {
                           console.log(result.data.data.page_pagenewsmedia)
                           this.items = result.data.data.page_pagenewsmedia.items
-                          document.cookie="crafterSite=demo;";
                         });
-                        
-                  },
-                   methods: {
-                    prompt() {
-                      alert("按鈕被按了！監聽到 click 事件");
                     }
                   }
                 })
