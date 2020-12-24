@@ -141,7 +141,7 @@
                     filter(start) {
                     var s = start + "-01-01T00:00:00Z";
                     var e = start + "-12-31T23:59:59Z"
-                    if(start == "") {
+                    if(start == null) {
                         s = "1997" + "-01-01T00:00:00Z";
                         e = "2047" + "-12-31T23:59:59Z"
                     }
