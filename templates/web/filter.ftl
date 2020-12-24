@@ -8,52 +8,15 @@
 -->
 <html>
 	<head>
-		<title>${contentModel.title_t}</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="/static-assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="/static-assets/css/main.css?v=${siteContext.siteName}" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="/static-assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="/static-assets/css/ie8.css" /><![endif]-->
-		<link rel="stylesheet" href="/static-assets/css/jquery-ui.min.css" />
+	
 	</head>
 	<body>
 		<!-- Wrapper -->
 		
-			<div id="wrapper">
+		
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-
-							<!-- Header -->
-							<@renderComponent component=contentModel.header_o.item />
-
-							<!-- Section -->
-								<section>
-									<header class="main">
-										<h1>Search Results</h1>
-										<h3>Refine by</h3>
-									</header>
-									<form id="categories">
-										<div class="row uniform">
-									
-										</div>
-									</form>
-									<hr class="major"/>
-									<div id="search-results">
-									
-									
-									</div>
-							
-									    
-                                        
-                                       
-
-								</section>
-
-						</div>
-					</div>
+		
 					
 					 <div id="app">
                                             <ul id="example-1">
@@ -73,7 +36,7 @@
                                         </div>
 
 
-			</div>
+		
 
 		
 
@@ -126,6 +89,5 @@
 			
 			
 
-		<@studio.toolSupport/>
 	</body>
 </html>
