@@ -52,25 +52,17 @@
           method: 'post',
           data: {
               query: `query MyQuery {
-                      page_page__video {
-                        items {
-                          thumbnail_s
-                          title_t
-                          video_s
-                          objectId
-                          dateFormat_s
-                          description_t
-                          duration_s
-                          author_t
-                          tags_o {
-                            item {
-                              tagName_t
-                              tagUrl_s
-                            }
-                          }
-                        }
-                      }
-                    }`
+                                     page_pagenewsmedia {
+                                        items {
+                                          title_t
+                                          subject_s
+                                          author_s
+                                          content_t
+                                          image_s
+                                          date_dt(filter: {gt: "2020-11-15T06:40:33Z", lte: "2020-12-31T06:40:33Z"})
+                                        }
+                                      }
+                                    }`
               
           }, 
             headers: {
