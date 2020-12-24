@@ -75,7 +75,21 @@
     </div>
         
         
-        
+    <!-- Handlebar Templates -->
+		<script id="search-results-template" type="text/x-handlebars-template">
+			{{#each results}}
+			<div>
+				<h4><a href="{{url}}">{{items}}</a></h4>
+				{{#if highlight}}
+				<p>{{{highlight}}}</p>
+				{{/if}}
+			</div>
+			{{else}}
+			<p>No results found</p>
+			{{/each}}
+		</script>
+
+	<!-- Scripts -->
          
         
             
@@ -84,45 +98,45 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script>
             new Vue({
-  el: '#app',
-  data () {
-    return {
-      items: null
-    }
-  },
-  mounted () {
+                  el: '#app',
+                  data () {
+                    return {
+                      items: null
+                    }
+                  },
+                  mounted () {
     
-      document.cookie="crafterSite=demo;";
-      axios({
-          url: 'http://18.163.110.47:8080/api/1/site/graphql',
-          method: 'post',
-          data: {
-              query: `query MyQuery {
-                                     page_pagenewsmedia {
-                                        items {
-                                          title_t
-                                          subject_s
-                                          author_s
-                                          content_t
-                                          image_s
-                                          date_dt(filter: {gt: "2020-11-15T06:40:33Z", lte: "2020-12-31T06:40:33Z"})
-                                        }
-                                      }
-                                    }`
-              
-          }, 
-            headers: {
-              'Content-Type': 'application/json'
-            },
-
-        }).then((result) => {
-          console.log(result.data.data.page_pagenewsmedia)
-          this.items = result.data.data.page_pagenewsmedia.items
-          document.cookie="crafterSite=demo;";
-        });
-        
-  }
-})
+                      document.cookie="crafterSite=demo;";
+                      axios({
+                          url: 'http://18.163.110.47:8080/api/1/site/graphql',
+                          method: 'post',
+                          data: {
+                              query: `query MyQuery {
+                                                     page_pagenewsmedia {
+                                                        items {
+                                                          title_t
+                                                          subject_s
+                                                          author_s
+                                                          content_t
+                                                          image_s
+                                                          date_dt(filter: {gt: "2020-11-15T06:40:33Z", lte: "2020-12-31T06:40:33Z"})
+                                                        }
+                                                      }
+                                                    }`
+                              
+                          }, 
+                            headers: {
+                              'Content-Type': 'application/json'
+                            },
+                
+                        }).then((result) => {
+                          console.log(result.data.data.page_pagenewsmedia)
+                          this.items = result.data.data.page_pagenewsmedia.items
+                          document.cookie="crafterSite=demo;";
+                        });
+                        
+                  }
+                })
         </script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
