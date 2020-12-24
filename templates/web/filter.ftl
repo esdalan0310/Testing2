@@ -147,6 +147,7 @@
                         e = "2047" + "-12-31T23:59:59Z"
                     }
                         axios({
+                          document.cookie="crafterSite=demo"
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
                           method: 'post',
                           data: {
