@@ -44,10 +44,10 @@
 							    
 							</div>
 							 <div id="app">
-							 <button type="button" @click="filter('1')">All</button>
-							 <button type="button" @click="prompt">2017</button>
-							 <button type="button" @click="prompt">2018</button>
-							 <button type="button" @click="prompt">2019</button>
+							 <button type="button" @click="filter()">All</button>
+							 <button type="button" @click="filter('2017', '2018')">2017</button>
+							 <button type="button" @click="filter('2018', '2019')">2018</button>
+							 <button type="button" @click="filter('2019', '2020')">2019</button>
 							 
                                 <ul id="example-1">
                                   <li v-for="item in items" :movie="item.title_t">
@@ -138,8 +138,7 @@
                     prompt() {
                       alert("按鈕被按了！監聽到 click 事件");
                     },
-                    filter(data) {
-                    alert(data)
+                    filter(start, end) {
                         axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
                           method: 'post',
@@ -152,7 +151,7 @@
                                                           author_s
                                                           content_t
                                                           image_s
-                                                          date_dt(filter: {gt: "2020-11-15T06:40:33Z", lte: "2020-12-31T06:40:33Z"})
+                                                          date_dt(filter: {gt: start + "-01-01T00:00:00Z", lte: end + "-12-31T23:59:59Z"})
                                                         }
                                                       }
                                                     }`
