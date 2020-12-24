@@ -51,7 +51,7 @@
                                             <p>{{ item.subject_s }}</p>
                                             <p>{{ item.author_s }}</p>
                                             <p>{{ item.content_t }}</p>
-                                            <img src="{{ item.image_s }}" alt=image" width="50" height="60">
+                                            <img v-bind:src="item.image_s"  alt=image" width="50" height="60"/> 
                                             <div>
                                                 <span>{{item.date_dt}}</span>
                                             </div>
