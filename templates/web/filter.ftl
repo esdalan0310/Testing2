@@ -41,23 +41,24 @@
 							</form>
 							<hr class="major"/>
 							<div id="search-results">
-							     <div id="app">
-                                    <ul id="example-1">
-                                      <li v-for="movie in items" :movie="movie.title_t">
-                                            <div :key="movie.title_t">
-                                                <h3>{{ movie.title_t }}</h3>
-                                                <p>{{ movie.title_t }}</p>
-                                                <p>{{ movie.title_t }}</p>
-                                                
-                                                <div>
-                                                    <span>{{movie.title_t}}</span>
-                                                </div>
-                                             </div>
-                                             
-                                      </li>
-                                    </ul>
-                                </div>
+							    
 							</div>
+							 <div id="app">
+                                <ul id="example-1">
+                                  <li v-for="movie in items" :movie="movie.title_t">
+                                        <div :key="movie.title_t">
+                                            <h3>{{ movie.title_t }}</h3>
+                                            <p>{{ movie.title_t }}</p>
+                                            <p>{{ movie.title_t }}</p>
+                                            
+                                            <div>
+                                                <span>{{movie.title_t}}</span>
+                                            </div>
+                                         </div>
+                                         
+                                  </li>
+                                </ul>
+                            </div>
 						</section>
 
 				</div>
