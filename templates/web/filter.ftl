@@ -109,7 +109,7 @@
                     getPath(title) {
                       axios
                           .get('http://18.163.110.47:8080/api/1/site/context/id?token=defaultManagementToken&crafterSite=demo')
-                          .then(response => (console.log(response)))
+                          .then(response => (console.log(response.data.id)))
                     },
                     filter(start) {
                     var s = start + "-01-01T00:00:00Z";
