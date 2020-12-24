@@ -139,8 +139,6 @@
                       alert("按鈕被按了！監聽到 click 事件");
                     },
                     filter(start) {
-                    console.log(start + "-01-01T00:00:00Z")
-                    console.log(end + "-12-31T23:59:59Z")
                     var s = start + "-01-01T00:00:00Z";
                     var e = start + "-12-31T23:59:59Z"
                     if(start == "") {
