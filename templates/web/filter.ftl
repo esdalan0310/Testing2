@@ -106,7 +106,7 @@
                     }
                   },
                    methods: {
-                    getPath(title) {
+                    getPath(objId) {
                       axios
                           .get('http://18.163.110.47:8080/api/1/site/context/id?token=defaultManagementToken&crafterSite=demo')
                           .then(response => 
@@ -122,7 +122,7 @@
                                         var i;
                                             for (i = 0; i < items.length; i++) {
                                             console.log(items[i].descriptorDom.component.objectId)
-                                              if(items[i].descriptorDom.component.objectId == title) {
+                                              if(items[i].descriptorDom.component.objectId == objId) {
                                                   result = items[i].url
                                               }
                                             }
@@ -167,7 +167,7 @@
                         }).then((result) => {
                           console.log(result.data.data.page_pagenewsmedia)
                           this.items = result.data.data.page_pagenewsmedia.items
-                          this.getPath("abc")
+                          this.getPath("4b4f4d52-1c30-a459-237c-df664db69f24")
                         });
                     }
                   }
