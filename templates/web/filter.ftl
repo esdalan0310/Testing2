@@ -44,6 +44,10 @@
 							    
 							</div>
 							 <div id="app">
+							 <button type="button" @click="prompt">2017</button>
+							 <button type="button" @click="prompt">2018</button>
+							 <button type="button" @click="prompt">2019</button>
+							 
                                 <ul id="example-1">
                                   <li v-for="item in items" :movie="item.title_t">
                                         <div :key="item.title_t">
@@ -131,6 +135,11 @@
                           document.cookie="crafterSite=demo;";
                         });
                         
+                  },
+                   methods: {
+                    prompt() {
+                      alert("按鈕被按了！監聽到 click 事件");
+                    }
                   }
                 })
         </script>
