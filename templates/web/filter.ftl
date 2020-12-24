@@ -110,6 +110,10 @@
                       axios
                           .get('http://18.163.110.47:8080/api/1/site/context/id?token=defaultManagementToken&crafterSite=demo')
                           .then(response => (console.log(response.data.id)))
+                          
+                      axios
+                          .get('http://18.163.110.47:8080/api/1/content_store/tree.json?contextId=a56b10349ef9fe4faf597f3385fa5628&url=/site/website/newsandmedia&depth=1')
+                          .then(response => (console.log(response)))
                     },
                     filter(start) {
                     var s = start + "-01-01T00:00:00Z";
