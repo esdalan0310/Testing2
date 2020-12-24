@@ -21,22 +21,54 @@
 
 
     <div id="wrapper">
-        <div id="app">
-            <ul id="example-1">
-              <li v-for="movie in items" :movie="movie.title_t">
-                    <div :key="movie.title_t">
-                        <h3>{{ movie.title_t }}</h3>
-                        <p>{{ movie.title_t }}</p>
-                        <p>{{ movie.title_t }}</p>
-                        
-                        <div>
-                            <span>{{movie.title_t}}</span>
-                        </div>
-                     </div>
-                     
-              </li>
-            </ul>
-        </div>
+        <!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<@renderComponent component=contentModel.header_o.item />
+
+					<!-- Section -->
+						<section>
+							<header class="main">
+								<h1>Search Results</h1>
+								<h3>Refine by</h3>
+							</header>
+							<form id="categories">
+								<div class="row uniform">
+							
+								</div>
+							</form>
+							<hr class="major"/>
+							<div id="search-results">
+							
+							
+							</div>
+					
+							    
+                                
+                               
+
+						</section>
+
+				</div>
+			</div>
+            <div id="app">
+                <ul id="example-1">
+                  <li v-for="movie in items" :movie="movie.title_t">
+                        <div :key="movie.title_t">
+                            <h3>{{ movie.title_t }}</h3>
+                            <p>{{ movie.title_t }}</p>
+                            <p>{{ movie.title_t }}</p>
+                            
+                            <div>
+                                <span>{{movie.title_t}}</span>
+                            </div>
+                         </div>
+                         
+                  </li>
+                </ul>
+            </div>
     </div>
         
         
