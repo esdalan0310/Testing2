@@ -121,9 +121,12 @@
                                         var result = ""
                                         var i;
                                             for (i = 0; i < items.length; i++) {
-                                            console.log(items[i].descriptorDom.component.objectId)
-                                              if(items[i].descriptorDom.component.objectId == objId) {
-                                                  result = items[i].url
+                                            console.log(items[i].descriptorDom.page)
+                                            if(items[i].descriptorDom.page != null) {
+                                            
+                                                  if(items[i].descriptorDom.page.objectId == objId) {
+                                                      result = items[i].url
+                                                  }
                                               }
                                             }
                                             console.log(result)
@@ -167,7 +170,7 @@
                         }).then((result) => {
                           console.log(result.data.data.page_pagenewsmedia)
                           this.items = result.data.data.page_pagenewsmedia.items
-                          this.getPath("4b4f4d52-1c30-a459-237c-df664db69f24")
+                          this.getPath("181cfcdc-fe2d-4256-1892-ea0147729258")
                         });
                     }
                   }
