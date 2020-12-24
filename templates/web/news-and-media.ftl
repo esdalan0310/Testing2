@@ -45,7 +45,9 @@
 								</#if>
 								<span class="image main"><img src="${image}" alt="" /></span>
 								${contentModel.content_t!""}
-								<button onclick="back">back</button>
+								<div id="app">
+								    <button onclick="back">back</button>
+								</div>
 							</section>
 						</div>
 					</div>
@@ -105,7 +107,8 @@
                           
                         });
                         
-                  }
+                  },
+                  method
                 })
         </script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
