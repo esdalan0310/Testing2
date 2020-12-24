@@ -126,7 +126,7 @@
 
                                                     console.log(objId)
                                                   if(items[i].children[0].descriptorDom.page.objectId == objId) {
-                                                      result = items[i].url
+                                                      result = items[i].name
                                                   }
                                               }
                                             }
