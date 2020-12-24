@@ -45,6 +45,7 @@
 								</#if>
 								<span class="image main"><img src="${image}" alt="" /></span>
 								${contentModel.content_t!""}
+								<button>back<button
 							</section>
 						</div>
 					</div>
