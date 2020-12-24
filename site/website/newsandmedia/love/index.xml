@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/pagenewsmedia</content-type>
+	<display-template>/templates/web/news-and-media.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>181c</objectGroupId>
+	<objectId>181cfcdc-fe2d-4256-1892-ea0147729258</objectId>
+	<internal-name>love</internal-name>
+	<navLabel>love</navLabel>
+	<title_t>abc</title_t>
+	<meta_keywords_t/>
+	<subject_s>abc</subject_s>
+	<author_s>aaa</author_s>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<years_o>	<item>	<key>2020</key>
+	<value_smv>2020</value_smv>
+	</item></years_o>
+	<content_t>aaa</content_t>
+	<image_s>/static-assets/item/images/2020/12/24/121.png</image_s>
+	<file-name>index.xml</file-name>
+	<folder-name>love</folder-name>
+	<createdDate>2020-12-24T03:48:42.136Z</createdDate>
+	<createdDate_dt>2020-12-24T03:48:42.136Z</createdDate_dt>
+	<lastModifiedDate>2020-12-24T03:48:42.136Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-12-24T03:48:42.136Z</lastModifiedDate_dt>
+	<date_dt>2020-12-24T03:48:42.000Z</date_dt>
+	<date_dt_tz>EST5EDT</date_dt_tz>
+</page>
