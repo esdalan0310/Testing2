@@ -44,10 +44,10 @@
 							    
 							</div>
 							 <div id="app">
-							 <button type="button" @click="filter('1997', '2047')">All</button>
-							 <button type="button" @click="filter('2017', '2018')">2017</button>
-							 <button type="button" @click="filter('2018', '2019')">2018</button>
-							 <button type="button" @click="filter('2019', '2020')">2019</button>
+							 <button type="button" @click="filter()">All</button>
+							 <button type="button" @click="filter('2017')">2017</button>
+							 <button type="button" @click="filter('2018')">2018</button>
+							 <button type="button" @click="filter('2019')">2019</button>
 							 
                                 <ul id="example-1">
                                   <li v-for="item in items" :movie="item.title_t">
@@ -138,11 +138,15 @@
                     prompt() {
                       alert("按鈕被按了！監聽到 click 事件");
                     },
-                    filter(start, end) {
+                    filter(start) {
                     console.log(start + "-01-01T00:00:00Z")
                     console.log(end + "-12-31T23:59:59Z")
                     var s = start + "-01-01T00:00:00Z";
-                    var e = end + "-12-31T23:59:59Z"
+                    var e = start + "-12-31T23:59:59Z"
+                    if(start == "") {
+                        s = "1997" + "-01-01T00:00:00Z";
+                        e = "2047" + "-12-31T23:59:59Z"
+                    }
                         axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
                           method: 'post',
