@@ -141,6 +141,8 @@
                     filter(start, end) {
                     console.log(start + "-01-01T00:00:00Z")
                     console.log(end + "-12-31T23:59:59Z")
+                    var s = start + "-01-01T00:00:00Z";
+                    var e = end + "-12-31T23:59:59Z"
                         axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
                           method: 'post',
@@ -153,7 +155,7 @@
                                                           author_s
                                                           content_t
                                                           image_s
-                                                          date_dt(filter: {gt: start + "-01-01T00:00:00Z", lte: end + "-12-31T23:59:59Z"})
+                                                          date_dt(filter: {gt: s, lte: e})
                                                         }
                                                       }
                                                     }`
