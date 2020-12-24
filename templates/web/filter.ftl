@@ -131,7 +131,7 @@
                                               }
                                             }
                                             console.log("http://18.163.110.47:8080/studio/preview/#/?page=/newsandmedia/" + result+ "&site=demo")
-                                            window.location.href = "/studio/preview/#/?page=/newsandmedia/" + result+ "&site=demo"
+                                            window.top.location.href = "/studio/preview/#/?page=/newsandmedia/" + result+ "&site=demo"
                                     }
                                   )
                             }
