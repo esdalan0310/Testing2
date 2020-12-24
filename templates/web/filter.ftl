@@ -155,7 +155,7 @@
                                                           author_s
                                                           content_t
                                                           image_s
-                                                          date_dt(filter: {gt:` + s + `, lte:` + e + `})
+                                                          date_dt(filter: {gt:"` + s + `", lte:"` + e + `"})
                                                         }
                                                       }
                                                     }`
