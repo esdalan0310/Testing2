@@ -38,7 +38,7 @@
   el: '#app',
   data () {
     return {
-      movies: null
+      items: null
     }
   },
   mounted () {
@@ -68,7 +68,7 @@
 
         }).then((result) => {
           console.log(result.data)
-          this.movies = result.data.data.page_page__video.items
+          this.items = result.data.data.page_page__video.items
           document.cookie="crafterSite=demo;";
         });
         
