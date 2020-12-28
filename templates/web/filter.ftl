@@ -147,7 +147,7 @@
                         e = "2047" + "-12-31T23:59:59Z"
                     }
                     
-                   
+                   axios.defaults.withCredentials = true
                     
                         axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
