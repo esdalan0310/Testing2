@@ -148,7 +148,7 @@
                     }
                     
                    axios.defaults.withCredentials = true
-                   document.cookie="crafterSite=test;";
+                   document.cookie="crafterSite=demo;";
                     
                         axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
