@@ -165,11 +165,7 @@
                                                       }
                                                     }`
                               
-                          }, 
-                            headers: {
-                              'Content-Type': 'application/json',
-                              'Cookie': 'crafterSite=demo'
-                            },
+                          }
                 
                         }).then((result) => {
                           console.log(result.data.data.page_pagenewsmedia)
