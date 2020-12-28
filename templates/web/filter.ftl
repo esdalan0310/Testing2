@@ -168,9 +168,6 @@
                                                       }
                                                     }`
                               
-                          },
-                          headers: {
-                              "cookie": "crafterSite=demo;"
                           }
                 
                         }).then((result) => {
