@@ -146,7 +146,11 @@
                         s = "1997" + "-01-01T00:00:00Z";
                         e = "2047" + "-12-31T23:59:59Z"
                     }
-                    document.cookie= "crafterSite=demo;domain=18.163.110.47;path=/";
+                    
+                    axios.interceptors.request.use(config => {
+                        config.withCredentials = true;
+                        return config;
+                    });
                     
                         axios({
                           url: 'http://18.163.110.47:8080/api/1/site/graphql',
