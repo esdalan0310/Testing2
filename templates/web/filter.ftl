@@ -167,7 +167,8 @@
                               
                           }, 
                             headers: {
-                              'Content-Type': 'application/json'
+                              'Content-Type': 'application/json',
+                              'Cookie': 'crafterSite=demo'
                             },
                 
                         }).then((result) => {
