@@ -169,7 +169,7 @@
                                                     }`
                               
                           },
-                          header: {
+                          headers: {
                               "cookie": "crafterSite=demo;"
                           }
                 
