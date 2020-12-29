@@ -7,3 +7,11 @@ String datePart = date.format("dd/MM/yyyy")
 String timePart = date.format("HH:mm:ss")
 println "datePart : " + datePart + "\ttimePart : " + timePart
 // templateModel.test123 = "alanalan123123213212321"
+
+// GET
+def get = new URL("https://httpbin.org/get").openConnection();
+def getRC = get.getResponseCode();
+println(getRC);
+if(getRC.equals(200)) {
+    println(get.getInputStream().getText());
+}
