@@ -63,7 +63,7 @@ function resetQuery(){
      
 var doGraphql = function (yearFilterQuery) {
    $("#testDiv").html('loading....');
-   $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql?crafterSite=demo",
+   $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
       contentType: "application/json",
       type:'POST',
       headers: { 'Cookie': 'crafterSite=demo' },
