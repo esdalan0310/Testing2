@@ -55,12 +55,36 @@ $(document).ready(function() {
 var source2 = $("#search-results-template-2").html();
 var template2 = Handlebars.compile(source2);
 var yearFilterQuery = '';
+doGet();
 
 function resetQuery(){
     // yearFilterQuery = '{page_article {items {localId image_s subject_t summary_t}}}';
     yearFilterQuery = '{page_pagenewsmedia {items {localId image_s subject_s title_t}}}';
 }
-     
+
+var doGet = function(){
+    $.ajax({url: "http://18.163.105.240/api/v1/admin/login",
+      contentType: "application/json",
+      type:'GET',
+    //   headers: { 'Cookie': 'crafterSite=demo' },
+      data: JSON.stringify({
+        //  query: yearFilterQuery
+      }),
+      success: function(results) {
+        console.log(results);
+        // if(results){
+        //     // results = results.data.page_pagenewsmedia.items
+        //     console.log(results);
+        //     // var html = template2(context);
+        //     console.)
+        //     // $("#testDiv").html(html);
+        // }else{
+        //     // $("#testDiv").html("<h1>no data</h1>");
+        // }
+      }
+   });
+}
+
 var doGraphql = function (yearFilterQuery) {
    $("#testDiv").html('loading....');
    $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql",
