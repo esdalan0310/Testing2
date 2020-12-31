@@ -76,6 +76,7 @@ var doGraphql = function (yearFilterQuery) {
     var year = $(this).val();
     if(year){
         if(year === 'clean'){
+            a();
             resetQuery();
             $("#testDiv").html("");
         }else{
