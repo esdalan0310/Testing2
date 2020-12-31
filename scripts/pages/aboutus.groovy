@@ -29,3 +29,15 @@ if(getRC.equals(200)) {
 // if(postRC.equals(200)) {
 //     println(post.getInputStream().getText());
 // }
+
+def baseUrl = new URL('http://18.163.105.240/api/v1/admin/login')
+def queryString = ''
+def connection = baseUrl.openConnection()
+connection.with {
+  doOutput = true
+  requestMethod = 'POST'
+  outputStream.withWriter { writer ->
+    writer << queryString
+  }
+  println content.text
+}
