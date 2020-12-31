@@ -55,7 +55,10 @@ $(document).ready(function() {
 var source2 = $("#search-results-template-2").html();
 var template2 = Handlebars.compile(source2);
 var yearFilterQuery = '';
-var abc = doGet;
+
+document.addEventListener('DOMContentLoaded', function() {
+    alert("Ready!");
+}, false);
 
 function resetQuery(){
     // yearFilterQuery = '{page_article {items {localId image_s subject_t summary_t}}}';
