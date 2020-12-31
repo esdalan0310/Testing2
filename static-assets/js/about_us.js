@@ -53,6 +53,7 @@ var doGraphql = function (yearFilterQuery) {
             }
             console.log(results);
             var html = template2(context);
+            console.log(html);
             $("#testDiv").html(html);
         }else{
             $("#testDiv").html("<h1>no data</h1>");
