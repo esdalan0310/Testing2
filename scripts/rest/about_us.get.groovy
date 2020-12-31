@@ -17,13 +17,13 @@
 def get = new URL("http://worldclockapi.com/api/json/est/now").openConnection();
 // def get = new URL("http://18.163.105.240/api/v1/admin/login").openConnection();
 def getRC = get.getResponseCode();
-def results = null;
 println(getRC);
 if(getRC.equals(200)) {
     println(get.getInputStream().getText());
-    results = get.getInputStream().getText();
+    return get.getInputStream().getText();
+}else{
+    return 'no data'
 }
-return results;
 
 // // POST
 // def post = new URL("http://18.163.105.240/api/v1/admin/login").openConnection();
