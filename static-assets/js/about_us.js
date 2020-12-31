@@ -9,7 +9,7 @@ function resetQuery(){
     yearFilterQuery = '{page_pagenewsmedia {items {localId image_s subject_s title_t}}}';
 }
 
-function() a {
+function a() {
     $.ajax({url: "http://18.163.105.240/api/v1/admin/login",
       contentType: "application/json",
       type:'GET',
