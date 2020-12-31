@@ -19,7 +19,7 @@ def get = new URL("http://worldclockapi.com/api/json/est/now").openConnection();
 def getRC = get.getResponseCode();
 println(getRC);
 if(getRC.equals(200)) {
-    println(get.getInputStream().getText());
+    // println(get.getInputStream().getText());
     return get.getInputStream().getText();
 }else{
     return 'no data'
