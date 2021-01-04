@@ -66,6 +66,9 @@ var doGraphql = function (yearFilterQuery) {
         //   $("#testDiv").html(html);
         //   $('#search-results').html(html);
         //  $("#testDiv").html("<h1>"+result+"</h1>");
+      },
+      error: function(error) {
+          console.log(error)
       }
    });
 }
