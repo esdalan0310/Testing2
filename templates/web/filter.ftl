@@ -150,7 +150,7 @@
                    
                     
                         axios({
-                          url: 'http://18.163.110.47:8080/api/1/site/graphql',
+                          url: 'http://18.163.110.47:8080/api/1/site/graphql?crafterSite=demo',
                           method: 'post',
                           data: {
                               query: `query MyQuery {
@@ -167,10 +167,6 @@
                                                       }
                                                     }`
                               
-                          },
-                          header: {
-                              "content-type": "application/json",
-                              "cookie":"crafterSite=demo"
                           }
                 
                         }).then((result) => {
