@@ -37,7 +37,7 @@ var doGraphql = function (yearFilterQuery) {
    $.ajax({url: "http://18.163.110.47:8080/api/1/site/graphql?crafterSite=demo",
       contentType: "application/json",
       type:'POST',
-      headers: { 'Cookie': 'crafterSite=demo' },
+    //   headers: { 'Cookie': 'crafterSite=demo' },
       data: JSON.stringify({
          query: yearFilterQuery
       }),
