@@ -168,6 +168,10 @@
                                                       }
                                                     }`
                               
+                          },
+                          header: {
+                              "content-type": "application/json",
+                              "cookie":"crafterSite=demo"
                           }
                 
                         }).then((result) => {
