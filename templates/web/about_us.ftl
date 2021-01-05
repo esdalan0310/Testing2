@@ -31,8 +31,11 @@
 					
 					<h1>${contentModel.pageTitle_s}</h1>
 					
-                    <h1>${contentModel.test_s}</h1>					
-					<h1 id="test123"></h1>
+					<#list test_123 as test>
+					<h1>${test}</h1>
+    						
+		            </#list>
+             
 
 					<!--About Our Organization-->
 					<section id="aboutOurOrganization" <@studio.iceAttr iceGroup="hero1"/>>
