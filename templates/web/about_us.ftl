@@ -31,10 +31,10 @@
 					
 					<h1>${contentModel.pageTitle_s}</h1>
 					
-					<#list test_123 as test>
-					<h1>${test}</h1>
+					
+					<h1>${test_123}</h1>
     						
-		            </#list>
+		            
              
 
 					<!--About Our Organization-->
