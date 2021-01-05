@@ -6,7 +6,8 @@ Date date = new Date()
 String datePart = date.format("dd/MM/yyyy")
 String timePart = date.format("HH:mm:ss")
 println "datePart : " + datePart + "\ttimePart : " + timePart
-// templateModel.test123 = "alanalan123123213212321"
+templateModel.test_s = "alanalan123123213212321"
+// templateModel.site
 
 // // GET
 // def get = new URL("http://worldclockapi.com/api/json/est/now").openConnection();
