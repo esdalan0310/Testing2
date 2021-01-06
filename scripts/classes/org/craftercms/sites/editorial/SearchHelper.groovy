@@ -162,7 +162,6 @@ class SearchHelper {
         def doc = hit.getSourceAsMap()
         println "[DOC] = " + doc
         def article = [:]
-        println "[ARTICLE] = " + article
             article.title = doc.subject_s
             //added by alanlee 11-12-2020
             article.image = doc.image_s
@@ -253,7 +252,7 @@ class SearchHelper {
             userTerm = "${userTerm}~1 OR *${userTerm}*"
           }
           def userTermQuery = "(subject_s:(${userTerm}) OR sections_o.item.section_html:(${userTerm}))"
-            println userTermQuery
+            // println userTermQuery
           q = "${q} AND ${userTermQuery}"
         }
         
