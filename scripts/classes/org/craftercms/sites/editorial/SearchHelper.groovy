@@ -82,6 +82,8 @@ class SearchHelper {
 
   def searchArticles(featured, categories, segments, start = DEFAULT_START, rows = DEFAULT_ROWS, additionalCriteria = null) {
     def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
+    
+    q = "${q} AND ${ARTICLE_CONTENT_TYPE_QUERY}"
 
     if (featured) {
       q = "${q} AND featured_b:true"
