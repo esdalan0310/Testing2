@@ -282,7 +282,7 @@ class SearchHelper {
         def result = elasticsearch.search(new SearchRequest().source(builder))
         
         if (result) {
-            println (result)
+            // println (result)
         //   return processUserSearchResults(result)
           return processUserSearchResults222(result)
         } else {
