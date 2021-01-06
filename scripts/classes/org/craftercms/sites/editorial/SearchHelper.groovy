@@ -188,7 +188,7 @@ class SearchHelper {
         articles << article
       }
     }
-    println "[RESULT] =    "articles
+    println "[RESULT] =   " + articles
     return articles
   }
 
