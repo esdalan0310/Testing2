@@ -26,11 +26,13 @@ import org.elasticsearch.search.sort.SortOrder
 
 class SearchHelper {
 
-  static final String ARTICLE_CONTENT_TYPE_QUERY = "content-type:\"/page/article\""
+//   static final String ARTICLE_CONTENT_TYPE_QUERY = "content-type:\"/page/article\""
   static final String NEWS_N_MEDIA_TYPE_QUERY = "content-type:\"/page/pagenewsmedia\""
   static final String[] HIGHLIGHT_FIELDS = ["subject_t", "sections_o.item.section_html"]
   static final int DEFAULT_START = 0
   static final int DEFAULT_ROWS = 10
+  
+    static final String ARTICLE_CONTENT_TYPE_QUERY = "content-type:\"/page/aboutus\""
 
   def elasticsearch
   UrlTransformationService urlTransformationService
@@ -48,17 +50,19 @@ class SearchHelper {
         userTerm = "${userTerm}~1 OR *${userTerm}*"
       }
       def userTermQuery = "(subject_t:(${userTerm}) OR sections_o.item.section_html:(${userTerm}))"
+      
+      println userTermQuery
 
-      q = "${q} AND ${userTermQuery}"
+    //   q = "${q} AND ${userTermQuery}"
     }
     if (categories) {
       def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
 
-      q = "${q} AND ${categoriesQuery}"
+    //   q = "${q} AND ${categoriesQuery}"
     }
 
-    def highlighter = SearchSourceBuilder.highlight()
-    HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
+    // def highlighter = SearchSourceBuilder.highlight()
+    // HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
     
     println q
 
@@ -66,10 +70,10 @@ class SearchHelper {
       .query(QueryBuilders.queryStringQuery(q))
       .from(start)
       .size(rows)
-      .highlighter(highlighter)
+    //   .highlighter(highlighter)
     
     def result = elasticsearch.search(new SearchRequest().source(builder))
-
+    println result
     if (result) {
       return processUserSearchResults(result)
     } else {
