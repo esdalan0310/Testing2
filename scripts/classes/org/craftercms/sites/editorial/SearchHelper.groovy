@@ -253,7 +253,8 @@ class SearchHelper {
           if(!userTerm.contains(" ")) {
             userTerm = "${userTerm}~1 OR *${userTerm}*"
           }
-          def userTermQuery = "(subject_s:(${userTerm}) OR subject_t:(${userTerm}) )"
+        //   def userTermQuery = "(subject_s:(${userTerm}) OR subject_t:(${userTerm}) )"
+                    def userTermQuery = "(subject_s:(${userTerm}) )"
             // println userTermQuery
           q = "${q} AND ${userTermQuery}"
         }
