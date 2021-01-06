@@ -155,7 +155,7 @@ class SearchHelper {
   
    private def processUserSearchResults222(result) {
     def articles = []
-    // println result
+    println "[[RESULT]]" + result
     def hits = result.hits.hits
 
     if (hits) {
