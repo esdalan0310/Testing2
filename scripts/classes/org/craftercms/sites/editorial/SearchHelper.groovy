@@ -73,7 +73,6 @@ class SearchHelper {
       .highlighter(highlighter)
     
     def result = elasticsearch.search(new SearchRequest().source(builder))
-    println result
     if (result) {
       return processUserSearchResults(result)
     } else {
