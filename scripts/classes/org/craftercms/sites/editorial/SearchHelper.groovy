@@ -284,7 +284,7 @@ class SearchHelper {
         if (result) {
             println (result)
         //   return processUserSearchResults(result)
-        //   return processUserSearchResults222(result)
+          return processUserSearchResults222(result)
         } else {
           return []
         }
