@@ -272,8 +272,8 @@ class SearchHelper {
         // HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
         def builder = new SearchSourceBuilder()
           .query(QueryBuilders.queryStringQuery(q))
-          .from(start)
-          .size(rows)
+        //   .from(start)
+        //   .size(rows)
         //   .highlighter(highlighter)
         
         println "q = " + q
