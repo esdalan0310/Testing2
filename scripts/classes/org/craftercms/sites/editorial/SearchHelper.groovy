@@ -42,8 +42,7 @@ class SearchHelper {
 
   def search(userTerm, categories, start = DEFAULT_START, rows = DEFAULT_ROWS) {
     def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
-    println q
-    println "userterm = " + userTerm
+
     if (userTerm) {
       if(!userTerm.contains(" ")) {
         userTerm = "${userTerm}~1 OR *${userTerm}*"
@@ -53,13 +52,11 @@ class SearchHelper {
       q = "${q} AND ${userTermQuery}"
     }
     if (categories) {
-    println "categories = " + categories
-
       def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
 
       q = "${q} AND ${categoriesQuery}"
     }
-    
+
     def highlighter = SearchSourceBuilder.highlight()
     HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
 
@@ -67,12 +64,7 @@ class SearchHelper {
       .query(QueryBuilders.queryStringQuery(q))
       .from(start)
       .size(rows)
-      .highlihter(highlighter)
-      
-    println "q = " + q
-      
-    println "BUILDER QUERY = " + builder
-
+      .highlighter(highlighter)
     
     def result = elasticsearch.search(new SearchRequest().source(builder))
 
