@@ -44,14 +44,14 @@ class SearchHelper {
     def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
     println q
     println "userterm = " + userTerm
-    if (userTerm) {
-      if(!userTerm.contains(" ")) {
-        userTerm = "${userTerm}~1 OR *${userTerm}*"
-      }
-      def userTermQuery = "(subject_t:(${userTerm}) OR sections_o.item.section_html:(${userTerm}))"
+    // if (userTerm) {
+    //   if(!userTerm.contains(" ")) {
+    //     userTerm = "${userTerm}~1 OR *${userTerm}*"
+    //   }
+    //   def userTermQuery = "(subject_t:(${userTerm}) OR sections_o.item.section_html:(${userTerm}))"
 
-      q = "${q} AND ${userTermQuery}"
-    }
+    //   q = "${q} AND ${userTermQuery}"
+    // }
     // if (categories) {
     // println "categories = " + categories
 
@@ -60,14 +60,14 @@ class SearchHelper {
     //   q = "${q} AND ${categoriesQuery}"
     // }
     
-    def highlighter = SearchSourceBuilder.highlight()
-    HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
+    // def highlighter = SearchSourceBuilder.highlight()
+    // HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
 
     def builder = new SearchSourceBuilder()
       .query(QueryBuilders.queryStringQuery(q))
       .from(start)
       .size(rows)
-      .highlighter(highlighter)
+    //   .highlighter(highlighter)
       
     println "q = " + q
       
