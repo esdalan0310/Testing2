@@ -160,9 +160,9 @@ class SearchHelper {
     if (hits) {
       hits.each {hit ->
         def doc = hit.getSourceAsMap()
-        println doc
+        println "[DOC] = " + doc
         def article = [:]
-        println article
+        println "[ARTICLE] = " + article
             article.title = doc.title_t
             //added by alanlee 11-12-2020
             article.image = doc.image_s
