@@ -247,13 +247,13 @@ class SearchHelper {
     // def about_us_search(userTerm, years, start = DEFAULT_START, rows = DEFAULT_ROWS){
         // def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
         def q = "${NEWS_N_MEDIA_TYPE_QUERY}"
-        // q = "${q} OR ${ARTICLE_CONTENT_TYPE_QUERY}"
+        q = "${q} OR ${ARTICLE_CONTENT_TYPE_QUERY}"
         
         if (userTerm) {
           if(!userTerm.contains(" ")) {
             userTerm = "${userTerm}~1 OR *${userTerm}*"
           }
-          def userTermQuery = "(subject_s:(${userTerm}) OR subject_t:(${userTerm}) )"
+          def userTermQuery = "(title_t:(${userTerm}) )"
             // println userTermQuery
           q = "${q} AND ${userTermQuery}"
         }
