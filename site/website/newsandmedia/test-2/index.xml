@@ -12,7 +12,6 @@
 	<navLabel>test-2</navLabel>
 	<title_t>test-2</title_t>
 	<meta_keywords_t>seo</meta_keywords_t>
-	<subject_s>test-2</subject_s>
 	<author_s>test-2</author_s>
 	<placeInNav>true</placeInNav>
 	<orderDefault_f>2000</orderDefault_f>
@@ -27,8 +26,9 @@
 	<image_s>/static-assets/item/images/2020/12/24/2018.jpg</image_s>
 	<createdDate>2020-12-15T07:54:04.716Z</createdDate>
 	<createdDate_dt>2020-12-15T07:54:04.716Z</createdDate_dt>
-	<lastModifiedDate>2020-12-24T03:45:48.000Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-24T03:45:48.000Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-06T08:22:28.063Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-06T08:22:28.063Z</lastModifiedDate_dt>
 	<date_dt>2019-12-24T07:54:04.000Z</date_dt>
 	<date_dt_tz>EST5EDT</date_dt_tz>
+	<subject_t>test-2</subject_t>
 </page>
