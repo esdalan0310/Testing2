@@ -151,6 +151,45 @@ class SearchHelper {
 
     return articles
   }
+  
+  
+   private def processUserSearchResults222(result) {
+    def articles = []
+    def hits = result.hits.hits
+
+    if (hits) {
+      hits.each {hit ->
+      println doc
+        def doc = hit.getSourceAsMap()
+        def article = [:]
+            article.title = doc.title_t
+            //added by alanlee 11-12-2020
+            article.image = doc.image_s
+            //end added by alanlee 11-12-2020
+            article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId) + "?crafterSite=demo"
+            article.category = doc.categories_o.item.value_smv
+            article.date = doc.date_dt
+
+        // if (hit.highlightFields) {
+        //   def articleHighlights = hit.highlightFields.values()*.getFragments().flatten()*.string()
+        //   if (articleHighlights) {
+        //       def highlightValues = []
+
+        //       articleHighlights.each { value ->
+        //           highlightValues << value
+        //       }
+
+        //       article.highlight = StringUtils.join(highlightValues, "... ")
+        //       article.highlight = StringUtils.strip(article.highlight)
+        //   }
+        // }
+
+        articles << article
+      }
+    }
+
+    return articles
+  }
 
   private def processArticleListingResults(result) {
     def articles = []
@@ -203,17 +242,18 @@ class SearchHelper {
 
     //added by alanlee 11-12-2020
     // def about_us_search(userTerm, categories, start = DEFAULT_START, rows = DEFAULT_ROWS){
-    def about_us_search(userTerm, years, start = DEFAULT_START, rows = DEFAULT_ROWS){
-        def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
-        // def q = "${NEWS_N_MEDIA_TYPE_QUERY}"
+    def about_us_search(userTerm, start = DEFAULT_START, rows = DEFAULT_ROWS){
+    // def about_us_search(userTerm, years, start = DEFAULT_START, rows = DEFAULT_ROWS){
+        // def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
+        def q = "${NEWS_N_MEDIA_TYPE_QUERY}"
         
         if (userTerm) {
           if(!userTerm.contains(" ")) {
             userTerm = "${userTerm}~1 OR *${userTerm}*"
           }
           def userTermQuery = "(subject_t:(${userTerm}) OR sections_o.item.section_html:(${userTerm}))"
-        
-          q = "${q} AND ${userTermQuery}"
+            println userTermQuery
+        //   q = "${q} AND ${userTermQuery}"
         }
         
         // if (categories) {
@@ -222,10 +262,10 @@ class SearchHelper {
         //   q = "${q} AND ${categoriesQuery}"
         // }
 
-        if(years){
-            def yearsQuery = getFieldQueryWithMultipleValues("years_o.item.key", years)
-            q = "${q} AND ${yearsQuery}"
-        }
+        // if(years){
+        //     def yearsQuery = getFieldQueryWithMultipleValues("years_o.item.key", years)
+        //     q = "${q} AND ${yearsQuery}"
+        // }
 
         // def highlighter = SearchSourceBuilder.highlight()
         // HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
@@ -238,40 +278,11 @@ class SearchHelper {
         println "q = " + q
         println "BUILDER QUERY = " + builder
         
-        // def result = elasticsearch.search(new SearchRequest().source(builder))
+        def result = elasticsearch.search(new SearchRequest().source(builder))
         
-        def result = elasticsearch.search([
-            query: [ query_string: [query: q as String]]
-            
-            // ,
-            // page_article:[
-            //     items[
-            //         author_s,
-            //         date_dt
-            //         ]
-            //     ]
-            // ]
-            //     // ,
-                //     from: start,
-                //     size: rows,
-                //     aggs: [
-                //     // "categories": [
-                //     //     terms: [
-                //     //     field: "categories.item.value_smv",
-                //     //     min_doc_count: 1
-                //     //     ]
-                //     // ]
-                //      "years": [
-                //         terms: [
-                //         field: "years.item.value_smv",
-                //         min_doc_count: 1
-                //         ]
-                //     ]
-                // ]
-            ])
-        // // println result
         if (result) {
-          return processUserSearchResults(result)
+        //   return processUserSearchResults(result)
+          return processUserSearchResults222(result)
         } else {
           return []
         }
