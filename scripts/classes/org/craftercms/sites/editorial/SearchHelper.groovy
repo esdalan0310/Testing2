@@ -163,13 +163,13 @@ class SearchHelper {
         println "[DOC] = " + doc
         def article = [:]
         println "[ARTICLE] = " + article
-            article.title = doc.title_t
+            article.title = doc.subject_s
             //added by alanlee 11-12-2020
             article.image = doc.image_s
             //end added by alanlee 11-12-2020
             article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId) + "?crafterSite=demo"
-            article.category = doc.categories_o.item.value_smv
-            article.date = doc.date_dt
+            // article.category = doc.categories_o.item.value_smv
+            // article.date = doc.date_dt
 
         // if (hit.highlightFields) {
         //   def articleHighlights = hit.highlightFields.values()*.getFragments().flatten()*.string()
