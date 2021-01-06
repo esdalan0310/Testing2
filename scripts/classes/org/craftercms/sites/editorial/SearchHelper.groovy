@@ -155,6 +155,7 @@ class SearchHelper {
   
    private def processUserSearchResults222(result) {
     def articles = []
+    println result
     def hits = result.hits.hits
 
     if (hits) {
