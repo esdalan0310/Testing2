@@ -52,13 +52,13 @@ class SearchHelper {
 
       q = "${q} AND ${userTermQuery}"
     }
-    if (categories) {
-    println "categories = " + categories
+    // if (categories) {
+    // println "categories = " + categories
 
-      def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
+    //   def categoriesQuery = getFieldQueryWithMultipleValues("categories_o.item.key", categories)
 
-      q = "${q} AND ${categoriesQuery}"
-    }
+    //   q = "${q} AND ${categoriesQuery}"
+    // }
     
     def highlighter = SearchSourceBuilder.highlight()
     HIGHLIGHT_FIELDS.each{ field -> highlighter.field(field) }
