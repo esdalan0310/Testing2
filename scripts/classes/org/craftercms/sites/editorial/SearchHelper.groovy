@@ -254,7 +254,7 @@ class SearchHelper {
           }
           def userTermQuery = "(subject_s:(${userTerm}) OR (subject_t:(${userTerm}) OR sections_o.item.section_html:(${userTerm}))"
             // println userTermQuery
-          q = "${q} AND ${userTermQuery}"
+        //   q = "${q} AND ${userTermQuery}"
         }
         
         // if (categories) {
