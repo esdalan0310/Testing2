@@ -30,7 +30,7 @@ class SearchHelper {
   static final String NEWS_N_MEDIA_TYPE_QUERY = "content-type:\"/page/pagenewsmedia\""
   static final String[] HIGHLIGHT_FIELDS = ["subject_t", "sections_o.item.section_html"]
   static final int DEFAULT_START = 0
-  static final int DEFAULT_ROWS = 10
+  static final int DEFAULT_ROWS = 100
   
     static final String ABOUTUS_CONTENT_TYPE_QUERY = "content-type:\"/page/aboutus\""
 
