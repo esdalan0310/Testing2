@@ -12,7 +12,6 @@
 	<navLabel>test-3</navLabel>
 	<title_t>test-3</title_t>
 	<meta_keywords_t>SEO</meta_keywords_t>
-	<subject_s>test-3</subject_s>
 	<author_s>test-3</author_s>
 	<placeInNav>true</placeInNav>
 	<orderDefault_f>3000</orderDefault_f>
@@ -22,7 +21,8 @@
 	<date_dt>2018-12-25T08:02:04.000Z</date_dt>
 	<createdDate>2020-12-21T08:02:04.396Z</createdDate>
 	<createdDate_dt>2020-12-21T08:02:04.396Z</createdDate_dt>
-	<lastModifiedDate>2020-12-24T03:40:35.932Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-24T03:40:35.932Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-06T08:22:37.351Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-06T08:22:37.351Z</lastModifiedDate_dt>
 	<date_dt_tz>EST5EDT</date_dt_tz>
+	<subject_t>test-3</subject_t>
 </page>
