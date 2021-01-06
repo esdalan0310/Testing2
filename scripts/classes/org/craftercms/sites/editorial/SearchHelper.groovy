@@ -163,7 +163,7 @@ class SearchHelper {
         def doc = hit.getSourceAsMap()
         println "[DOC] = " + doc
         def article = [:]
-            article.title = doc.subject_s
+            article.title = doc.title_t
             //added by alanlee 11-12-2020
             article.image = doc.image_s
             //end added by alanlee 11-12-2020
