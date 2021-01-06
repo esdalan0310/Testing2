@@ -317,7 +317,7 @@
 			<fields>
 				<field>
 					<type>input</type>
-					<id>subject_s</id>
+					<id>subject_t</id>
 					<iceId></iceId>
 					<title>Subject</title>
 					<description></description>
