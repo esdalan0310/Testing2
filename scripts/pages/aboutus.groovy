@@ -9,14 +9,14 @@ String timePart = date.format("HH:mm:ss")
 templateModel.test_123 = "datePart : " + datePart + "\ttimePart : " + timePart
 // templateModel.site
 
-// GET
-// def get = new URL("http://worldclockapi.com/api/json/est/now").openConnection();
-def get = new URL("http://172.61.41.119/api/v1/admin/login").openConnection();
-def getRC = get.getResponseCode();
-println(getRC);
-if(getRC.equals(200)) {
-    println(get.getInputStream().getText());
-}
+// // GET
+// // def get = new URL("http://worldclockapi.com/api/json/est/now").openConnection();
+// def get = new URL("http://172.61.41.119/api/v1/admin/login").openConnection();
+// def getRC = get.getResponseCode();
+// println(getRC);
+// if(getRC.equals(200)) {
+//     println(get.getInputStream().getText());
+// }
 
 // POST
 // def post = new URL("http://172.61.41.119/api/v1/admin/login").openConnection();
