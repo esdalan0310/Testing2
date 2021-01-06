@@ -25,15 +25,15 @@
 //     return 'no data'
 // }
 
-// POST
-def post = new URL("http://18.163.105.240/api/v1/admin/login").openConnection();
-def message = "{'username':'superuser1@esdlife.com','password':'Ab123456!','type':'A'}";
-post.setRequestMethod("POST");
-post.setDoOutput(true);
-post.setRequestProperty("Content-Type", "application/json");
-post.getOutputStream().write(message.getBytes("UTF-8"));
-def postRC = post.getResponseCode();
-println(postRC);
-if(postRC.equals(200)) {
-    println(post.getInputStream().getText());
-}
+// // POST
+// def post = new URL("http://18.163.105.240/api/v1/admin/login").openConnection();
+// def message = "{'username':'superuser1@esdlife.com','password':'Ab123456!','type':'A'}";
+// post.setRequestMethod("POST");
+// post.setDoOutput(true);
+// post.setRequestProperty("Content-Type", "application/json");
+// post.getOutputStream().write(message.getBytes("UTF-8"));
+// def postRC = post.getResponseCode();
+// println(postRC);
+// if(postRC.equals(200)) {
+//     println(post.getInputStream().getText());
+// }
