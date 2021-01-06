@@ -20,7 +20,7 @@ templateModel.test_123 = "datePart : " + datePart + "\ttimePart : " + timePart
 
 // POST
 def post = new URL("http://172.61.41.119/api/v1/admin/login").openConnection();
-def message = "";
+def message = "{'username':'superuser1@esdlife.com','password':'Ab123456!','type': 'A'}";
 post.setRequestMethod("POST");
 post.setDoOutput(true);
 post.setRequestProperty("Content-Type", "application/json");
