@@ -10,7 +10,7 @@ templateModel.test_123 = "datePart : " + datePart + "\ttimePart : " + timePart
 // templateModel.site
 
 // GET
-// def get = new URL("http://worldclockapi.com/api/json/est/now").openConnection();
+// // def get = new URL("http://worldclockapi.com/api/json/est/now").openConnection();
 // def get = new URL("http://172.61.41.119/api/v1/admin/login").openConnection();
 // def getRC = get.getResponseCode();
 // println(getRC);
@@ -19,7 +19,7 @@ templateModel.test_123 = "datePart : " + datePart + "\ttimePart : " + timePart
 // }
 
 // POST
-def post = new URL("http://18.163.105.240/api/v1/admin/login").openConnection();
+def post = new URL("http://172.61.41.119/api/v1/admin/login").openConnection();
 def message = "";
 post.setRequestMethod("POST");
 post.setDoOutput(true);
