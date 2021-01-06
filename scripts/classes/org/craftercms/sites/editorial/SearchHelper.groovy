@@ -160,7 +160,7 @@ class SearchHelper {
     if (hits) {
       hits.each {hit ->
         def doc = hit.getSourceAsMap()
-        println "[DOC] = " + doc
+        // println "[DOC] = " + doc
         def article = [:]
             article.title = doc.subject_s
             //added by alanlee 11-12-2020
@@ -252,7 +252,7 @@ class SearchHelper {
           if(!userTerm.contains(" ")) {
             userTerm = "${userTerm}~1 OR *${userTerm}*"
           }
-          def userTermQuery = "(subject_s:(${userTerm}) OR sections_o.item.section_html:(${userTerm}))"
+          def userTermQuery = "(subject_s:(${userTerm}) OR (subject_t:(${userTerm}) OR sections_o.item.section_html:(${userTerm}))"
             // println userTermQuery
           q = "${q} AND ${userTermQuery}"
         }
