@@ -12,7 +12,7 @@ function resetQuery(){
 function a() {
     $.ajax({url: "http://18.163.105.240/api/v1/admin/login",
       contentType: "application/json",
-      type:'GET',
+      type:'POST',
     //   headers: { 'Cookie': 'crafterSite=demo' },
       data: JSON.stringify({
         //  query: yearFilterQuery
