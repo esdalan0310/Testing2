@@ -42,6 +42,7 @@ class SearchHelper {
 
   def search(userTerm, categories, start = DEFAULT_START, rows = DEFAULT_ROWS) {
     def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
+    println q
     println "userterm = " + userTerm
     if (userTerm) {
       if(!userTerm.contains(" ")) {
