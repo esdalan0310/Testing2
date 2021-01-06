@@ -83,8 +83,6 @@ class SearchHelper {
   def searchArticles(featured, categories, segments, start = DEFAULT_START, rows = DEFAULT_ROWS, additionalCriteria = null) {
     def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
     
-    q = "${q} AND ${ARTICLE_CONTENT_TYPE_QUERY}"
-
     if (featured) {
       q = "${q} AND featured_b:true"
     }
@@ -248,6 +246,7 @@ class SearchHelper {
     // def about_us_search(userTerm, years, start = DEFAULT_START, rows = DEFAULT_ROWS){
         // def q = "${ARTICLE_CONTENT_TYPE_QUERY}"
         def q = "${NEWS_N_MEDIA_TYPE_QUERY}"
+        q = "${q} AND ${ARTICLE_CONTENT_TYPE_QUERY}"
         
         if (userTerm) {
           if(!userTerm.contains(" ")) {
