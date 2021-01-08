@@ -21,8 +21,8 @@
 	<orderDefault_f>1000</orderDefault_f>
 	<createdDate>2020-12-11T10:32:09.198Z</createdDate>
 	<createdDate_dt>2020-12-11T10:32:09.198Z</createdDate_dt>
-	<lastModifiedDate>2021-01-08T02:18:00.255Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-01-08T02:18:00.255Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-08T03:04:56.226Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-08T03:04:56.226Z</lastModifiedDate_dt>
 	<title_t>test-1</title_t>
 	<author_s>Author</author_s>
 	<content_t>123456AAAA</content_t>
@@ -40,18 +40,18 @@
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>018b</objectGroupId>
 	<objectId>018b6eac-029c-bf59-5090-99360a9a4973</objectId>
-	<contactGroup_o item-list="true">	<item>	<title_s>test123</title_s>
-	<input_s>test123</input_s>
+	<contactGroup_o item-list="true">	<item>	<title_s>test123component_title</title_s>
+	<input_s>test123component</input_s>
 	</item></contactGroup_o>
 	<file-name>018b6eac-029c-bf59-5090-99360a9a4973.xml</file-name>
 	<disabled>false</disabled>
 	<internal-name>test123</internal-name>
 	<title_s>test123</title_s>
-	<title_2_s>test123</title_2_s>
+	<title_2_s>test123component_title2</title_2_s>
 	<createdDate>2021-01-08T02:17:42.404Z</createdDate>
 	<createdDate_dt>2021-01-08T02:17:42.404Z</createdDate_dt>
-	<lastModifiedDate>2021-01-08T02:18:02.499Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-01-08T02:18:02.499Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-08T03:05:05.880Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-08T03:05:05.880Z</lastModifiedDate_dt>
 	<socialMedia_o item-list="true">	<item>	<media_link_s>test123</media_link_s>
 	<media_icon_s>/static-assets/images/123.png</media_icon_s>
 	</item></socialMedia_o>
