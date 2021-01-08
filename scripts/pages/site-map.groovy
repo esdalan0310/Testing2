@@ -17,6 +17,7 @@
 def topNavItems = [:]
 def siteDir = siteItemService.getSiteTree("/site/website", 2)
 if(siteDir) {
+    println siteDir
     def dirs = siteDir.childItems
     dirs.each { dir ->
             def dirName = dir.getStoreName()
@@ -27,4 +28,6 @@ if(siteDir) {
             }
    }
 }
+
+println topNavItems
 templateModel.topNavItems = topNavItems;
