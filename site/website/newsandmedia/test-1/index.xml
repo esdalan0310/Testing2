@@ -21,8 +21,8 @@
 	<orderDefault_f>1000</orderDefault_f>
 	<createdDate>2020-12-11T10:32:09.198Z</createdDate>
 	<createdDate_dt>2020-12-11T10:32:09.198Z</createdDate_dt>
-	<lastModifiedDate>2021-01-06T10:05:17.749Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-01-06T10:05:17.749Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-08T02:12:12.047Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-08T02:12:12.047Z</lastModifiedDate_dt>
 	<title_t>test-1</title_t>
 	<author_s>Author</author_s>
 	<content_t>123456AAAA</content_t>
@@ -31,4 +31,5 @@
 	<date_dt_tz>EST5EDT</date_dt_tz>
 	<meta_keywords_t>seo</meta_keywords_t>
 	<subject_t>test-1</subject_t>
+	<testcomponent_o item-list="true"/>
 </page>
