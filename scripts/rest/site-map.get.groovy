@@ -28,8 +28,8 @@ if(siteDir) {
                 def dirDisplayName = dirItem.queryValue('internal-name')
                    topNavItems.put(dirName, dirDisplayName)
             }
+            println dirItem
    }
 }
 result.topNavItems = topNavItems;
-prinltn "[RESULT]" + result.toString()
 return result;
