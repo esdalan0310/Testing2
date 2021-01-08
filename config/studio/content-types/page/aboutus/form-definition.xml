@@ -842,7 +842,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>contact_us</value>
+							<value>contact_us,components-header</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
