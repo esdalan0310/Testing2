@@ -217,9 +217,9 @@
 				</field>
 				<field>
 					<type>node-selector</type>
-					<id>testcomponent_o</id>
+					<id>contact_us_o</id>
 					<iceId></iceId>
-					<title>testcomponent</title>
+					<title>test</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
