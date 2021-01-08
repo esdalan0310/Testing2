@@ -30,6 +30,10 @@
 							<!-- Header -->
 							<@renderComponent component = contentModel.header_o.item />
 
+                            <!--test -->
+                        	<@renderComponent component = contentModel.testcomponent_o.item />
+
+
 							<!-- Content -->
 							<section>
 								<header class="main" <@studio.iceAttr iceGroup="subject"/>>
