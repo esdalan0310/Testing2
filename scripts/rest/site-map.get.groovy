@@ -31,5 +31,5 @@ if(siteDir) {
    }
 }
 result.topNavItems = topNavItems;
-prinltn "[RESULT]" + result
+prinltn "[RESULT]" + result.toString()
 return result;
