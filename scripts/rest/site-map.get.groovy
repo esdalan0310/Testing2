@@ -20,6 +20,7 @@ def siteDir = siteItemService.getSiteTree("/site/website", 2)
 if(siteDir) {
     println "SiteDir = " + siteDir
     def dirs = siteDir.childItems
+    println "DIRS = "+dirs
     dirs.each { dir ->
             def dirName = dir.getStoreName()
             def dirItem = siteItemService.getSiteItem("/site/website/${dirName}/index.xml")
