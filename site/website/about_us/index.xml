@@ -20,8 +20,8 @@
 	</item></header_o>
 	<createdDate>2020-12-09T07:18:35.384Z</createdDate>
 	<createdDate_dt>2020-12-09T07:18:35.384Z</createdDate_dt>
-	<lastModifiedDate>2021-01-08T08:20:33.236Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-01-08T08:20:33.236Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-08T08:23:03.866Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-08T08:23:03.866Z</lastModifiedDate_dt>
 	<hero_text_1_html>&lt;div style="display: none;"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div style="display: none;"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div style="display: none;"&gt;&lt;br /&gt;&lt;/div&gt;
@@ -33,44 +33,27 @@
 &lt;p&gt;About Our Organization Test 03123&lt;/p&gt;</hero_title_1_html>
 	<hero_title_2_html>&lt;p&gt;Our Services&lt;/p&gt;</hero_title_2_html>
 	<hero_text_2_html>&lt;p&gt;&lt;strong style="margin: 0px; padding: 0px; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify; background-color: #ffffff;"&gt;Lorem Ipsum&lt;/strong&gt;&lt;span style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify; background-color: #ffffff;"&gt; is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/span&gt;&lt;/p&gt;</hero_text_2_html>
-	<contact_us_o item-list="true">	<item datasource="contactus" inline="true">	<key>db865e9a-b813-207f-459f-8b15537366cb</key>
-	<value>Contact Us</value>
-<component id="db865e9a-b813-207f-459f-8b15537366cb">
+	<contact_us_o item-list="true">	<item datasource="contact_us" inline="true">	<key>c60d3623-5039-9157-d47d-435e22db9f13</key>
+	<value>aaa</value>
+<component id="c60d3623-5039-9157-d47d-435e22db9f13">
 	<content-type>/component/contactus</content-type>
 	<display-template>/templates/web/contact_us.ftl</display-template>
 	<no-template-required/>
 	<merge-strategy>inherit-levels</merge-strategy>
-	<objectGroupId>db86</objectGroupId>
-	<objectId>db865e9a-b813-207f-459f-8b15537366cb</objectId>
-	<contactGroup_o item-list="true">	<item>	<title_s>Hotline</title_s>
-	<input_s>2210 9600</input_s>
-	</item>	<item>	<title_s>Fax</title_s>
-	<input_s>2561 8669</input_s>
-	</item>	<item>	<title_s>Email</title_s>
-	<input_s>info@yoclub.org.hk</input_s>
-	</item>	<item>	<title_s>Address</title_s>
-	<input_s>8/F, China Hong Kong Tower, 8-12 Hennessy Road, Wan Chai, Hong Kong </input_s>
+	<objectGroupId>c60d</objectGroupId>
+	<objectId>c60d3623-5039-9157-d47d-435e22db9f13</objectId>
+	<contactGroup_o item-list="true">	<item>	<title_s>a</title_s>
+	<input_s>a</input_s>
 	</item></contactGroup_o>
-	<file-name>db865e9a-b813-207f-459f-8b15537366cb.xml</file-name>
-	<internal-name>Contact Us</internal-name>
-	<title_s>Contact Us</title_s>
-	<disabled>true</disabled>
-	<createdDate>2020-12-09T09:18:24.502Z</createdDate>
-	<createdDate_dt>2020-12-09T09:18:24.502Z</createdDate_dt>
-	<lastModifiedDate>2020-12-09T10:02:01.942Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-12-09T10:02:01.942Z</lastModifiedDate_dt>
-	<title_2_s>Social Media</title_2_s>
-	<socialMedia_o item-list="true">	<item>	<media_link_s>facebook.com</media_link_s>
-	<media_icon_s>/static-assets/item/images/2020/12/09/fb.JPG</media_icon_s>
-	</item>	<item>	<media_icon_s>/static-assets/item/images/2020/12/09/ig.JPG</media_icon_s>
-	<media_link_s>instagram.com</media_link_s>
-	</item>	<item>	<media_icon_s>/static-assets/item/images/2020/12/09/yt.JPG</media_icon_s>
-	<media_link_s>youtube.com</media_link_s>
-	</item>	<item>	<media_icon_s>/static-assets/item/images/2020/12/09/we7.JPG</media_icon_s>
-	<media_link_s>we7</media_link_s>
-	</item>	<item>	<media_icon_s>/static-assets/item/images/2020/12/09/in.JPG</media_icon_s>
-	<media_link_s>linkedin</media_link_s>
-	</item></socialMedia_o>
+	<file-name>c60d3623-5039-9157-d47d-435e22db9f13.xml</file-name>
+	<internal-name>aaa</internal-name>
+	<title_s>aaa</title_s>
+	<title_2_s>a</title_2_s>
+	<disabled>false</disabled>
+	<createdDate>2021-01-08T08:23:32.925Z</createdDate>
+	<createdDate_dt>2021-01-08T08:23:32.925Z</createdDate_dt>
+	<lastModifiedDate>2021-01-08T08:23:32.925Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-08T08:23:32.925Z</lastModifiedDate_dt>
 </component>
 	</item></contact_us_o>
 	<left-rail_o item-list="true"/>
