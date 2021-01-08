@@ -31,7 +31,7 @@
 							<@renderComponent component = contentModel.header_o.item />
 
                             <!--test -->
-                        	<@renderComponent component = contentModel.testcomponent_o.item />
+                        	<@renderComponent component = contentModel.testcomponent_o />
 
 
 							<!-- Content -->
