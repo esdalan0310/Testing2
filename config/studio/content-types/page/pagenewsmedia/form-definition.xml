@@ -650,12 +650,12 @@
 						</property>
 						<property>
 							<name>repoPath</name>
-							<value></value>
+							<value>/component/contactus</value>
 								<type>string</type>
 						</property>
 						<property>
 							<name>browsePath</name>
-							<value></value>
+							<value>/component/contactus</value>
 								<type>string</type>
 						</property>
 						<property>
