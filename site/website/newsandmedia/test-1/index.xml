@@ -21,8 +21,8 @@
 	<orderDefault_f>1000</orderDefault_f>
 	<createdDate>2020-12-11T10:32:09.198Z</createdDate>
 	<createdDate_dt>2020-12-11T10:32:09.198Z</createdDate_dt>
-	<lastModifiedDate>2021-01-08T02:12:12.047Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-01-08T02:12:12.047Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-08T02:13:13.986Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-08T02:13:13.986Z</lastModifiedDate_dt>
 	<title_t>test-1</title_t>
 	<author_s>Author</author_s>
 	<content_t>123456AAAA</content_t>
@@ -31,5 +31,28 @@
 	<date_dt_tz>EST5EDT</date_dt_tz>
 	<meta_keywords_t>seo</meta_keywords_t>
 	<subject_t>test-1</subject_t>
-	<testcomponent_o item-list="true"/>
+	<testcomponent_o item-list="true">	<item datasource="testcomponent" inline="true">	<key>b626943c-5939-b00c-218b-dedd713597c3</key>
+	<value>test123</value>
+<component id="b626943c-5939-b00c-218b-dedd713597c3">
+	<content-type>/component/contactus</content-type>
+	<display-template>/templates/web/contact_us.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>b626</objectGroupId>
+	<objectId>b626943c-5939-b00c-218b-dedd713597c3</objectId>
+	<contactGroup_o item-list="true">	<item>	<title_s>test123</title_s>
+	<input_s>test123</input_s>
+	</item></contactGroup_o>
+	<file-name>b626943c-5939-b00c-218b-dedd713597c3.xml</file-name>
+	<internal-name>test123</internal-name>
+	<title_s>test123</title_s>
+	<title_2_s>test123</title_2_s>
+	<disabled>false</disabled>
+	<socialMedia_o item-list="true"/>
+	<createdDate>2021-01-08T02:13:16.140Z</createdDate>
+	<createdDate_dt>2021-01-08T02:13:16.140Z</createdDate_dt>
+	<lastModifiedDate>2021-01-08T02:13:16.140Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-08T02:13:16.140Z</lastModifiedDate_dt>
+</component>
+	</item></testcomponent_o>
 </page>
