@@ -31,4 +31,5 @@ if(siteDir) {
    }
 }
 result.topNavItems = topNavItems;
+prinltn "[RESULT]" + result
 return result;
