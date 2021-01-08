@@ -21,8 +21,8 @@
 	<orderDefault_f>1000</orderDefault_f>
 	<createdDate>2020-12-11T10:32:09.198Z</createdDate>
 	<createdDate_dt>2020-12-11T10:32:09.198Z</createdDate_dt>
-	<lastModifiedDate>2021-01-08T02:17:39.300Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-01-08T02:17:39.300Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-08T02:18:00.255Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-08T02:18:00.255Z</lastModifiedDate_dt>
 	<title_t>test-1</title_t>
 	<author_s>Author</author_s>
 	<content_t>123456AAAA</content_t>
@@ -50,8 +50,11 @@
 	<title_2_s>test123</title_2_s>
 	<createdDate>2021-01-08T02:17:42.404Z</createdDate>
 	<createdDate_dt>2021-01-08T02:17:42.404Z</createdDate_dt>
-	<lastModifiedDate>2021-01-08T02:17:42.404Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-01-08T02:17:42.404Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-08T02:18:02.499Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-08T02:18:02.499Z</lastModifiedDate_dt>
+	<socialMedia_o item-list="true">	<item>	<media_link_s>test123</media_link_s>
+	<media_icon_s>/static-assets/images/123.png</media_icon_s>
+	</item></socialMedia_o>
 </component>
 	</item></contact_us_o>
 </page>
