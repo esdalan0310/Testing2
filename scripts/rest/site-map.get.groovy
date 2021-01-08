@@ -18,7 +18,7 @@ def result = [:]
 def topNavItems = [:]
 def siteDir = siteItemService.getSiteTree("/site/website", 2)
 if(siteDir) {
-    println siteDir
+    println "SiteDir = " + siteDir
     def dirs = siteDir.childItems
     dirs.each { dir ->
             def dirName = dir.getStoreName()
