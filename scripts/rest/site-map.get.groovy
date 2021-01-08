@@ -26,7 +26,7 @@ if(siteDir) {
             def dirItem = siteItemService.getSiteItem("/site/website/${dirName}/index.xml")
             if (dirItem != null) {
                 def dirDisplayName = dirItem.queryValue('internal-name')
-                   topNavItems.put(dirName, dirItem.storeUrl)
+                   topNavItems.put(dirName, dir.storeUrl)
             }
             println dirItem
    }
