@@ -17,7 +17,7 @@
         <h2>Menu</h2>
       </header>
       <ul>
-		<@nav.renderNavigation "/site/website" 3 true/>
+		<@nav.renderNavigation "/site/website" 1 true/>
       </ul>
     </nav>
 
