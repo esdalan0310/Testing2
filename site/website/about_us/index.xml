@@ -20,8 +20,8 @@
 	</item></header_o>
 	<createdDate>2020-12-09T07:18:35.384Z</createdDate>
 	<createdDate_dt>2020-12-09T07:18:35.384Z</createdDate_dt>
-	<lastModifiedDate>2021-01-08T08:23:03.866Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-01-08T08:23:03.866Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-12T07:59:56.938Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-12T07:59:56.938Z</lastModifiedDate_dt>
 	<hero_text_1_html>&lt;div style="display: none;"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div style="display: none;"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div style="display: none;"&gt;&lt;br /&gt;&lt;/div&gt;
@@ -52,8 +52,11 @@
 	<disabled>false</disabled>
 	<createdDate>2021-01-08T08:23:32.925Z</createdDate>
 	<createdDate_dt>2021-01-08T08:23:32.925Z</createdDate_dt>
-	<lastModifiedDate>2021-01-08T08:23:32.925Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-01-08T08:23:32.925Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-01-12T08:00:03.581Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-01-12T08:00:03.581Z</lastModifiedDate_dt>
+	<socialMedia_o item-list="true">	<item>	<media_link_s>facebook.com</media_link_s>
+	<media_icon_s>/static-assets/item/images/2021/01/12/icon_facebook.png</media_icon_s>
+	</item></socialMedia_o>
 </component>
 	</item></contact_us_o>
 	<left-rail_o item-list="true"/>
