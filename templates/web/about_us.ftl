@@ -7,7 +7,7 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-BKZ9S2HW92', {
+  gtag('config', 'G-V45S1Q9XYT', {
   'user_id': 'M0001'
 });
 </script>
