@@ -7,9 +7,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'G-BKZ9S2HW92');
-  gtag('set', {'user_id': 'M0001'}); 
+  gtag('config', 'G-BKZ9S2HW92', {
+  'user_id': 'M0001'
+});
 </script>
 <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
