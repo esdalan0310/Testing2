@@ -15,7 +15,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-BKZ9S2HW92');
+  gtag('config', 'G-V45S1Q9XYT');
 </script>
 		<title>${contentModel.title_t}</title>
 		<meta charset="utf-8" />
