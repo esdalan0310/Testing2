@@ -8,15 +8,15 @@
 -->
 <html>
 	<head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKZ9S2HW92"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-V45S1Q9XYT', {
-          'user_id': 'M0002'
-        });
-        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-187863024-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-187863024-1');
+</script>
 		<title>${contentModel.title_t}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
