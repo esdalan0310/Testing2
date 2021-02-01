@@ -8,6 +8,15 @@
 -->
 <html>
 	<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-187863024-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-187863024-1');
+</script>
 		<title>${contentModel.title_t}</title>
 		<meta charset="utf-8" />
 	    <meta name="keywords" content="${contentModel.meta_keywords_t}">
