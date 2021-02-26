@@ -9,5 +9,5 @@
 	<quickCreate>false</quickCreate>
 	<quickCreatePath></quickCreatePath>
 	<noThumbnail>true</noThumbnail>
-	<image-thumbnail></image-thumbnail>
+	<image-thumbnail>black.png</image-thumbnail>
 </content-type>
